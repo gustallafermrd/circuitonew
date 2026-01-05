@@ -1,0 +1,59 @@
+{
+  "navbar": {
+    "home": "Inicio",
+    "posadas": "Posadas",
+    "map": "Mapa",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "title": "Vive lo Mejor de Venezuela",
+    "subtitle": "Descubre el Circuito de la Excelencia – una colección curada de las mejores posadas y hoteles boutique en paisajes impresionantes.",
+    "explore": "Explorar Posadas",
+    "viewMap": "Ver Mapa"
+  },
+  "intro": {
+    "title": "El Circuito de la Excelencia",
+    "subtitle": "Más que una estadía. Representamos un estándar de oro en calidad, cálida hospitalidad y auténtica cultura venezolana.",
+    "quality": {
+      "title": "Calidad Certificada",
+      "description": "Estándares rigurosos que garantizan las mejores comodidades, limpieza y confort para cada huésped."
+    },
+    "hospitality": {
+      "title": "Hospitalidad Auténtica",
+      "description": "Atención personalizada de anfitriones que te tratan como familia, compartiendo secretos y tradiciones locales."
+    },
+    "locations": {
+      "title": "Ubicaciones Únicas",
+      "description": "Posadas ubicadas en los lugares más impresionantes de Venezuela, desde los Andes hasta la costa caribeña."
+    }
+  },
+  "fundadores": {
+    "title": "Posadas Fundadoras",
+    "viewAll": "Ver todos los destinos",
+    "from": "Desde",
+    "perNight": "noche",
+    "seeMore": "Ver más",
+    "notFound": "No se encontraron posadas fundadoras."
+  },
+  "posadas": {
+    "title": "Viva la Mejor Hospitalidad de Venezuela",
+    "subtitle": "Explore nuestra selección curada de posadas dedicadas a la calidad, tradición y naturaleza.",
+    "searchPlaceholder": "Buscar por región, servicios o nombre de posada...",
+    "searchButton": "Buscar",
+    "listTitle": "Nuestras Posadas",
+    "regions": {
+      "all": "Todas las Regiones",
+      "andes": "Andes",
+      "costa": "Costa",
+      "llanos": "Llanos",
+      "centro": "Centro"
+    },
+    "notFound": "No se encontraron posadas.",
+    "details": "Ver Detalles",
+    "location": "Ubicación",
+    "amenities": "Servicios",
+    "bookNow": "Reservar Ahora",
+    "backToList": "Volver a la lista",
+    "whereWillYouBe": "Ubicación"
+  }
+}

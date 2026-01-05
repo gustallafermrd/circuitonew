@@ -1,0 +1,59 @@
+{
+  "navbar": {
+    "home": "Home",
+    "posadas": "Posadas",
+    "map": "Map",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Experience the Best of Venezuela",
+    "subtitle": "Discover the Circuito de la Excelencia – a curated collection of the finest inns and boutique hotels in breathtaking landscapes.",
+    "explore": "Explore Posadas",
+    "viewMap": "View Map"
+  },
+  "intro": {
+    "title": "The Circuito de la Excelencia",
+    "subtitle": "More than just a stay. We represent a gold standard in quality, warm hospitality, and authentic Venezuelan culture.",
+    "quality": {
+      "title": "Certified Quality",
+      "description": "Rigorous standards that guarantee the best amenities, cleanliness, and comfort for every guest."
+    },
+    "hospitality": {
+      "title": "Authentic Hospitality",
+      "description": "Personalized attention from hosts who treat you like family, sharing local secrets and traditions."
+    },
+    "locations": {
+      "title": "Unique Locations",
+      "description": "Posadas located in the most stunning places in Venezuela, from the Andes to the Caribbean coast."
+    }
+  },
+  "fundadores": {
+    "title": "Founding Posadas",
+    "viewAll": "View all destinations",
+    "from": "From",
+    "perNight": "night",
+    "seeMore": "See more",
+    "notFound": "No founding posadas found."
+  },
+  "posadas": {
+    "title": "Experience the Finest Venezuelan Hospitality",
+    "subtitle": "Explore our curated selection of inns dedicated to quality, tradition, and nature.",
+    "searchPlaceholder": "Search by region, services, or inn name...",
+    "searchButton": "Search",
+    "listTitle": "Our Posadas",
+    "regions": {
+      "all": "All Regions",
+      "andes": "Andes",
+      "costa": "Coast",
+      "llanos": "Plains",
+      "centro": "Central"
+    },
+    "notFound": "No posadas found.",
+    "details": "View Details",
+    "location": "Location",
+    "amenities": "Amenities",
+    "bookNow": "Book Now",
+    "backToList": "Back to list",
+    "whereWillYouBe": "GPS Coordinates"
+  }
+}
