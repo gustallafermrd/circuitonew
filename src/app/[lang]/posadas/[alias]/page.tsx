@@ -69,9 +69,10 @@ export default async function PosadaDetailPage({
     } catch {
       if (typeof attr.logo === 'string' && attr.logo.length > 0) {
         logoImage = getImageUrl(attr.logo);
-      }
     }
   }
+
+  const googleMapUrl = attr['google-map'];
 
   return (
     <main className="layout-container flex h-full grow flex-col pb-20 bg-white dark:bg-gray-900">
@@ -100,7 +101,7 @@ export default async function PosadaDetailPage({
             <div className="flex flex-col gap-10">
               <div className="flex justify-between items-center border-b border-[#f0f4f2] dark:border-white/10 pb-8">
                 <div>
-                  <h3 className="text-xl md:text-2xl font-bold mb-1 dark:text-white">Ubicación y Entorno</h3>
+                  <h3 className="text-xl md:text-2xl font-bold mb-1 dark:text-white">Ubicación</h3>
                   <div className="flex items-center gap-1 text-secondary">
                     <span className="material-symbols-outlined [font-variation-settings:'FILL'_1]">location_on</span>
                     <p className="font-semibold">{attr.estado}, Venezuela</p>
@@ -165,16 +166,13 @@ export default async function PosadaDetailPage({
               </div>
 
               {/* Google Map */}
-              <div className="pb-8">
-                <h3 className="text-xl md:text-2xl font-bold mb-2 dark:text-white">{dictionary.posadas?.whereWillYouBe || "Ubicación"}</h3>
-                <p className="text-gray-500 dark:text-gray-400 mb-6">{attr.estado}, Venezuela</p>
-                {/* Robust coordinate parsing */}
-                {(() => {
-                  const lat = parseFloat(String(attr.latitud || "10.855029663464661"));
-                  const lng = parseFloat(String(attr.longitud || "-68.38136133218646"));
-                  return <GoogleMap lat={lat} lng={lng} name={attr.title} />;
-                })()}
-              </div>
+              {googleMapUrl && (
+                <div className="pb-8">
+                  <h3 className="text-xl md:text-2xl font-bold mb-2 dark:text-white">{dictionary.posadas?.whereWillYouBe || "Ubicación"}</h3>
+                  <p className="text-gray-500 dark:text-gray-400 mb-6">{attr.estado}, Venezuela</p>
+                  <GoogleMap src={googleMapUrl} />
+                </div>
+              )}
             </div>
 
             {/* Sidebar Sticky */}
@@ -267,4 +265,5 @@ export default async function PosadaDetailPage({
       </div>
     </main>
   );
+}
 }

@@ -4,7 +4,6 @@ import Intro from "@/app/components/intro";
 import Fundadores from "@/app/components/fundadores";
 import Mapa from "@/app/components/mapa";
 import Comentarios from "@/app/components/comentarios";
-import Footer from "@/app/components/footer";
 import { getDictionary } from "@/lib/get-dictionary";
 
 export default async function LangHome({
@@ -22,7 +21,6 @@ export default async function LangHome({
       <Fundadores dictionary={dictionary.fundadores} lang={lang} />
       <Mapa />
       <Comentarios />
-      <Footer />
     </main>
   );
 }
