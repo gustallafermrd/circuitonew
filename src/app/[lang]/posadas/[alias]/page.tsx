@@ -56,8 +56,8 @@ export default async function PosadaDetailPage({
     displayImages.push(mainImage);
   }
 
-  const hasWhatsApp = !!attr.telefono;
-  const whatsappNumber = attr.telefono?.replace(/\D/g, '');
+  const hasWhatsApp = !!attr.whatsapp;
+  const whatsappNumber = attr.whatsapp?.replace(/\D/g, '');
 
   let logoImage = '';
   if (attr.logo) {
@@ -200,7 +200,7 @@ export default async function PosadaDetailPage({
                         </div>
                       </div>
                     )}
-                    {attr.telefono && (
+                    {attr.tlf && (
                       <div className="flex items-start gap-3">
                         <div className="bg-primary/5 p-2 rounded-lg text-primary dark:text-secondary">
                           <span className="material-symbols-outlined">call</span>
@@ -208,7 +208,7 @@ export default async function PosadaDetailPage({
                         <div>
                           <p className="text-xs font-bold uppercase text-gray-500 dark:text-gray-400 mb-1">Teléfonos</p>
                           <p className="text-sm font-medium text-text-main dark:text-white">
-                            {attr.telefono}
+                            {attr.tlf}
                           </p>
                         </div>
                       </div>
