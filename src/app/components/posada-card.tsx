@@ -33,7 +33,7 @@ export default function PosadaCard({ posada, lang, dictionary }: PosadaCardProps
   const description = (attr.text || attr.introtext || "").replace(/<[^>]+>/g, '').trim().slice(0, 150) + "...";
 
   // Robust check for "Si" in custom fields
-  const isJunior = (field: any) => {
+  const isSi = (field: any) => {
     if (typeof field === 'string') return field.toLowerCase() === 'si';
     if (typeof field === 'object' && field !== null) {
       return Object.values(field).some((v: any) => typeof v === 'string' && v.toLowerCase() === 'si');
@@ -41,7 +41,8 @@ export default function PosadaCard({ posada, lang, dictionary }: PosadaCardProps
     return false;
   };
 
-  const showJuniorBadge = isJunior(attr.asociado_junior) || isJunior(attr['asociado-junior']);
+  const showJuniorBadge = isSi(attr.asociado_junior) || isSi(attr['asociado-junior']);
+  const showFounderBadge = isSi(attr.fundadores) || isSi(attr.fundador);
 
   return (
     <Link href={`/${lang}/posadas/${attr.alias}`} className="group flex flex-col gap-4 cursor-pointer">
@@ -50,12 +51,20 @@ export default function PosadaCard({ posada, lang, dictionary }: PosadaCardProps
           data-alt={attr.title}
           style={{ backgroundImage: `url("${image}")` }}>
         </div>
-        {showJuniorBadge && (
-          <div
-            className="absolute top-3 right-3 bg-green-600/90 dark:bg-black/80 backdrop-blur text-xs font-bold px-3 py-1 rounded-full tracking-wide text-white">
-            Asociado Junior
-          </div>
-        )}
+        <div className="absolute top-3 right-3 flex flex-col items-end gap-2">
+          {showFounderBadge && (
+            <div
+              className="bg-white/90 backdrop-blur text-[10px] md:text-xs font-bold px-3 py-1 rounded-full tracking-wide text-text-main shadow-sm">
+              Fundador
+            </div>
+          )}
+          {showJuniorBadge && (
+            <div
+              className="bg-green-600/90 backdrop-blur text-[10px] md:text-xs font-bold px-3 py-1 rounded-full tracking-wide text-white shadow-sm">
+              Asociado Junior
+            </div>
+          )}
+        </div>
       </div>
       <div className="flex flex-col gap-1">
         <div className="flex flex-col gap-1">

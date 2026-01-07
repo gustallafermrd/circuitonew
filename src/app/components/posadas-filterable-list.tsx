@@ -9,20 +9,14 @@ interface PosadasFilterableListProps {
   lang: string;
 }
 
-const REGION_MAPPING: Record<string, string[]> = {
-  'Andes': ['Mérida', 'Táchira', 'Trujillo'],
-  'Costa': ['Falcón', 'Carabobo', 'Aragua', 'La Guaira', 'Sucre', 'Anzoátegui', 'Nueva Esparta', 'Vargas'],
-  'Llanos': ['Barinas', 'Apure', 'Portuguesa', 'Guárico', 'Cojedes'],
-  'Centro': ['Distrito Capital', 'Miranda'],
-};
-
-// Map dictionary keys to region names for internal logic
+// Map dictionary keys to destination names for internal logic
 const REGION_KEYS: Record<string, string> = {
   'all': 'all',
-  'andes': 'Andes',
-  'costa': 'Costa',
-  'llanos': 'Llanos',
-  'centro': 'Centro',
+  'montana': 'Montaña',
+  'ciudad': 'Ciudad',
+  'playa': 'Playa',
+  'selva': 'Selva',
+  'llano': 'Llano',
 };
 
 export default function PosadasFilterableList({ initialPosadas, dictionary, lang }: PosadasFilterableListProps) {
@@ -33,6 +27,13 @@ export default function PosadasFilterableList({ initialPosadas, dictionary, lang
     return initialPosadas.filter((posada: any) => {
       const attr = posada.attributes;
       const estado = attr.estado || '';
+      let destino = attr.destino || '';
+      
+      // Joomla custom fields can be objects. Extract string value if so.
+      if (typeof destino === 'object' && destino !== null) {
+        destino = Object.values(destino)[0] as string || '';
+      }
+      
       const title = attr.title || '';
       const text = (attr.text || attr.introtext || '').replace(/<[^>]+>/g, '');
 
@@ -40,21 +41,24 @@ export default function PosadasFilterableList({ initialPosadas, dictionary, lang
       const matchesSearch = 
         title.toLowerCase().includes(searchTerm.toLowerCase()) ||
         text.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        estado.toLowerCase().includes(searchTerm.toLowerCase());
+        estado.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        (typeof destino === 'string' && destino.toLowerCase().includes(searchTerm.toLowerCase()));
 
       if (!matchesSearch) return false;
 
-      // Region Filter
+      // Region Filter (using Destino)
       if (selectedRegion === 'all') return true;
       
       const targetRegionName = REGION_KEYS[selectedRegion];
-      const validStates = REGION_MAPPING[targetRegionName] || [];
       
-      return validStates.some(state => 
-        estado.toLowerCase().includes(state.toLowerCase())
-      );
+      // Match the destination exactly (ignoring case)
+      return typeof destino === 'string' && destino.toLowerCase() === targetRegionName.toLowerCase();
+    }).sort((a: any, b: any) => {
+      const titleA = a.attributes?.title || '';
+      const titleB = b.attributes?.title || '';
+      return titleA.localeCompare(titleB, lang);
     });
-  }, [initialPosadas, searchTerm, selectedRegion]);
+  }, [initialPosadas, searchTerm, selectedRegion, lang]);
 
   return (
     <>
@@ -105,7 +109,7 @@ export default function PosadasFilterableList({ initialPosadas, dictionary, lang
             className="text-text-main dark:text-white text-2xl font-bold leading-tight tracking-[-0.015em]">
             {dictionary.posadas.listTitle}</h2>
           <div className="flex gap-3 overflow-x-auto pb-2 scrollbar-hide">
-            {['all', 'andes', 'costa', 'llanos', 'centro'].map((regionKey) => (
+            {['all', 'montana', 'ciudad', 'playa', 'selva', 'llano'].map((regionKey) => (
               <button
                 key={regionKey}
                 onClick={() => setSelectedRegion(regionKey)}
@@ -122,7 +126,7 @@ export default function PosadasFilterableList({ initialPosadas, dictionary, lang
         </div>
       </section>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
         {filteredPosadas.map((posada: any) => (
           <PosadaCard 
             key={posada.id} 

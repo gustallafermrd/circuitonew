@@ -42,11 +42,12 @@
     "searchButton": "Search",
     "listTitle": "Our Posadas",
     "regions": {
-      "all": "All Regions",
-      "andes": "Andes",
-      "costa": "Coast",
-      "llanos": "Plains",
-      "centro": "Central"
+      "all": "All",
+      "montana": "Mountain",
+      "ciudad": "City",
+      "playa": "Beach",
+      "selva": "Jungle",
+      "llano": "Plains"
     },
     "notFound": "No posadas found.",
     "details": "View Details",

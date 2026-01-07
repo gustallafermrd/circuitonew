@@ -1,7 +1,7 @@
 
 export default async function Mapa() {
 return (
-  <div className="w-full max-w-[1400px] px-4 md:px-6 py-16">
+  <div className="w-full max-w-[1440px] px-4 md:px-6 py-16">
       <div className="relative overflow-hidden rounded-2xl bg-primary flex flex-col items-center justify-center text-center p-8 md:p-16 gap-6 min-h-[400px]"
         data-alt="Stylized dark map background representing travel routes"
         style={{backgroundImage: 'linear-gradient(rgba(24, 24, 52, 0.4) 0%, rgba(24, 24, 52, 0.9) 100%), url("/img/map.png"); background-size: cover; background-position: center'}}>

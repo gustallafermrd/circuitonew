@@ -69,6 +69,7 @@ export default async function PosadaDetailPage({
     } catch {
       if (typeof attr.logo === 'string' && attr.logo.length > 0) {
         logoImage = getImageUrl(attr.logo);
+      }
     }
   }
 
@@ -265,5 +266,4 @@ export default async function PosadaDetailPage({
       </div>
     </main>
   );
-}
 }

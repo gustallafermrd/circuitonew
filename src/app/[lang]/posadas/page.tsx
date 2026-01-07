@@ -13,7 +13,7 @@ export default async function PosadasPage({
 
   return (
     <div className="w-full bg-white dark:bg-gray-900 py-16 flex justify-center min-h-screen">
-      <div className="max-w-[1200px] w-full px-4 md:px-6 flex flex-col gap-10">
+      <div className="max-w-[1440px] w-full px-4 md:px-6 flex flex-col gap-10">
         <PosadasFilterableList 
           initialPosadas={posadas} 
           dictionary={dictionary} 
