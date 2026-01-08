@@ -144,27 +144,40 @@ export default async function PosadaDetailPage({
               </div>
 
               {/* Offerings */}
-              <div className="border-b border-[#f0f4f2] dark:border-white/10 pb-8">
-                <h3 className="text-xl md:text-2xl font-bold mb-6 dark:text-white">Lo que ofrece este lugar</h3>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <div className="flex items-center gap-4 text-text-main dark:text-gray-200">
-                    <span className="material-symbols-outlined">wifi</span>
-                    <span>Wifi</span>
+              {(() => {
+                const rawAmenities = attr['amennities-list'] || attr.amennities_list;
+                let amenityList: { label: string; icon: string }[] = [];
+
+                if (rawAmenities) {
+                  try {
+                    const parsed = typeof rawAmenities === 'string' ? JSON.parse(rawAmenities) : rawAmenities;
+                    if (typeof parsed === 'object' && parsed !== null) {
+                      amenityList = Object.values(parsed).map((row: any) => ({
+                        label: row.field27 || '',
+                        icon: row.field28 || 'check_circle'
+                      })).filter(a => a.label);
+                    }
+                  } catch (e) {
+                    console.error('Error parsing amenities:', e);
+                  }
+                }
+                
+                if (amenityList.length === 0) return null;
+
+                return (
+                  <div className="border-b border-[#f0f4f2] dark:border-white/10 pb-8">
+                    <h3 className="text-xl md:text-2xl font-bold mb-6 dark:text-white">Lo que ofrece este lugar</h3>
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+                      {amenityList.map((amenity, idx) => (
+                        <div key={idx} className="flex items-center gap-4 text-text-main dark:text-gray-200">
+                          <span className="text-secondary material-symbols-outlined">{amenity.icon}</span>
+                          <span>{amenity.label}</span>
+                        </div>
+                      ))}
+                    </div>
                   </div>
-                  <div className="flex items-center gap-4 text-text-main dark:text-gray-200">
-                    <span className="material-symbols-outlined">restaurant</span>
-                    <span>Gastronomía local</span>
-                  </div>
-                  <div className="flex items-center gap-4 text-text-main dark:text-gray-200">
-                    <span className="material-symbols-outlined">ac_unit</span>
-                    <span>Ambiente confortable</span>
-                  </div>
-                  <div className="flex items-center gap-4 text-text-main dark:text-gray-200">
-                    <span className="material-symbols-outlined">nature_people</span>
-                    <span>Entorno natural</span>
-                  </div>
-                </div>
-              </div>
+                );
+              })()}
 
               {/* Google Map */}
               {googleMapUrl && (

@@ -1,0 +1,1781 @@
+{
+  "links": {
+    "self": "https://beta.circuitodelaexcelencia.com/api/index.php/v1/content/articles?page[limit]=100"
+  },
+  "data": [
+    {
+      "type": "articles",
+      "id": "21",
+      "attributes": {
+        "id": 21,
+        "asset_id": 152,
+        "title": "Reserva Ecológica Guáquira",
+        "alias": "reserva-ecologica-guaquira",
+        "state": 1,
+        "access": 1,
+        "created": "2026-01-07 19:22:42",
+        "created_by": 655,
+        "created_by_alias": "",
+        "modified": "2026-01-08 00:22:23",
+        "featured": 0,
+        "language": "es-ES",
+        "hits": 0,
+        "publish_up": "2026-01-07 19:22:42",
+        "publish_down": null,
+        "note": "",
+        "images": {
+          "image_intro": "",
+          "image_intro_alt": "",
+          "float_intro": "",
+          "image_intro_caption": "",
+          "image_fulltext": "",
+          "image_fulltext_alt": "",
+          "float_fulltext": "",
+          "image_fulltext_caption": ""
+        },
+        "metakey": "",
+        "metadesc": "",
+        "metadata": {
+          "robots": "",
+          "author": "",
+          "rights": ""
+        },
+        "version": 7,
+        "featured_up": null,
+        "featured_down": null,
+        "typeAlias": "com_content.article",
+        "text": "<p>Reserva de 2.500 hectáreas en Yaracuy donde el turismo sostenible apoya la conservación; fundada con visión en 1993.</p>\r\n<p><br>Desde 1993 protege biodiversidad y ofrece turismo responsable en un entorno de conservación.</p>\r\n<p><br>Posada privada para grupos (alquiler completa), ideal para familias numerosas, grupos y retiros corporativos. Cabalgatas, taller de chocolate, excursiones a cascadas, rutas en cuatrimoto, fogatas y noches de música.</p>\r\n<p><br>Cabalgatas, talleres de chocolate, excursiones a cascadas, rutas en cuatrimoto, fogatas, noches de música tradicional y posibilidad de bodas en la Capilla.</p>\r\n<p><br>Menús caseros adaptados a grupos con opciones vegetarianas y postres con cacao artesanal.</p> ",
+        "slogan": "Un santuario natural con propósito",
+        "icono": "",
+        "descripcion": "",
+        "amennities-list": "{\"row0\":{\"field27\":\"Wi-Fi Complementaria\",\"field28\":\"wifi\"},\"row1\":{\"field27\":\"Fogatas\",\"field28\":\"local_fire_department\"},\"row2\":{\"field27\":\"Excursiones a cascadas\",\"field28\":\"waterfall_chart\"}}",
+        "whatsapp": "+584126390828",
+        "direccion": "A 5 minutos del Distribuidor La Marroquina, San Felipe, Yaracuy; acceso directo desde la autopista Morón-Barquisimeto.",
+        "tlf": "<p>+58 412 639 0828</p>",
+        "e-mail": "tuguaquira@gmail.com",
+        "web": "https://www.guaquira.net",
+        "estado": "San Felipe - Yaracuy",
+        "instagram": "PueblitoGuaquira",
+        "destino": {
+          "montana": "Montaña"
+        },
+        "horario-de-atencion": "8:00AM - 6:00PM ",
+        "google-map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d490.6986319330085!2d-68.65822571160274!3d10.294657199999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e80c7c440e25a6f%3A0x54817f5e240fe1e7!2sPueblito%20Gu%C3%A1quira!5e0!3m2!1ses!2sar!4v1767706084908!5m2!1ses!2sar",
+        "asociado-junior": {
+          "no": "No"
+        },
+        "fundador": {
+          "no": "No"
+        },
+        "logo": "{\"imagefile\":\"images\\/logos\\/guaquira-logo.jpg#joomlaImage:\\/\\/local-images\\/logos\\/guaquira-logo.jpg?width=290&height=160\",\"alt_text\":\"\",\"alt_empty\":\"1\"}",
+        "portada": "{\"imagefile\":\"images\\/posadas\\/guaquira-0.webp#joomlaImage:\\/\\/local-images\\/posadas\\/guaquira-0.webp?width=1920&height=1280\",\"alt_text\":\"\",\"alt_empty\":\"1\"}",
+        "galeria-de-imagenes": [
+          "guaquira-1.webp",
+          "guaquira-2.webp",
+          "guaquira-3.webp",
+          "guaquira-4.webp",
+          "guaquira-5.webp",
+          "guaquira-6.webp"
+        ],
+        "tags": []
+      },
+      "relationships": {
+        "category": {
+          "data": {
+            "type": "categories",
+            "id": "8"
+          }
+        },
+        "created_by": {
+          "data": {
+            "type": "users",
+            "id": "655"
+          }
+        },
+        "tags": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "articles",
+      "id": "20",
+      "attributes": {
+        "id": 20,
+        "asset_id": 151,
+        "title": "La Ardileña",
+        "alias": "la-ardilena",
+        "state": 1,
+        "access": 1,
+        "created": "2026-01-07 19:04:48",
+        "created_by": 655,
+        "created_by_alias": "",
+        "modified": "2026-01-07 19:18:15",
+        "featured": 0,
+        "language": "es-ES",
+        "hits": 0,
+        "publish_up": "2026-01-07 19:04:48",
+        "publish_down": null,
+        "note": "",
+        "images": {
+          "image_intro": "",
+          "image_intro_alt": "",
+          "float_intro": "",
+          "image_intro_caption": "",
+          "image_fulltext": "",
+          "image_fulltext_alt": "",
+          "float_fulltext": "",
+          "image_fulltext_caption": ""
+        },
+        "metakey": "",
+        "metadesc": "",
+        "metadata": {
+          "robots": "",
+          "author": "",
+          "rights": ""
+        },
+        "version": 2,
+        "featured_up": null,
+        "featured_down": null,
+        "typeAlias": "com_content.article",
+        "text": "<p>Posada en Morrocoy, zona con rica vida marina y bosques y manglares; destino turístico de gran categoría.</p>\r\n<p><br>Nace como sueño familiar; inversión y mejora de la posada desde 2006 para posicionarla dentro del Parque Nacional Morrocoy.</p>\r\n<p><br>20 cómodas habitaciones (estándar, superior y suites), aire acondicionado, TV satelital, nevera, caja de seguridad, secador, Wi-Fi, jardínes y estacionamiento.</p>\r\n<p><br>Spa, jacuzzi flotante en el mar, kayak, paddle, renta de lancha y traslados a cayos.</p>\r\n<p><br>Cocina típica e internacional; desayunos americanos, continentales y criollos; almuerzos y cenas de alta cocina con reserva.</p> ",
+        "slogan": "Un paraíso Escondido",
+        "icono": "",
+        "descripcion": "",
+        "amennities-list": "",
+        "whatsapp": "+584147672327",
+        "direccion": "Acceso desde la carretera Morón – Coro; señalizaciones y ruta de llegada indicadas.",
+        "tlf": "<p>+58 412 741 4279 / +58 424 454 5752</p>",
+        "e-mail": "reservaciones@ardilena.com",
+        "web": "https://www.ardilena.com",
+        "estado": "Morrocoy - Falcón",
+        "instagram": "posadaardilena",
+        "destino": {
+          "playa": "Playa"
+        },
+        "horario-de-atencion": "8:00AM - 6:00PM ",
+        "google-map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.4153016811224!2d-68.25630287787669!3d10.85598366161815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e810c88bc7ecaaf%3A0x18ec26c3da9c824e!2sPosada%20La%20Ardile%C3%B1a!5e0!3m2!1ses!2sar!4v1767706244654!5m2!1ses!2sar",
+        "asociado-junior": {
+          "no": "No"
+        },
+        "fundador": {
+          "no": "No"
+        },
+        "logo": "{\"imagefile\":\"images\\/logos\\/la-ardilena-logo.jpeg#joomlaImage:\\/\\/local-images\\/logos\\/la-ardilena-logo.jpeg?width=240&height=93\",\"alt_text\":\"\",\"alt_empty\":\"1\"}",
+        "portada": "{\"imagefile\":\"images\\/posadas\\/la-ardilena-0.jpg#joomlaImage:\\/\\/local-images\\/posadas\\/la-ardilena-0.jpg?width=1920&height=1223\",\"alt_text\":\"\",\"alt_empty\":\"1\"}",
+        "galeria-de-imagenes": [
+          "la-ardilena-1.jpg",
+          "la-ardilena-2.jpg",
+          "la-ardilena-3.jpg",
+          "la-ardilena-4.jpg",
+          "la-ardilena-5.jpg",
+          "la-ardilena-6.jpg",
+          "la-ardilena-7.jpg",
+          "la-ardilena-8.jpg"
+        ],
+        "tags": []
+      },
+      "relationships": {
+        "category": {
+          "data": {
+            "type": "categories",
+            "id": "8"
+          }
+        },
+        "created_by": {
+          "data": {
+            "type": "users",
+            "id": "655"
+          }
+        },
+        "tags": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "articles",
+      "id": "19",
+      "attributes": {
+        "id": 19,
+        "asset_id": 150,
+        "title": "Posada Piedemonte",
+        "alias": "posada-piedemonte",
+        "state": 1,
+        "access": 1,
+        "created": "2026-01-07 18:37:57",
+        "created_by": 655,
+        "created_by_alias": "",
+        "modified": "2026-01-07 18:39:11",
+        "featured": 0,
+        "language": "*",
+        "hits": 0,
+        "publish_up": "2026-01-07 18:37:57",
+        "publish_down": null,
+        "note": "",
+        "images": {
+          "image_intro": "",
+          "image_intro_alt": "",
+          "float_intro": "",
+          "image_intro_caption": "",
+          "image_fulltext": "",
+          "image_fulltext_alt": "",
+          "float_fulltext": "",
+          "image_fulltext_caption": ""
+        },
+        "metakey": "",
+        "metadesc": "",
+        "metadata": {
+          "robots": "",
+          "author": "",
+          "rights": ""
+        },
+        "version": 2,
+        "featured_up": null,
+        "featured_down": null,
+        "typeAlias": "com_content.article",
+        "text": "<p>Posada en San Cristóbal diseñada acorde con los paisajes andinos; ofrece ambiente de montaña dentro de la ciudad.</p>\r\n<p><br>Calor de hogar, tranquilidad y buen servicio definen la posada; ideal para turismo o trabajo.</p>\r\n<p><br>20 habitaciones incluyendo suite; instalaciones con tv, aire acondicionado, nevera, agua caliente. Desayuno y piscina incluidos; servicio de spa y salón de usos múltiples. Planta eléctrica y wifi satelital.</p>\r\n<p><br>Ubicación cercana a sitios para deporte al aire libre.</p>\r\n<p><br>Desayunos típicos tachirenses y opciones americanas/continentales.</p> ",
+        "slogan": "Ambiente de montaña en la Ciudad",
+        "icono": "",
+        "descripcion": "",
+        "amennities-list": "",
+        "whatsapp": "+584247262101",
+        "direccion": "Ciudad de San Cristóbal, Urb. Altos de los Criollitos.",
+        "tlf": "<p>Tel: +58 276 347 3029</p>",
+        "e-mail": "contacto@posadapiedemonte.com",
+        "web": "https://www.posadapiedemonte.com",
+        "estado": "San Cristobal - Tachira",
+        "instagram": "",
+        "destino": {
+          "montana": "Montaña"
+        },
+        "horario-de-atencion": "8:00AM - 6:00PM ",
+        "google-map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.365084815421!2d-72.22084797807217!3d7.751046272269995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e666cb4debb1b3d%3A0xcddb20e80690c9b8!2sPosada%20P%C3%AFedemonte!5e0!3m2!1ses!2sar!4v1767705706754!5m2!1ses!2sar",
+        "asociado-junior": {
+          "no": "No"
+        },
+        "fundador": {
+          "no": "No"
+        },
+        "logo": "{\"imagefile\":\"images\\/logos\\/piedemonte-logo.webp#joomlaImage:\\/\\/local-images\\/logos\\/piedemonte-logo.webp?width=238&height=94\",\"alt_text\":\"\",\"alt_empty\":\"1\"}",
+        "portada": "{\"imagefile\":\"images\\/posadas\\/piedemonte-0.webp#joomlaImage:\\/\\/local-images\\/posadas\\/piedemonte-0.webp?width=1280&height=856\",\"alt_text\":\"\"}",
+        "galeria-de-imagenes": [
+          "piedemonte-1.webp",
+          "piedemonte-10.webp",
+          "piedemonte-2.webp",
+          "piedemonte-3.webp",
+          "piedemonte-4.webp",
+          "piedemonte-5.webp",
+          "piedemonte-6.webp",
+          "piedemonte-7.webp",
+          "piedemonte-8.webp",
+          "piedemonte-9.webp"
+        ],
+        "tags": []
+      },
+      "relationships": {
+        "category": {
+          "data": {
+            "type": "categories",
+            "id": "8"
+          }
+        },
+        "created_by": {
+          "data": {
+            "type": "users",
+            "id": "655"
+          }
+        },
+        "tags": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "articles",
+      "id": "18",
+      "attributes": {
+        "id": 18,
+        "asset_id": 149,
+        "title": "Wakü Lodge",
+        "alias": "waku-lodge",
+        "state": 1,
+        "access": 1,
+        "created": "2026-01-07 18:28:31",
+        "created_by": 655,
+        "created_by_alias": "",
+        "modified": "2026-01-07 18:47:33",
+        "featured": 0,
+        "language": "es-ES",
+        "hits": 0,
+        "publish_up": "2026-01-07 18:28:31",
+        "publish_down": null,
+        "note": "",
+        "images": {
+          "image_intro": "",
+          "image_intro_alt": "",
+          "float_intro": "",
+          "image_intro_caption": "",
+          "image_fulltext": "",
+          "image_fulltext_alt": "",
+          "float_fulltext": "",
+          "image_fulltext_caption": ""
+        },
+        "metakey": "",
+        "metadesc": "",
+        "metadata": {
+          "robots": "",
+          "author": "",
+          "rights": ""
+        },
+        "version": 2,
+        "featured_up": null,
+        "featured_down": null,
+        "typeAlias": "com_content.article",
+        "text": "<p>Posada a orillas de la Laguna Canaima, con vistas a los saltos y ubicada en el Parque Nacional Canaima. Santuario para loros y tucanes.</p>\r\n<p><br>Narrativa del fundador y el equipo; compromiso con la protección del Parque Nacional y prácticas sustentables.</p>\r\n<p><br>19 habitaciones, suite \"Casa Kanau\" con sala, cocina y vista a la laguna; dos áreas de restaurante construidas con técnicas indígenas; paquetes que incluyen comidas.</p>\r\n<p> </p>\r\n<p>Excursiones al Salto Ángel, Salto Sapo y Hacha, Cuevas de Kavac; paddle board, kayak, bicicletas y visitas a comunidades indígenas.</p>\r\n<p><br>Comidas incluidas en paquetes, servidas en churuatas con vista a saltos y tepuyes.</p> ",
+        "slogan": "Su Aventura en la Selva su Paraíso en Canaima",
+        "icono": "",
+        "descripcion": "",
+        "amennities-list": "",
+        "whatsapp": "+584148686659",
+        "direccion": "Parque Nacional Canaima. Servicios de boleto aéreo y traslados desde Maiquetía, Maracaibo y Puerto Ordaz.",
+        "tlf": "<p>Teléfonos: +58 286 962 5560 / +58 286 962 0559 / +58 286 962 8658</p>",
+        "e-mail": "wakulodge@gmail.com",
+        "web": "https://www.wakulodge.com",
+        "estado": "Canaima - Bolívar",
+        "instagram": "wakulodge",
+        "destino": {
+          "selva": "Selva"
+        },
+        "horario-de-atencion": "8:00AM - 6:00PM ",
+        "google-map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.144036896724!2d-62.853887!3d6.244741599999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8dc429f2caf57437%3A0xbf86adb09a72eea!2sWaku%20Lodge%20exelente!5e0!3m2!1ses!2sar!4v1767705519581!5m2!1ses!2sar",
+        "asociado-junior": {
+          "no": "No"
+        },
+        "fundador": {
+          "no": "No"
+        },
+        "logo": "{\"imagefile\":\"images\\/logos\\/waku-logo.webp#joomlaImage:\\/\\/local-images\\/logos\\/waku-logo.webp?width=238&height=120\",\"alt_text\":\"\",\"alt_empty\":\"1\"}",
+        "portada": "{\"imagefile\":\"images\\/posadas\\/waku-0.jpg#joomlaImage:\\/\\/local-images\\/posadas\\/waku-0.jpg?width=1920&height=1072\",\"alt_text\":\"\"}",
+        "galeria-de-imagenes": [
+          "waku-1.jpg",
+          "waku-10.jpg",
+          "waku-11.jpg",
+          "waku-2.webp",
+          "waku-3.webp",
+          "waku-4.webp",
+          "waku-5.webp",
+          "waku-6.webp",
+          "waku-7.jpg",
+          "waku-8.jpg",
+          "waku-9.jpg"
+        ],
+        "tags": []
+      },
+      "relationships": {
+        "category": {
+          "data": {
+            "type": "categories",
+            "id": "8"
+          }
+        },
+        "created_by": {
+          "data": {
+            "type": "users",
+            "id": "655"
+          }
+        },
+        "tags": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "articles",
+      "id": "17",
+      "attributes": {
+        "id": 17,
+        "asset_id": 148,
+        "title": "Ventisquero",
+        "alias": "ventisquero",
+        "state": 1,
+        "access": 1,
+        "created": "2026-01-07 18:15:03",
+        "created_by": 655,
+        "created_by_alias": "",
+        "modified": "2026-01-07 18:15:03",
+        "featured": 0,
+        "language": "es-ES",
+        "hits": 0,
+        "publish_up": "2026-01-07 18:15:03",
+        "publish_down": null,
+        "note": "",
+        "images": {
+          "image_intro": "",
+          "image_intro_alt": "",
+          "float_intro": "",
+          "image_intro_caption": "",
+          "image_fulltext": "",
+          "image_fulltext_alt": "",
+          "float_fulltext": "",
+          "image_fulltext_caption": ""
+        },
+        "metakey": "",
+        "metadesc": "",
+        "metadata": {
+          "robots": "",
+          "author": "",
+          "rights": ""
+        },
+        "version": 1,
+        "featured_up": null,
+        "featured_down": null,
+        "typeAlias": "com_content.article",
+        "text": "<p>Ubicada en el Páramo la Laja, a 15 minutos de San Cristóbal; ideal para quienes quieren disfrutar de clima privilegiado y cocina fusión tachirense.</p>\r\n<p><br>Rescatando sabores regionales con una propuesta gastronómica moderna; ofrece hospedaje y actividades de aventura.</p>\r\n<p> </p>\r\n<p><br>6 habitaciones (2 suites, 4 hab). Instalaciones: Bar-Restaurant, salón, terraza panorámica, estacionamiento y bike park.</p>\r\n<p> </p>\r\n<p><br>Senderismo, ciclismo de montaña, visitas a plazas y pueblitos andinos cercanos.</p>\r\n<p> </p>\r\n<p><br>Restaurante con fusión de sabores venezolanos, asiáticos y mediterráneos; bar “1350”. Horarios y reservas publicadas.</p> ",
+        "slogan": "Ventisquero el escape Perfecto",
+        "icono": "",
+        "descripcion": "",
+        "amennities-list": "",
+        "whatsapp": "+584247532990",
+        "direccion": "Sector Páramo La Laja, Capacho, Táchira.",
+        "tlf": "<p>+58 412 789 6202</p>",
+        "e-mail": "posadaventisquero@gmail.com",
+        "web": "https://www.posadaventisquero.com",
+        "estado": "Capacho - Táchira",
+        "instagram": "posadaventisquero",
+        "destino": {
+          "montana": "Montaña"
+        },
+        "horario-de-atencion": "8:00AM - 6:00PM ",
+        "google-map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.842708382571!2d-72.2935773!3d7.806470599999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e666a4fc50265b7%3A0xd3e06b4495b46676!2sVentisquero!5e0!3m2!1ses!2sar!4v1767705753269!5m2!1ses!2sar",
+        "asociado-junior": {
+          "no": "No"
+        },
+        "fundador": {
+          "no": "No"
+        },
+        "logo": "{\"imagefile\":\"images\\/logos\\/ventisquero-logo.webp#joomlaImage:\\/\\/local-images\\/logos\\/ventisquero-logo.webp?width=238&height=158\",\"alt_text\":\"\",\"alt_empty\":\"1\"}",
+        "portada": "{\"imagefile\":\"images\\/posadas\\/ventisquero-0.webp#joomlaImage:\\/\\/local-images\\/posadas\\/ventisquero-0.webp?width=1920&height=1440\",\"alt_text\":\"\",\"alt_empty\":\"1\"}",
+        "galeria-de-imagenes": [
+          "ventisquero-1.webp",
+          "ventisquero-2.webp",
+          "ventisquero-3.webp",
+          "ventisquero-4.webp",
+          "ventisquero-5.webp",
+          "ventisquero-6.webp",
+          "ventisquero-7.webp"
+        ],
+        "tags": []
+      },
+      "relationships": {
+        "category": {
+          "data": {
+            "type": "categories",
+            "id": "8"
+          }
+        },
+        "created_by": {
+          "data": {
+            "type": "users",
+            "id": "655"
+          }
+        },
+        "tags": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "articles",
+      "id": "16",
+      "attributes": {
+        "id": 16,
+        "asset_id": 147,
+        "title": "Hato Las Caretas",
+        "alias": "hato-las-caretas",
+        "state": 1,
+        "access": 1,
+        "created": "2026-01-07 17:43:08",
+        "created_by": 655,
+        "created_by_alias": "",
+        "modified": "2026-01-07 17:43:08",
+        "featured": 0,
+        "language": "es-ES",
+        "hits": 0,
+        "publish_up": "2026-01-07 17:43:08",
+        "publish_down": null,
+        "note": "",
+        "images": {
+          "image_intro": "",
+          "image_intro_alt": "",
+          "float_intro": "",
+          "image_intro_caption": "",
+          "image_fulltext": "",
+          "image_fulltext_alt": "",
+          "float_fulltext": "",
+          "image_fulltext_caption": ""
+        },
+        "metakey": "",
+        "metadesc": "",
+        "metadata": {
+          "robots": "",
+          "author": "",
+          "rights": ""
+        },
+        "version": 1,
+        "featured_up": null,
+        "featured_down": null,
+        "typeAlias": "com_content.article",
+        "text": "<p>Ubicado en la carretera Calabozo-Camaguán, a 13 km de Corozopando; fácil acceso y experiencias llaneras.</p>\r\n<p> </p>\r\n<p>Durante la estadía se puede contemplar la naturaleza y fauna típica del llano y participar en actividades y tradiciones llaneras.</p>\r\n<p> </p>\r\n<p>Casa colonial de hospedaje \"Vieja Casa Nueva\" con 5 habitaciones, agua caliente, planta eléctrica y espacios comunes. Gastronomía llanera.</p>\r\n<p> </p>\r\n<p>Ordeño, elaboración de queso llanero, pesca, paseo a caballo, faenas llaneras, observación de aves. Puntos de interés: Esteros de Camaguán, San Juan de los Morros, Museo del Llano.</p>\r\n<p> </p>\r\n<p>Platos típicos: pisillo de babo, chiguire, carne asada, cachapas, cochino frito, asopado de pato y granos variados, muchos productos locales.</p> ",
+        "slogan": "Confort en Medio del Llano",
+        "icono": "",
+        "descripcion": "",
+        "amennities-list": "",
+        "whatsapp": "+584127704669",
+        "direccion": "Carretera Nacional Calabozo - Camaguán, a 13 km de la alcabala de la Guardia Nacional de Corozopando.\r\n",
+        "tlf": "<p>+58 414 333 3755</p>",
+        "e-mail": "lascaretas@gmail.com",
+        "web": "https://www.hatolascaretas.com",
+        "estado": "Camaguán - Guárico",
+        "instagram": "",
+        "destino": {
+          "llano": "Llano"
+        },
+        "horario-de-atencion": "8:00AM - 6:00PM ",
+        "google-map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3947.109589499141!2d-67.6067452883392!3d8.390881191612308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e78b1d10c0ff01b3A0xc689d7f5f86a4ba1!2sHato20Las20Caretas!5e0!3m2!1ses!2sar!4v1767707089604!5m2!1ses!2sar",
+        "asociado-junior": {
+          "no": "No"
+        },
+        "fundador": {
+          "no": "No"
+        },
+        "logo": "{\"imagefile\":\"images\\/logos\\/hato-caretas-logo.webp#joomlaImage:\\/\\/local-images\\/logos\\/hato-caretas-logo.webp?width=238&height=120\",\"alt_text\":\"\",\"alt_empty\":\"1\"}",
+        "portada": "{\"imagefile\":\"images\\/posadas\\/hato-caretas-0.webp#joomlaImage:\\/\\/local-images\\/posadas\\/hato-caretas-0.webp?width=1920&height=1081\",\"alt_text\":\"\",\"alt_empty\":\"1\"}",
+        "galeria-de-imagenes": [
+          "hato-caretas-1.webp",
+          "hato-caretas-2.webp",
+          "hato-caretas-3.webp",
+          "hato-caretas-4.webp",
+          "hato-caretas-5.webp",
+          "hato-caretas-6.webp",
+          "hato-caretas-7.webp"
+        ],
+        "tags": []
+      },
+      "relationships": {
+        "category": {
+          "data": {
+            "type": "categories",
+            "id": "8"
+          }
+        },
+        "created_by": {
+          "data": {
+            "type": "users",
+            "id": "655"
+          }
+        },
+        "tags": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "articles",
+      "id": "15",
+      "attributes": {
+        "id": 15,
+        "asset_id": 146,
+        "title": "Estancia La Cañada",
+        "alias": "estancia-la-canada",
+        "state": 1,
+        "access": 1,
+        "created": "2026-01-07 17:08:34",
+        "created_by": 655,
+        "created_by_alias": "",
+        "modified": "2026-01-07 17:08:34",
+        "featured": 0,
+        "language": "es-ES",
+        "hits": 0,
+        "publish_up": "2026-01-07 17:08:34",
+        "publish_down": null,
+        "note": "",
+        "images": {
+          "image_intro": "",
+          "image_intro_alt": "",
+          "float_intro": "",
+          "image_intro_caption": "",
+          "image_fulltext": "",
+          "image_fulltext_alt": "",
+          "float_fulltext": "",
+          "image_fulltext_caption": ""
+        },
+        "metakey": "",
+        "metadesc": "",
+        "metadata": {
+          "robots": "",
+          "author": "",
+          "rights": ""
+        },
+        "version": 1,
+        "featured_up": null,
+        "featured_down": null,
+        "typeAlias": "com_content.article",
+        "text": "<p>Estancia en un valle rodeado de montañas y jardines, a 45 minutos de Mérida y 20 minutos de Mucuchíes, altitud 2.300 m.s.n.m.</p>\r\n<p><br>Fundada en 1992 con arquitectura rústica colonial; salones con chimeneas y restaurante con vista a la montaña.</p>\r\n<p><br>27 habitaciones en galerías y cabañas; restaurante para 44 personas; salones para eventos; parque infantil; estacionamiento; wifi en lobby.</p>\r\n<p><br>Paseos a caballo, masajes, caminatas por la hacienda, excursiones, juegos infantiles y organización de eventos.</p>\r\n<p><br>Desayunos tradicionales (perico, panquecas, pizca andina) y cenas dirigidas con platos como Lomito, Trucha y postres.</p> ",
+        "slogan": "Con nosotros Andes es Amistad, Descanso y Aventura",
+        "icono": "",
+        "descripcion": "",
+        "amennities-list": "",
+        "whatsapp": "+584141294308",
+        "direccion": "En la Carretera Trasandina, pasando Mucurubá.",
+        "tlf": "<p>+584141294308</p>",
+        "e-mail": "escagueyelc@gmail.com",
+        "web": "https://www.estancialacanada.com",
+        "estado": "Escagüey - Mérida",
+        "instagram": "",
+        "destino": {
+          "montana": "Montaña"
+        },
+        "horario-de-atencion": "8:00AM - 6:00PM ",
+        "google-map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3943.998453234201!2d-71.00581118833654!3d8.691695191320688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6482acb1b49ddd%3A0x10eef403538bf7ef!2sEstancia%20La%20Ca%C3%B1ada!5e0!3m2!1ses!2sar!4v1767705898958!5m2!1ses!2sar",
+        "asociado-junior": {
+          "no": "No"
+        },
+        "fundador": {
+          "no": "No"
+        },
+        "logo": "{\"imagefile\":\"images\\/logos\\/la-canada-logo.webp#joomlaImage:\\/\\/local-images\\/logos\\/la-canada-logo.webp?width=238&height=120\",\"alt_text\":\"\",\"alt_empty\":\"1\"}",
+        "portada": "{\"imagefile\":\"images\\/posadas\\/la-canada-0.webp#joomlaImage:\\/\\/local-images\\/posadas\\/la-canada-0.webp?width=1920&height=1081\",\"alt_text\":\"\",\"alt_empty\":\"1\"}",
+        "galeria-de-imagenes": [
+          "la-canada-1.webp",
+          "la-canada-2.webp",
+          "la-canada-3.webp",
+          "la-canada-4.webp",
+          "la-canada-5.webp",
+          "la-canada-6.webp",
+          "la-canada-7.webp",
+          "la-canada-8.webp",
+          "la-canada-9.webp"
+        ],
+        "tags": []
+      },
+      "relationships": {
+        "category": {
+          "data": {
+            "type": "categories",
+            "id": "8"
+          }
+        },
+        "created_by": {
+          "data": {
+            "type": "users",
+            "id": "655"
+          }
+        },
+        "tags": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "articles",
+      "id": "14",
+      "attributes": {
+        "id": 14,
+        "asset_id": 145,
+        "title": "Santa Margarita",
+        "alias": "santa-margarita",
+        "state": 1,
+        "access": 1,
+        "created": "2026-01-07 17:00:22",
+        "created_by": 655,
+        "created_by_alias": "",
+        "modified": "2026-01-07 17:00:22",
+        "featured": 0,
+        "language": "es-ES",
+        "hits": 0,
+        "publish_up": "2026-01-07 17:00:22",
+        "publish_down": null,
+        "note": "",
+        "images": {
+          "image_intro": "",
+          "image_intro_alt": "",
+          "float_intro": "",
+          "image_intro_caption": "",
+          "image_fulltext": "",
+          "image_fulltext_alt": "",
+          "float_fulltext": "",
+          "image_fulltext_caption": ""
+        },
+        "metakey": "",
+        "metadesc": "",
+        "metadata": {
+          "robots": "",
+          "author": "",
+          "rights": ""
+        },
+        "version": 1,
+        "featured_up": null,
+        "featured_down": null,
+        "typeAlias": "com_content.article",
+        "text": "<p>Ubicada en el Centro Histórico de Puerto Cabello, cerca del mar y principales atractivos turísticos.</p>\r\n<p><br>Se ha convertido en un destino seguro y de esparcimiento en el estado Carabobo.</p>\r\n<p><br>17 habitaciones en tres ambientes, piscina, terraza con vista al mar, salón de juegos, Wi-Fi, estacionamiento, planta de emergencia, aire acondicionado, agua caliente y desayunos.</p>\r\n<p> </p>\r\n<p>Playas y ensenadas (Patanemo, La Rosa, Quizandal, Isla Larga), buceo y deportes, ríos y cascadas, monumentos históricos como Fortín Solano y teatro local.</p>\r\n<p> </p>\r\n<p>Gastronomía de calidad, desayuno reconocido en la ciudad; variedad de restaurantes frente al mar.</p> ",
+        "slogan": "Amalgama de historia y mar",
+        "icono": "",
+        "descripcion": "",
+        "amennities-list": "",
+        "whatsapp": "+584127190598",
+        "direccion": "Calle Bolívar, Casa 4-36, Centro Histórico, Puerto Cabello, Estado Carabobo.",
+        "tlf": "<p>Celular: +58 412 719 0598 / +58 414 234 0453</p>",
+        "e-mail": "posadasantamargarita.pc@gmail.com",
+        "web": "",
+        "estado": "Puerto Cabello - Carabobo",
+        "instagram": "posadasantamargarita",
+        "destino": {
+          "playa": "Playa"
+        },
+        "horario-de-atencion": "8:00AM - 6:00PM ",
+        "google-map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3923.2681606866895!2d-68.01447647790386!3d10.479514062888068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e8053b0da7d8e25%3A0x7a9d1af5b6030107!2sPosada%20Santa%20Margarita!5e0!3m2!1ses!2sar!4v1767706147104!5m2!1ses!2sar",
+        "asociado-junior": {
+          "no": "No"
+        },
+        "fundador": {
+          "no": "No"
+        },
+        "logo": "{\"imagefile\":\"images\\/logos\\/santa-margarita-logo.webp#joomlaImage:\\/\\/local-images\\/logos\\/santa-margarita-logo.webp?width=238&height=120\",\"alt_text\":\"\",\"alt_empty\":\"1\"}",
+        "portada": "{\"imagefile\":\"images\\/posadas\\/santa-margarita-0.webp#joomlaImage:\\/\\/local-images\\/posadas\\/santa-margarita-0.webp?width=1275&height=789\",\"alt_text\":\"\",\"alt_empty\":\"1\"}",
+        "galeria-de-imagenes": [
+          "santa-margarita-1.webp",
+          "santa-margarita-2.webp",
+          "santa-margarita-3.webp",
+          "santa-margarita-4.webp",
+          "santa-margarita-5.webp"
+        ],
+        "tags": []
+      },
+      "relationships": {
+        "category": {
+          "data": {
+            "type": "categories",
+            "id": "8"
+          }
+        },
+        "created_by": {
+          "data": {
+            "type": "users",
+            "id": "655"
+          }
+        },
+        "tags": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "articles",
+      "id": "13",
+      "attributes": {
+        "id": 13,
+        "asset_id": 144,
+        "title": "Estancia La Bravera",
+        "alias": "estancia-la-bravera",
+        "state": 1,
+        "access": 1,
+        "created": "2026-01-07 15:42:06",
+        "created_by": 655,
+        "created_by_alias": "",
+        "modified": "2026-01-07 15:42:06",
+        "featured": 0,
+        "language": "es-ES",
+        "hits": 0,
+        "publish_up": "2026-01-07 15:42:06",
+        "publish_down": null,
+        "note": "",
+        "images": {
+          "image_intro": "",
+          "image_intro_alt": "",
+          "float_intro": "",
+          "image_intro_caption": "",
+          "image_fulltext": "",
+          "image_fulltext_alt": "",
+          "float_fulltext": "",
+          "image_fulltext_caption": ""
+        },
+        "metakey": "",
+        "metadesc": "",
+        "metadata": {
+          "robots": "",
+          "author": "",
+          "rights": ""
+        },
+        "version": 1,
+        "featured_up": null,
+        "featured_down": null,
+        "typeAlias": "com_content.article",
+        "text": "<p>Posada ubicada en el Bosque Nublado de San Eusebio (Mérida) a 2.360 msnm, con docenas de colibríes y 12 Has de bosque nublado.</p>\r\n<p> </p>\r\n<p>Comenzó como un lugar de descanso familiar ambientado en estilo andino; hoy ofrece instalaciones en armonía con el paisaje del bosque nublado.</p>\r\n<p> </p>\r\n<p>Cabañas y habitaciones diversas (incluye acceso para personas con movilidad reducida), jardín botánico privado, sala de usos múltiples y caney.</p>\r\n<p> </p>\r\n<p>Senderismo, pesca de trucha, visitas a fincas productoras de vinos de mora y lácteos, excursiones al páramo y observación de aves. Puntos de interés locales.</p>\r\n<p> </p>\r\n<p>Desayunos y cenas incluidos en tarifas; menú rotativo con frutas, huevos, carnes y postres; servicio opcional de almuerzos.</p>\r\n<p> </p> ",
+        "slogan": "Paz, Tranquilidad y Aire Puro en un Lugar Privilegiado",
+        "icono": "",
+        "descripcion": "",
+        "amennities-list": "",
+        "whatsapp": "+584247568087",
+        "direccion": "Km. 18 de la vía Jají - La Azulita, Estado Mérida.",
+        "tlf": "<p>Celular: +58 042 4756 8087</p>",
+        "e-mail": "labravera@gmail.com",
+        "web": "https://www.estancialabravera.com",
+        "estado": "Bosque Nublado San Eusebio - Mérida",
+        "instagram": "estancialabravera",
+        "destino": {
+          "montana": "Montaña"
+        },
+        "horario-de-atencion": "8:00AM - 6:00PM ",
+        "google-map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.5257157808046!2d-71.38602558833684!3d8.641445991369391!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6476242f378435%3A0xc39729bee4511425!2sEstancia%20La%20Bravera!5e0!3m2!1ses!2sar!4v1767705800482!5m2!1ses!2sar",
+        "asociado-junior": {
+          "no": "No"
+        },
+        "fundador": {
+          "no": "No"
+        },
+        "logo": "{\"imagefile\":\"images\\/logos\\/la-bravera-logo.webp#joomlaImage:\\/\\/local-images\\/logos\\/la-bravera-logo.webp?width=238&height=123\",\"alt_text\":\"\",\"alt_empty\":\"1\"}",
+        "portada": "{\"imagefile\":\"images\\/posadas\\/la-bravera-0.webp#joomlaImage:\\/\\/local-images\\/posadas\\/la-bravera-0.webp?width=1275&height=789\",\"alt_text\":\"\",\"alt_empty\":\"1\"}",
+        "galeria-de-imagenes": [
+          "la-bravera-1.webp",
+          "la-bravera-2.webp",
+          "la-bravera-3.webp",
+          "la-bravera-4.webp",
+          "la-bravera-5.webp",
+          "la-bravera-6.webp",
+          "la-bravera-7.webp",
+          "la-bravera-8.webp"
+        ],
+        "tags": []
+      },
+      "relationships": {
+        "category": {
+          "data": {
+            "type": "categories",
+            "id": "8"
+          }
+        },
+        "created_by": {
+          "data": {
+            "type": "users",
+            "id": "655"
+          }
+        },
+        "tags": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "articles",
+      "id": "12",
+      "attributes": {
+        "id": 12,
+        "asset_id": 143,
+        "title": "Altos de Veracruz",
+        "alias": "altos-de-veracruz",
+        "state": 1,
+        "access": 1,
+        "created": "2026-01-07 15:08:45",
+        "created_by": 655,
+        "created_by_alias": "",
+        "modified": "2026-01-07 15:56:15",
+        "featured": 0,
+        "language": "es-ES",
+        "hits": 0,
+        "publish_up": "2026-01-07 15:08:45",
+        "publish_down": null,
+        "note": "",
+        "images": {
+          "image_intro": "",
+          "image_intro_alt": "",
+          "float_intro": "",
+          "image_intro_caption": "",
+          "image_fulltext": "",
+          "image_fulltext_alt": "",
+          "float_fulltext": "",
+          "image_fulltext_caption": ""
+        },
+        "metakey": "",
+        "metadesc": "",
+        "metadata": {
+          "robots": "",
+          "author": "",
+          "rights": ""
+        },
+        "version": 2,
+        "featured_up": null,
+        "featured_down": null,
+        "typeAlias": "com_content.article",
+        "text": "<p>Estancia que invita a la paz y reencuentro con la naturaleza, ubicada a 1.600mts de altura con temperatura promedio 17-18°C.</p>\r\n<p> </p>\r\n<p>Nacida como sueño familiar en 2014, cuenta con 18 habitaciones y restaurante Yagrumo; vistas de 360° y arquitectura rústica y moderna.</p>\r\n<p> </p>\r\n<p>18 habitaciones (varios tipos), salones de descanso, bar, tienda de artesanía, estacionamiento para 45 vehículos, campo de minigolf, salón de usos múltiples, parque infantil, vigilancia privada 24h.</p>\r\n<p> </p>\r\n<p>MiniGolf, ajedrez gigante, senderos y visitas a parques nacionales y sitios de interés cercanos.</p>\r\n<p> </p>\r\n<p>Restaurante Yagrumo con desayuno brunch, almuerzos y cenas estilo bistró con productos de la zona.</p> ",
+        "slogan": "Tu Estancia entre Nubes y Montañas",
+        "icono": "",
+        "descripcion": "",
+        "amennities-list": "",
+        "whatsapp": "+584125118090",
+        "direccion": "Vía El Blanquito, Parque Nacional Yacambú, a 3km de la plaza Bolívar de Sanare.",
+        "tlf": "<p>Celulares: +58 412 5118090</p>\r\n<p>+58 414 5137582</p>\r\n<p>+58 414 8215425</p>\r\n<p>+58 414 5094486. </p>",
+        "e-mail": "estancia.altosdeveracruz@gmail.com",
+        "web": "https://www.altosdeveracruz.com",
+        "estado": "Sanare - Lara",
+        "instagram": "altosdeveracruz",
+        "destino": {
+          "montana": "Montaña"
+        },
+        "horario-de-atencion": "8:00AM - 6:00PM ",
+        "google-map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3932.4616245422803!2d-69.65529978832696!3d9.726907490324818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e7d9de5f3539631%3A0x9935ecef96088bac!2sESTANCIA%20ALTOS%20DE%20VERACRUZ!5e0!3m2!1ses!2sar!4v1767705991892!5m2!1ses!2sar",
+        "asociado-junior": {
+          "no": "No"
+        },
+        "fundador": {
+          "no": "No"
+        },
+        "logo": "{\"imagefile\":\"images\\/logos\\/altos-de-veracruz-logo.webp#joomlaImage:\\/\\/local-images\\/logos\\/altos-de-veracruz-logo.webp?width=238&height=120\",\"alt_text\":\"\",\"alt_empty\":\"1\"}",
+        "portada": "{\"imagefile\":\"images\\/posadas\\/altos-veracruz-0.webp#joomlaImage:\\/\\/local-images\\/posadas\\/altos-veracruz-0.webp?width=1080&height=720\",\"alt_text\":\"\",\"alt_empty\":\"1\"}",
+        "galeria-de-imagenes": [
+          "altos-veracruz-1.webp",
+          "altos-veracruz-10.webp",
+          "altos-veracruz-2.webp",
+          "altos-veracruz-3.webp",
+          "altos-veracruz-4.webp",
+          "altos-veracruz-5.webp",
+          "altos-veracruz-6.webp",
+          "altos-veracruz-7.webp",
+          "altos-veracruz-8.webp",
+          "altos-veracruz-9.webp"
+        ],
+        "tags": []
+      },
+      "relationships": {
+        "category": {
+          "data": {
+            "type": "categories",
+            "id": "8"
+          }
+        },
+        "created_by": {
+          "data": {
+            "type": "users",
+            "id": "655"
+          }
+        },
+        "tags": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "articles",
+      "id": "11",
+      "attributes": {
+        "id": 11,
+        "asset_id": 142,
+        "title": "Posada Ecológica Casa María",
+        "alias": "posada-ecologica-casa-maria",
+        "state": 1,
+        "access": 1,
+        "created": "2026-01-07 14:46:23",
+        "created_by": 655,
+        "created_by_alias": "",
+        "modified": "2026-01-07 14:46:23",
+        "featured": 0,
+        "language": "es-ES",
+        "hits": 0,
+        "publish_up": "2026-01-07 14:46:23",
+        "publish_down": null,
+        "note": "",
+        "images": {
+          "image_intro": "",
+          "image_intro_alt": "",
+          "float_intro": "",
+          "image_intro_caption": "",
+          "image_fulltext": "",
+          "image_fulltext_alt": "",
+          "float_fulltext": "",
+          "image_fulltext_caption": ""
+        },
+        "metakey": "",
+        "metadesc": "",
+        "metadata": {
+          "robots": "",
+          "author": "",
+          "rights": ""
+        },
+        "version": 1,
+        "featured_up": null,
+        "featured_down": null,
+        "typeAlias": "com_content.article",
+        "text": "<p>Posada Ecológica Casa María, fundada en 1992 por Norbert Flauger y su esposa Gaby. Es una obra de arte en su arquitectura, paisajística y ecológica con servicio de excelencia.<br><br></p>\r\n<p>Es un destino para los que buscan conectarse con la naturaleza y alejarse del ajetreo citadino. Alberga el Santuario de Flora y Fauna muy protegido, permitiendo contemplar la naturaleza y aprender sobre conservación. Ubicada en las montañas de las Cumbres de Canoabo, Bejuma. Temperatura 20°-25° y altitud entre 750 y 1300 msnm.</p>\r\n<p> </p>\r\n<p>Alojamiento con varias cabañas y habitaciones (detalles de capacidades). Eco-Lodge y Eco-Camping Bugparadise con instalaciones como piscina, jacuzzi, senderos, miradores, plataformas en árboles, duchas con agua caliente solar, áreas de fogata y cocina. Comidas disponibles para huéspedes con alimentos ecológicos del huerto.</p>\r\n<p> </p>\r\n<p>Excursiones 4x4 al Santuario de Flora y Fauna; miradores, caminerías, colonias de colibríes; excursiones a Canoabo, Artesanos, Chocolatería; actividades para naturalistas, observadores de aves, biólogos y fotógrafos. Eco-Lodge con habitaciones y servicios detallados.</p>\r\n<p> </p>\r\n<p>Servicios de comidas (desayuno, almuerzo, cena) con menú adaptado a deseos de los huéspedes, con alimentos ecológicos del propio huerto. Cocina fusión con influencias locales, amazónicas y alemanas.<br><br></p> ",
+        "slogan": "Un Manantial de Vida",
+        "icono": "",
+        "descripcion": "",
+        "amennities-list": "",
+        "whatsapp": "+584141428589",
+        "direccion": "En la carretera entre Aguirre y Canoabo, sector Guarapo, vía Palmichal. Casa Numero 66.",
+        "tlf": "<p>+58 414 142 8589</p>",
+        "e-mail": "info@bugparadise.com",
+        "web": "",
+        "estado": "Canoabo - Carabobo",
+        "instagram": "posadaecologicacasamaria",
+        "destino": {
+          "montana": "Montaña"
+        },
+        "horario-de-atencion": "8:00AM - 6:00PM ",
+        "google-map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3925.7348849294376!2d-68.25704458832138!3d10.282932289795099!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e80f3ed97f33ed7%3A0x72612a3054df6fd7!2sPosada%20Ecol%C3%B3gica%20Casa%20Mar%C3%ADa%20Bug%20Paradise!5e0!3m2!1ses!2sar!4v1767706206159!5m2!1ses!2sar",
+        "asociado-junior": {
+          "no": "No"
+        },
+        "fundador": {
+          "no": "No"
+        },
+        "logo": "{\"imagefile\":\"images\\/logos\\/casa-maria-logo.webp#joomlaImage:\\/\\/local-images\\/logos\\/casa-maria-logo.webp?width=238&height=120\",\"alt_text\":\"\",\"alt_empty\":\"1\"}",
+        "portada": "{\"imagefile\":\"images\\/posadas\\/casa-maria-0.webp#joomlaImage:\\/\\/local-images\\/posadas\\/casa-maria-0.webp?width=1728&height=1004\",\"alt_text\":\"\",\"alt_empty\":\"1\"}",
+        "galeria-de-imagenes": [
+          "casa-maria-1.webp",
+          "casa-maria-2.webp",
+          "casa-maria-3.webp",
+          "casa-maria-4.webp",
+          "casa-maria-5.webp",
+          "casa-maria-6.webp",
+          "casa-maria-7.webp",
+          "casa-maria-8.webp",
+          "casa-maria-9.webp"
+        ],
+        "tags": []
+      },
+      "relationships": {
+        "category": {
+          "data": {
+            "type": "categories",
+            "id": "8"
+          }
+        },
+        "created_by": {
+          "data": {
+            "type": "users",
+            "id": "655"
+          }
+        },
+        "tags": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "articles",
+      "id": "10",
+      "attributes": {
+        "id": 10,
+        "asset_id": 141,
+        "title": "Alto Viento",
+        "alias": "alto-viento",
+        "state": 1,
+        "access": 1,
+        "created": "2026-01-07 14:23:38",
+        "created_by": 655,
+        "created_by_alias": "",
+        "modified": "2026-01-07 16:03:55",
+        "featured": 0,
+        "language": "es-ES",
+        "hits": 0,
+        "publish_up": "2026-01-07 14:23:38",
+        "publish_down": null,
+        "note": "",
+        "images": {
+          "image_intro": "",
+          "image_intro_alt": "",
+          "float_intro": "",
+          "image_intro_caption": "",
+          "image_fulltext": "",
+          "image_fulltext_alt": "",
+          "float_fulltext": "",
+          "image_fulltext_caption": ""
+        },
+        "metakey": "",
+        "metadesc": "",
+        "metadata": {
+          "robots": "",
+          "author": "",
+          "rights": ""
+        },
+        "version": 4,
+        "featured_up": null,
+        "featured_down": null,
+        "typeAlias": "com_content.article",
+        "text": "<p>La posada Alto Viento se encuentra en lo más alto de las bellas Lomas de Cubiro, un rincón hecho con mucho cariño, donde los huéspedes podrán disfrutar de un clima muy agradable y exóticos paisajes, perfecto para descansar y relajarse por completo.</p>\r\n<p> </p>\r\n<p>La Posada cuenta con 6 habitaciones (varios tipos). Nuestras instalaciones son confortables y cálidas. Habitaciones matrimoniales con cama queen y TV, caja de seguridad, nevera ejecutiva, baños con agua caliente y fría. Suite andina y suite alpina con comodidades similares. Cabaña Bariqui para 6 personas. Precios incluyen desayuno. Zona WiFi y planta eléctrica. Sala de juegos con ping-pong y futbolito. Jardines.</p>\r\n<p> </p>\r\n<p>Dentro de las actividades podrá visitar el pueblo localizado en las montañas, el Museo Antropológico de Quibor, cuevas del Carrao y practicar deportes extremos como escalada, rapel, senderismo, bicicleta de montaña, entre otros. Puntos de Interés: Tintorero, Parque Yacambú, Cuevas del Carrao, Cueva Poma Rosa, Flor de Venezuela, Divina Pastora, Museo Arqueológico de Quibor, la Fumarola y bosque Los Higuerones.</p>\r\n<p> </p>\r\n<p>En la posada podrás encontrar una amplia variedad de platos típicos representativos de la zona.</p> ",
+        "slogan": "Tranquilidad y Conexión con la Naturaleza",
+        "icono": "",
+        "descripcion": "",
+        "amennities-list": "",
+        "whatsapp": "+584245447259",
+        "direccion": "Estamos ubicados a 1 km después de Las Lomas de Cubiro por la vía asfaltada en el Estado Lara.\r\n",
+        "tlf": "<p>+58 414 573 7214</p>",
+        "e-mail": "altoviento@gmail.com",
+        "web": "",
+        "estado": "Cubiro - Lara",
+        "instagram": "posadaaltoviento",
+        "destino": {
+          "montana": "Montaña"
+        },
+        "horario-de-atencion": "8:00AM - 6:00PM ",
+        "google-map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3942.5077372490027!2d-79.79365618833528!3d8.832228691184854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fac9703cdf88aa9%3A0xf8f61d601e000549!2sAlto%20Viento%20La%20Chorrera!5e0!3m2!1ses!2sar!4v1767801762118!5m2!1ses!2sar",
+        "asociado-junior": {
+          "no": "No"
+        },
+        "fundador": {
+          "no": "No"
+        },
+        "logo": "{\"imagefile\":\"images\\/logos\\/altoviento-logo.webp#joomlaImage:\\/\\/local-images\\/logos\\/altoviento-logo.webp?width=238&height=120\",\"alt_text\":\"\",\"alt_empty\":\"1\"}",
+        "portada": "{\"imagefile\":\"images\\/posadas\\/alto-viento-0.webp#joomlaImage:\\/\\/local-images\\/posadas\\/alto-viento-0.webp?width=1275&height=789\",\"alt_text\":\"\",\"alt_empty\":\"1\"}",
+        "galeria-de-imagenes": [
+          "alto-viento-1.webp",
+          "alto-viento-2.webp",
+          "alto-viento-3.webp",
+          "alto-viento-4.webp",
+          "alto-viento-5.webp",
+          "alto-viento-6.webp",
+          "alto-viento-7.webp",
+          "alto-viento-8.webp",
+          "alto-viento-9.webp"
+        ],
+        "tags": []
+      },
+      "relationships": {
+        "category": {
+          "data": {
+            "type": "categories",
+            "id": "8"
+          }
+        },
+        "created_by": {
+          "data": {
+            "type": "users",
+            "id": "655"
+          }
+        },
+        "tags": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "articles",
+      "id": "8",
+      "attributes": {
+        "id": 8,
+        "asset_id": 137,
+        "title": "El Encanto",
+        "alias": "el-encanto",
+        "state": 1,
+        "access": 1,
+        "created": "2026-01-06 16:00:29",
+        "created_by": 655,
+        "created_by_alias": "",
+        "modified": "2026-01-07 13:54:02",
+        "featured": 0,
+        "language": "es-ES",
+        "hits": 0,
+        "publish_up": "2026-01-06 16:00:29",
+        "publish_down": null,
+        "note": "",
+        "images": {
+          "image_intro": "",
+          "image_intro_alt": "",
+          "float_intro": "",
+          "image_intro_caption": "",
+          "image_fulltext": "",
+          "image_fulltext_alt": "",
+          "float_fulltext": "",
+          "image_fulltext_caption": ""
+        },
+        "metakey": "",
+        "metadesc": "",
+        "metadata": {
+          "robots": "",
+          "author": "",
+          "rights": ""
+        },
+        "version": 17,
+        "featured_up": null,
+        "featured_down": null,
+        "typeAlias": "com_content.article",
+        "text": "<p class=\"my-2 [&amp;+p]:mt-4 [&amp;_strong:has(+br)]:inline-block [&amp;_strong:has(+br)]:pb-2\">Posada El Encanto está ubicada en el estado Lara, a 1.400 msnm, con clima fresco de 18 °C, a 67 km de Barquisimeto, cerca de los parques nacionales Yacambú y Dinira. Ofrece un alojamiento tranquilo en una finca familiar, rodeada de cultivos, ganado y hermosos atardeceres, ideal para quienes buscan silencio, naturaleza y descanso.</p>\r\n<p class=\"my-2 [&amp;+p]:mt-4 [&amp;_strong:has(+br)]:inline-block [&amp;_strong:has(+br)]:pb-2\"> </p>\r\n<p class=\"my-2 [&amp;+p]:mt-4 [&amp;_strong:has(+br)]:inline-block [&amp;_strong:has(+br)]:pb-2\">Cuenta con 14 cabañas (matrimoniales, familiares, suites y una suite superior), todas con cama queen, nevera y TV satelital, además de salón de conferencias, comedor, sala de lectura, TV y juegos, terraza y un completo spa con sauna seco, jacuzzi y masajes.</p>\r\n<p class=\"my-2 [&amp;+p]:mt-4 [&amp;_strong:has(+br)]:inline-block [&amp;_strong:has(+br)]:pb-2\"> </p>\r\n<p class=\"my-2 [&amp;+p]:mt-4 [&amp;_strong:has(+br)]:inline-block [&amp;_strong:has(+br)]:pb-2\">En los alrededores se pueden hacer rutas de café y artesanía, senderismo, bicicleta, actividades agropecuarias, observación de aves y visitas al Parque Nacional Yacambú y otros puntos de interés como cuevas, petroglifos, bosques y pueblos cercanos. La posada también ofrece gastronomía típica larense, con platos como mondongo de chivo, olleta de gallos, mute larense, queso de mano y dulces y licores tradicionales.</p> ",
+        "slogan": "Amor en los Detalles",
+        "icono": "",
+        "descripcion": "",
+        "amennities-list": "",
+        "whatsapp": "+584145092920",
+        "direccion": "Tomar la vía de Sanare y proseguir en dirección a Guarico-Los Humocaros y El Tocuyo. La posada se encuentra a unos siete kilómetros de Sanare.",
+        "tlf": "<p>Teléfono: +58 253 5141111 Celular: +58 414 5505454</p>",
+        "e-mail": "reservacionesposadaelencanto@gmail.com",
+        "web": "",
+        "estado": "Sanare - Lara",
+        "instagram": "http://www.instagram.com/posadaelencanto",
+        "destino": {
+          "llano": "Llano"
+        },
+        "horario-de-atencion": "8:00AM - 6:00PM ",
+        "google-map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3932.590456632168!2d-69.7005992883271!3d9.715950990335267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e7d76200f49ef69%3A0xe8369e1030ea0bc!2sPosada%20El%20Encanto!5e0!3m2!1ses!2sar!4v1767705658064!5m2!1ses!2sar",
+        "asociado-junior": {
+          "no": "No"
+        },
+        "fundador": {
+          "si": "Si"
+        },
+        "logo": "{\"imagefile\":\"images\\/posadas\\/logo.webp#joomlaImage:\\/\\/local-images\\/posadas\\/logo.webp?width=238&height=120\",\"alt_text\":\"\"}",
+        "portada": "{\"imagefile\":\"images\\/posadas\\/el-encanto-1.webp#joomlaImage:\\/\\/local-images\\/posadas\\/el-encanto-1.webp?width=1920&height=1080\",\"alt_text\":\"\",\"alt_empty\":\"1\"}",
+        "galeria-de-imagenes": [
+          "el-encanto-2.webp",
+          "el-encanto-3.webp",
+          "el-encanto-5.webp",
+          "el-encanto-6.webp",
+          "el-encanto-7.webp",
+          "el-encanto-8.webp",
+          "el-encanto-9.webp"
+        ],
+        "tags": []
+      },
+      "relationships": {
+        "category": {
+          "data": {
+            "type": "categories",
+            "id": "8"
+          }
+        },
+        "created_by": {
+          "data": {
+            "type": "users",
+            "id": "655"
+          }
+        },
+        "tags": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "articles",
+      "id": "7",
+      "attributes": {
+        "id": 7,
+        "asset_id": 135,
+        "title": "Granja Momentos",
+        "alias": "granja-momentos",
+        "state": 1,
+        "access": 1,
+        "created": "2026-01-06 14:23:05",
+        "created_by": 655,
+        "created_by_alias": "",
+        "modified": "2026-01-07 12:57:50",
+        "featured": 0,
+        "language": "es-ES",
+        "hits": 0,
+        "publish_up": "2026-01-06 14:23:05",
+        "publish_down": null,
+        "note": "",
+        "images": {
+          "image_intro": "",
+          "image_intro_alt": "",
+          "float_intro": "",
+          "image_intro_caption": "",
+          "image_fulltext": "",
+          "image_fulltext_alt": "",
+          "float_fulltext": "",
+          "image_fulltext_caption": ""
+        },
+        "metakey": "",
+        "metadesc": "",
+        "metadata": {
+          "robots": "",
+          "author": "",
+          "rights": ""
+        },
+        "version": 15,
+        "featured_up": null,
+        "featured_down": null,
+        "typeAlias": "com_content.article",
+        "text": "<p class=\"my-2 [&amp;+p]:mt-4 [&amp;_strong:has(+br)]:inline-block [&amp;_strong:has(+br)]:pb-2\"><strong>Historia:<span> </span></strong>Fundada en 1997 por Aura Ovalles y Efraín Pérez. Ofrece campo tranquilo, verdor, manantial, comida casera y atención familiar para un descanso total.</p>\r\n<p class=\"my-2 [&amp;+p]:mt-4 [&amp;_strong:has(+br)]:inline-block [&amp;_strong:has(+br)]:pb-2\"> </p>\r\n<p class=\"my-2 [&amp;+p]:mt-4 [&amp;_strong:has(+br)]:inline-block [&amp;_strong:has(+br)]:pb-2\"><strong>Ubicación:</strong><span> </span>En la parte alta de San Felipe (Yaracuy), a 1.5h de playas (Puerto Cabello/Morrocoy), 45min de Barquisimeto y 4h de Caracas. A las faldas del Parque Nacional Yurubí.</p>\r\n<p class=\"my-2 [&amp;+p]:mt-4 [&amp;_strong:has(+br)]:inline-block [&amp;_strong:has(+br)]:pb-2\"> </p>\r\n<p class=\"my-2 [&amp;+p]:mt-4 [&amp;_strong:has(+br)]:inline-block [&amp;_strong:has(+br)]:pb-2\"><strong>Alojamiento:</strong><span> </span>7 habitaciones (26 personas máx.):</p>\r\n<ul class=\"marker:text-quiet list-disc\">\r\n<li class=\"py-0 my-0 prose-p:pt-0 prose-p:mb-2 prose-p:my-0 [&amp;&gt;p]:pt-0 [&amp;&gt;p]:mb-2 [&amp;&gt;p]:my-0\">\r\n<p class=\"my-2 [&amp;+p]:mt-4 [&amp;_strong:has(+br)]:inline-block [&amp;_strong:has(+br)]:pb-2\">2 cabañas (king + individual).</p>\r\n</li>\r\n<li class=\"py-0 my-0 prose-p:pt-0 prose-p:mb-2 prose-p:my-0 [&amp;&gt;p]:pt-0 [&amp;&gt;p]:mb-2 [&amp;&gt;p]:my-0\">\r\n<p class=\"my-2 [&amp;+p]:mt-4 [&amp;_strong:has(+br)]:inline-block [&amp;_strong:has(+br)]:pb-2\">4 suites con balcón (hasta 4pax).</p>\r\n</li>\r\n<li class=\"py-0 my-0 prose-p:pt-0 prose-p:mb-2 prose-p:my-0 [&amp;&gt;p]:pt-0 [&amp;&gt;p]:mb-2 [&amp;&gt;p]:my-0\">\r\n<p class=\"my-2 [&amp;+p]:mt-4 [&amp;_strong:has(+br)]:inline-block [&amp;_strong:has(+br)]:pb-2\">2 contiguas para familias (comparten baño).<br>Todas con A/A, baño caliente, TV, WiFi, etc.</p>\r\n</li>\r\n</ul>\r\n<p class=\"my-2 [&amp;+p]:mt-4 [&amp;_strong:has(+br)]:inline-block [&amp;_strong:has(+br)]:pb-2\"> </p>\r\n<p class=\"my-2 [&amp;+p]:mt-4 [&amp;_strong:has(+br)]:inline-block [&amp;_strong:has(+br)]:pb-2\"><strong>Instalaciones clave:</strong></p>\r\n<ul class=\"marker:text-quiet list-disc\">\r\n<li class=\"py-0 my-0 prose-p:pt-0 prose-p:mb-2 prose-p:my-0 [&amp;&gt;p]:pt-0 [&amp;&gt;p]:mb-2 [&amp;&gt;p]:my-0\">\r\n<p class=\"my-2 [&amp;+p]:mt-4 [&amp;_strong:has(+br)]:inline-block [&amp;_strong:has(+br)]:pb-2\">Terrazas, caney para comidas (mié-dom abierto).</p>\r\n</li>\r\n<li class=\"py-0 my-0 prose-p:pt-0 prose-p:mb-2 prose-p:my-0 [&amp;&gt;p]:pt-0 [&amp;&gt;p]:mb-2 [&amp;&gt;p]:my-0\">\r\n<p class=\"my-2 [&amp;+p]:mt-4 [&amp;_strong:has(+br)]:inline-block [&amp;_strong:has(+br)]:pb-2\">Salón para 50pax (eventos).</p>\r\n</li>\r\n<li class=\"py-0 my-0 prose-p:pt-0 prose-p:mb-2 prose-p:my-0 [&amp;&gt;p]:pt-0 [&amp;&gt;p]:mb-2 [&amp;&gt;p]:my-0\">\r\n<p class=\"my-2 [&amp;+p]:mt-4 [&amp;_strong:has(+br)]:inline-block [&amp;_strong:has(+br)]:pb-2\">Piscina con manantial, jardines, masajes, huerto.</p>\r\n</li>\r\n<li class=\"py-0 my-0 prose-p:pt-0 prose-p:mb-2 prose-p:my-0 [&amp;&gt;p]:pt-0 [&amp;&gt;p]:mb-2 [&amp;&gt;p]:my-0\">\r\n<p class=\"my-2 [&amp;+p]:mt-4 [&amp;_strong:has(+br)]:inline-block [&amp;_strong:has(+br)]:pb-2\">Estacionamiento, vigilancia 24h, WiFi total.</p>\r\n</li>\r\n</ul>\r\n<p class=\"my-2 [&amp;+p]:mt-4 [&amp;_strong:has(+br)]:inline-block [&amp;_strong:has(+br)]:pb-2\"> </p>\r\n<p class=\"my-2 [&amp;+p]:mt-4 [&amp;_strong:has(+br)]:inline-block [&amp;_strong:has(+br)]:pb-2\"><strong>Actividades y atractivos cercanos:</strong></p>\r\n<ul class=\"marker:text-quiet list-disc\">\r\n<li class=\"py-0 my-0 prose-p:pt-0 prose-p:mb-2 prose-p:my-0 [&amp;&gt;p]:pt-0 [&amp;&gt;p]:mb-2 [&amp;&gt;p]:my-0\">\r\n<p class=\"my-2 [&amp;+p]:mt-4 [&amp;_strong:has(+br)]:inline-block [&amp;_strong:has(+br)]:pb-2\">Senderismo, parapente, ciclismo.</p>\r\n</li>\r\n<li class=\"py-0 my-0 prose-p:pt-0 prose-p:mb-2 prose-p:my-0 [&amp;&gt;p]:pt-0 [&amp;&gt;p]:mb-2 [&amp;&gt;p]:my-0\">\r\n<p class=\"my-2 [&amp;+p]:mt-4 [&amp;_strong:has(+br)]:inline-block [&amp;_strong:has(+br)]:pb-2\">Parques: Flora Tropical (2.500 flores), San Felipe el Fuerte (histórico), Leonor Bernabó, Cumaripa, Minas de Aroa.</p>\r\n</li>\r\n<li class=\"py-0 my-0 prose-p:pt-0 prose-p:mb-2 prose-p:my-0 [&amp;&gt;p]:pt-0 [&amp;&gt;p]:mb-2 [&amp;&gt;p]:my-0\">\r\n<p class=\"my-2 [&amp;+p]:mt-4 [&amp;_strong:has(+br)]:inline-block [&amp;_strong:has(+br)]:pb-2\">Museos, plazas iluminadas, arquitectura icónica.</p>\r\n</li>\r\n</ul>\r\n<p class=\"my-2 [&amp;+p]:mt-4 [&amp;_strong:has(+br)]:inline-block [&amp;_strong:has(+br)]:pb-2\"> </p>\r\n<p class=\"my-2 [&amp;+p]:mt-4 [&amp;_strong:has(+br)]:inline-block [&amp;_strong:has(+br)]:pb-2\"><strong>Gastronomía:</strong><span> </span>Venezolana típica (sopa de quinchoncho, hallacas, hervidos, bollos pelones, pabellón, desayunos criollos, postres). Miembro Ruta Gastronómica Yaracuy.</p>\r\n<p class=\"my-2 [&amp;+p]:mt-4 [&amp;_strong:has(+br)]:inline-block [&amp;_strong:has(+br)]:pb-2\">Ideal para relax, familias, eventos y naturaleza.</p> ",
+        "slogan": "Bondades del Campo con el Confort de la Ciudad",
+        "icono": "",
+        "descripcion": "",
+        "amennities-list": "",
+        "whatsapp": "+584145470414",
+        "direccion": "Avenida Alberto Ravell, en el sector Cascabel norte, Municipio Independencia. San Felipe, Estado Yaracuy. ",
+        "tlf": "<p>Teléfono: +58 254 231 0153<br>Teléfono: +58 254 231 4729</p>",
+        "e-mail": "granjamomentos2020@gmail.com",
+        "web": "https://www.momentos.com.ve",
+        "estado": "San Felipe - Yaracuy",
+        "instagram": "https://www.instagram.com/posadagranjamomentos",
+        "destino": {
+          "montana": "Montaña"
+        },
+        "horario-de-atencion": "8:00AM - 6:00PM ",
+        "google-map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3924.960263461033!2d-68.76501778832065!3d10.3450624897361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e80c600a8e3c099%3A0xa6f66d91d6a2828b!2sPosada%20Granja%20Momentos!5e0!3m2!1ses!2sar!4v1767705591944!5m2!1ses!2sar",
+        "asociado-junior": {
+          "no": "No"
+        },
+        "fundador": {
+          "si": "Si"
+        },
+        "logo": "{\"imagefile\":\"images\\/logo.webp#joomlaImage:\\/\\/local-images\\/logo.webp?width=240&height=120\",\"alt_text\":\"Logo Granja Momentos\",\"alt_empty\":\"1\"}",
+        "portada": "{\"imagefile\":\"images\\/posadas\\/granja-momentos-1.jpeg#joomlaImage:\\/\\/local-images\\/posadas\\/granja-momentos-1.jpeg?width=1920&height=912\",\"alt_text\":\"\"}",
+        "galeria-de-imagenes": [
+          "granja-momentos-2.webp",
+          "granja-momentos-3.webp",
+          "granja-momentos-4.webp",
+          "granja-momentos-5.webp",
+          "granja-momentos-6.webp",
+          "granja-momentos-7.webp",
+          "granja-momentos-8.webp",
+          "granja-momentos-9.webp"
+        ],
+        "tags": []
+      },
+      "relationships": {
+        "category": {
+          "data": {
+            "type": "categories",
+            "id": "8"
+          }
+        },
+        "created_by": {
+          "data": {
+            "type": "users",
+            "id": "655"
+          }
+        },
+        "tags": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "articles",
+      "id": "6",
+      "attributes": {
+        "id": 6,
+        "asset_id": 130,
+        "title": "El Solar de la Luna",
+        "alias": "el-solar-de-la-luna",
+        "state": 1,
+        "access": 1,
+        "created": "2026-01-03 18:59:06",
+        "created_by": 655,
+        "created_by_alias": "",
+        "modified": "2026-01-07 16:53:23",
+        "featured": 0,
+        "language": "es-ES",
+        "hits": 0,
+        "publish_up": "2026-01-03 18:59:06",
+        "publish_down": null,
+        "note": "",
+        "images": {
+          "image_intro": "",
+          "image_intro_alt": "",
+          "float_intro": "",
+          "image_intro_caption": "",
+          "image_fulltext": "",
+          "image_fulltext_alt": "",
+          "float_fulltext": "",
+          "image_fulltext_caption": ""
+        },
+        "metakey": "",
+        "metadesc": "",
+        "metadata": {
+          "robots": "",
+          "author": "",
+          "rights": ""
+        },
+        "version": 26,
+        "featured_up": null,
+        "featured_down": null,
+        "typeAlias": "com_content.article",
+        "text": "<p>Es una de las posadas más tranquilas de Morrocoy no sólo por su delicada atmosfera, impecablemente decorada, que ha seducido a más de uno, sino también gracias a su atención y su continuo afán de innovar y mantener intacta esa mística que ha convertido a El Solar de la Luna en un punto ineludible de referencia si se trata de hablar de las posadas de Venezuela.</p>\r\n<p> </p>\r\n<div class=\"tab content1\">\r\n<p><strong>La Tradición es Nuestra Herencia y La Calidad Nuestro Ideal</strong></p>\r\n<p>El Solar de la Luna es una posada para los amantes del mar, la naturaleza y la alta cocina. Las brisas del Caribe y los hechizos de la montaña de Buena Vista despertarán los sentidos permitiendo de esta manera abrir su imaginación experimentando nuevas sensaciones, paz interior y vivir inolvidables momentos de conexión con la naturaleza.</p>\r\n<p>Es una de las posadas más tranquilas de Morrocoy no sólo por su delicada atmosfera, impecablemente decorada, que ha seducido a más de uno, sino también gracias a su atención y su continuo afán de innovar y mantener intacta esa mística que ha convertido a El Solar de la Luna en un punto ineludible de referencia si se trata de hablar de las posadas de Venezuela.</p>\r\n<p>Gracias a su privilegiada ubicación, la Posada logra esa intimidad y privacidad que tantas personas buscan al salir de la bulliciosa ciudad, brindando tranquilidad y encanto que se entreteje a la vez con lujo y ruralidad.</p>\r\n<p>La estadía en El Solar de la Luna no es otra cosa que el encuentro con un lugar mágico, donde el tiempo se mide por las olas que se ocultan bajo la arena y la brisa de esta magnífica isla. Por ello, vivir al máximo esta experiencia es imprescindible para que nuestros invitados se dejen cautivar, olvidando las preocupaciones y el estrés para hacer su visita inolvidable.</p>\r\n</div>\r\n<div class=\"tab content2\">\r\n<p><strong>Alojamiento:</strong></p>\r\n<p>Contamos con siete habitaciones: 1 habitación con cama matrimonial (para 2 personas), 2 habitaciones Triple con cama Matrimonial + cama individual (para 3 personas), 4 habitaciones con 2 camas individuales y una cama matrimonial Estándar (para 4 personas). Las habitaciones cuentan con baño privado. En las habitaciones encontrarás todo lo que pueden necesitar nuestros más exigentes invitados: lencería fina de 250 hilos, aire acondicionado, agua caliente, edredones de pluma, caja de seguridad y un ambiente donde la artesanía, el arte y el buen gusto inundan todos los rincones.</p>\r\n<p><strong>Nuestras Instalaciones:</strong></p>\r\n<p>La Posada cuenta con áreas comunes, un bar, una terraza, un jacuzzi al aire libre, una sala de usos múltiples, estacionamiento cerrado, atención para bebés, salón de TV con canales Premium de películas y reproductor de DVD, una caja de seguridad, una tienda de artesanía, chinchorros, una biblioteca y videoteca.</p>\r\n<p>Una vez fuera de las habitaciones, podrán convivir en pareja o en grupo en las diferentes áreas comunes como las salas de estar con tentadores sofás y chinchorros para descansar. También podrás optar por el bar o la terraza para disfrutar de la belleza de los exteriores y poder degustar de la exquisita gastronomía mantuana gourmet. Disfrutarás de un jacuzzi al aire libre, una sala de usos múltiples, con biblioteca, televisión satelital y una videoteca de más de 2000 películas. Además, nuestras instalaciones cuentan con estacionamiento cerrado, servicio de atención para bebés y servicio de cuna.</p>\r\n</div>\r\n<div class=\"tab content3\">\r\n<p><strong>Actividades:</strong></p>\r\n<p>El Buceo, las excursiones, el senderismo y observación de aves.</p>\r\n<p><strong>Puntos de Interés:</strong></p>\r\n<p>Podrás visitar el Parque Nacional Morrocoy, Chichiriviche, el Refugio de Fauna de Cuare, Cayo Sal, Cayo Muerto, Cayo Peraza, Cayo Pelón, Cayo Sombrero, Cayo Borracho, la Isla de Aves y la Isla de pájaros.</p>\r\n</div>\r\n<div class=\"tab content4\">\r\n<p><strong>Como en todo hogar, la cocina es el sitio donde reposan la esencia y el alma de cualquier familia.</strong> El Solar de la Luna, reúne todos los sabores mantuanos, especias del pacifico, colores del Caribe y aromas secretos.</p>\r\n<p>La Posada ofrece desayunos tipo brunch servidos en la mesa en horarios comprendidos entre 8:30 a.m. hasta las 10:30 a.m. Aperitivo de bienvenida y nuestros deliciosos abrebocas, entre las 7:00 p.m. hasta las 7:45 p.m. Cena/Menú degustación de 4 platos, entre 7:30 p.m. hasta las 9:00 p.m. de sábado a jueves y los viernes hasta las 9:30 p.m. Para cena infantil, debe indicar sus requerimientos. En las bebidas pueden seleccionar entre jugos naturales infusiones, refresco o café.</p>\r\n<p>En el menú encontrarás una gran variedad de platos como la Crema de zanahoria con naranja confitada al orange rum, el Mero en salsa de titiaros con puré de patata, naranja y cardamono. El Estofado de cordero al cacao de Chuao con puré de plátano. El Róbalo en salsa de romero con zanahorias glaseadas en parchita y el Rissoto de camacutos al champan con ají dulce.</p>\r\n<p>A la hora del postre podrás optar por Crepes de cuyaco en salsa de caramelo y helado. El Mousse de chocolate Bucare, con panelitas de San Joaquín y crema inglesa. La Torta de pan, sobre crema inglesa bañada con dulce de ciruelas pasas. Para cerrar, recomendamos un delicioso café recién molido para disfrutar en nuestra terraza o una de nuestras infusiones.</p>\r\n<p>Si tiene alguna limitación, dieta especial, o alergias, favor notificarlo con anterioridad a fin de facilitar que sea tomado en cuenta.</p>\r\n<p>Para los sibaritas, hay una carta de vinos Premium, una selección de tabacos, rones añejos, pous-cafes y una amplia selección de licores / bebidas del bar que podrán disfrutar en la terraza antes o después de las cenas. (costo adicional / opcional).</p>\r\n</div>\r\n<p>Nuestra casa está ubicada dentro de un entorno provincial, a 300 metros de altura en la montaña de Buena Vista, con una panorámica que nos permite ver el Parque Nacional Morrocoy, Chichiriviche, Puerto Cabello, el verdor de la Cordillera de la Costa. A tres horas de Caracas en la carretera Nacional hacia Coro y a unos 12 kilómetros de Tucacas y del embarcadero Las Luisas en el Caserío de Buena Vista.</p> ",
+        "slogan": "La Tradición es Nuestra Herencia y La Calidad Nuestro Ideal",
+        "icono": "",
+        "descripcion": "",
+        "amennities-list": "",
+        "whatsapp": "+584145470414",
+        "direccion": "Nuestra casa está ubicada dentro de un entorno provincial, a 300 metros de altura en la montaña de Buena Vista, con una panorámica que nos permite ver el Parque Nacional Morrocoy, Chichiriviche, Puerto Cabello",
+        "tlf": "<p>Telefono: +58 414 484 5054</p>",
+        "e-mail": "elsolardelaluna@gmail.com",
+        "web": "https://www.elsolardelaluna.com",
+        "estado": "Morrocoy - Falcón",
+        "instagram": "http://www.instagram.com/posadaelsolardelaluna",
+        "destino": {
+          "playa": "Playa"
+        },
+        "horario-de-atencion": "9AM - 6PM",
+        "google-map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.4307148059656!2d-68.38393088831542!3d10.854808389254112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e8113b72ca71d3d%3A0x725343ce7cd93098!2sEL%20SOLAR%20DE%20LA%20LUNA!5e0!3m2!1ses!2sar!4v1767804764246!5m2!1ses!2sar",
+        "asociado-junior": {
+          "no": "No"
+        },
+        "fundador": {
+          "si": "Si"
+        },
+        "logo": "{\"imagefile\":\"images\\/posadas\\/el-solar.webp#joomlaImage:\\/\\/local-images\\/posadas\\/el-solar.webp?width=238&height=120\",\"alt_text\":\"\",\"alt_empty\":\"1\"}",
+        "portada": "{\"imagefile\":\"images\\/posadas\\/el-solar-1.webp#joomlaImage:\\/\\/local-images\\/posadas\\/el-solar-1.webp?width=1275&height=789\",\"alt_text\":\"\",\"alt_empty\":\"1\"}",
+        "galeria-de-imagenes": [
+          "el-solar-1.webp",
+          "el-solar-10.webp",
+          "el-solar-11.webp",
+          "el-solar-2.webp",
+          "el-solar-3.webp",
+          "el-solar-4.webp",
+          "el-solar-5.webp",
+          "el-solar-6.webp",
+          "el-solar-7.webp",
+          "el-solar-8.webp",
+          "el-solar-9.webp"
+        ],
+        "tags": []
+      },
+      "relationships": {
+        "category": {
+          "data": {
+            "type": "categories",
+            "id": "8"
+          }
+        },
+        "created_by": {
+          "data": {
+            "type": "users",
+            "id": "655"
+          }
+        },
+        "tags": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "articles",
+      "id": "5",
+      "attributes": {
+        "id": 5,
+        "asset_id": 126,
+        "title": "Inicia la 8.ª edición de capacitaciones del proyecto de Turismo Rural Sostenible y Economía Circular",
+        "alias": "inicia-la-8-a-edicion-de-capacitaciones-del-proyecto-de-turismo-rural-sostenible-y-economia-circular",
+        "state": 1,
+        "access": 1,
+        "created": "2025-12-30 14:09:34",
+        "created_by": 655,
+        "created_by_alias": "",
+        "modified": "2025-12-30 14:09:34",
+        "featured": 0,
+        "language": "es-ES",
+        "hits": 0,
+        "publish_up": "2025-12-30 14:09:34",
+        "publish_down": null,
+        "note": "",
+        "images": {
+          "image_intro": "",
+          "image_intro_alt": "",
+          "float_intro": "",
+          "image_intro_caption": "",
+          "image_fulltext": "",
+          "image_fulltext_alt": "",
+          "float_fulltext": "",
+          "image_fulltext_caption": ""
+        },
+        "metakey": "",
+        "metadesc": "",
+        "metadata": {
+          "robots": "",
+          "author": "",
+          "rights": ""
+        },
+        "version": 1,
+        "featured_up": null,
+        "featured_down": null,
+        "typeAlias": "com_content.article",
+        "text": "<p>Gracias al entusiasmo y la gran cantidad de solicitudes recibidas, el proyecto anuncia con alegría el inicio de su octava edición de capacitaciones, que comenzará el 5 de noviembre de 2025. Esta nueva etapa responde al creciente interés de prestadores turísticos, emprendedores rurales y comunidades locales que desean formarse y transformar sus espacios desde una visión sostenible y regenerativa.</p>\r\n<div dir=\"auto\">Durante esta edición se abordarán temas como economía circular, desarrollo local, turismo rural y sostenible, prácticas ecológicas responsables y gestión ética.</div>\r\n<div dir=\"auto\"> </div>\r\n<div dir=\"auto\"><em><strong>“Estamos muy felices de iniciar esta nueva edición, impulsada por el interés genuino de tantas personas que quieren formarse, aportar y transformar el turismo en sus comunidades”</strong></em>, expresó Jenny Martínez, directora del proyecto.</div>\r\n<div dir=\"auto\"> </div>\r\n<div dir=\"auto\">Con más de 150 posadas ya formadas, esta edición representa una nueva oportunidad para seguir sembrando conocimiento y propósito en el turismo venezolano.</div> ",
+        "galeria-de-imagenes": "",
+        "tags": []
+      },
+      "relationships": {
+        "category": {
+          "data": {
+            "type": "categories",
+            "id": "10"
+          }
+        },
+        "created_by": {
+          "data": {
+            "type": "users",
+            "id": "655"
+          }
+        },
+        "tags": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "articles",
+      "id": "4",
+      "attributes": {
+        "id": 4,
+        "asset_id": 124,
+        "title": "Contacto",
+        "alias": "contacto",
+        "state": 1,
+        "access": 1,
+        "created": "2025-12-30 14:04:36",
+        "created_by": 655,
+        "created_by_alias": "",
+        "modified": "2025-12-30 14:04:36",
+        "featured": 0,
+        "language": "*",
+        "hits": 1,
+        "publish_up": "2025-12-30 14:04:36",
+        "publish_down": null,
+        "note": "",
+        "images": {
+          "image_intro": "",
+          "image_intro_alt": "",
+          "float_intro": "",
+          "image_intro_caption": "",
+          "image_fulltext": "",
+          "image_fulltext_alt": "",
+          "float_fulltext": "",
+          "image_fulltext_caption": ""
+        },
+        "metakey": "",
+        "metadesc": "",
+        "metadata": {
+          "robots": "",
+          "author": "",
+          "rights": ""
+        },
+        "version": 1,
+        "featured_up": null,
+        "featured_down": null,
+        "typeAlias": "com_content.article",
+        "text": "<p>Este es el contacto del CIrcuito</p> ",
+        "tags": []
+      },
+      "relationships": {
+        "category": {
+          "data": {
+            "type": "categories",
+            "id": "2"
+          }
+        },
+        "created_by": {
+          "data": {
+            "type": "users",
+            "id": "655"
+          }
+        },
+        "tags": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "articles",
+      "id": "3",
+      "attributes": {
+        "id": 3,
+        "asset_id": 123,
+        "title": "Finca la Huerfana",
+        "alias": "finca-la-huerfana",
+        "state": 1,
+        "access": 1,
+        "created": "2025-12-30 02:49:45",
+        "created_by": 655,
+        "created_by_alias": "",
+        "modified": "2026-01-07 12:45:09",
+        "featured": 0,
+        "language": "en-GB",
+        "hits": 0,
+        "publish_up": "2025-12-30 02:49:45",
+        "publish_down": null,
+        "note": "",
+        "images": {
+          "image_intro": "",
+          "image_intro_alt": "",
+          "float_intro": "",
+          "image_intro_caption": "",
+          "image_fulltext": "",
+          "image_fulltext_alt": "",
+          "float_fulltext": "",
+          "image_fulltext_caption": ""
+        },
+        "metakey": "",
+        "metadesc": "",
+        "metadata": {
+          "robots": "",
+          "author": "",
+          "rights": ""
+        },
+        "version": 7,
+        "featured_up": null,
+        "featured_down": null,
+        "typeAlias": "com_content.article",
+        "text": "<p>Good taste and pleasure are combined in the heights. Finca La Huérfana is located in the State of Táchira, one of the richest reservoirs of virgin nature in our Andean Cordillera, surrounded by beautiful mountains crossed by the El Valle river and the La Huérfana spring, with an average temperature of 14 degrees Celsius and an altitude of 2250 meters above sea level</p>\r\n<div class=\"tab content1\">\r\n<p><strong>Where living in nature is a reality</strong></p>\r\n<p>We offer five brick cabins, each with their own fireplace, plus a double room accented with tiles and teak wood as the basis of its main structure. We have a reading and music room with a fireplace, a meeting room, a gym with an infrared sauna, a room with satellite TV, a movie collection, game tables and a terrace with hammocks.</p>\r\n<p>You will enjoy beautiful trails that are the ideal settings for walks, mountain bike rides, bird watching, guided excursions or simple contemplation. Here you can also share the life of the cordial inhabitants of this region, surrounded by the traditional crops of flowers and vegetables.</p>\r\n<p>This is the perfect place for lovers, or those who are eager for rest and silence. Bird watchers will have the opportunity to indulge their fondness for species that are only seen in the area, especially the varieties of hummingbirds that fearlessly flutter by the dining room.</p>\r\n</div>\r\n<p> </p> ",
+        "slogan": "",
+        "icono": "",
+        "descripcion": "",
+        "whatsapp": "",
+        "direccion": "",
+        "tlf": "",
+        "e-mail": "",
+        "web": "",
+        "estado": "",
+        "instagram": "",
+        "destino": {
+          "montana": "Montaña"
+        },
+        "horario-de-atencion": "",
+        "google-map": "",
+        "asociado-junior": {
+          "no": "No"
+        },
+        "fundador": {
+          "si": "Si"
+        },
+        "logo": "{\"imagefile\":\"images\\/huerfana.png#joomlaImage:\\/\\/local-images\\/huerfana.png?width=158&height=145\",\"alt_text\":\"\",\"alt_empty\":\"1\"}",
+        "portada": "{\"imagefile\":\"images\\/portada.webp#joomlaImage:\\/\\/local-images\\/portada.webp?width=1920&height=1080\",\"alt_text\":\"\",\"alt_empty\":\"1\"}",
+        "galeria-de-imagenes": [
+          "la-huerfana-10.webp",
+          "la-huerfana-11.webp",
+          "la-huerfana-12.webp",
+          "la-huerfana-13.webp",
+          "la-huerfana-14.webp",
+          "la-huerfana-2.webp",
+          "la-huerfana-3.webp",
+          "la-huerfana-4.webp",
+          "la-huerfana-5.webp",
+          "la-huerfana-6.webp",
+          "la-huerfana-7.webp",
+          "la-huerfana-8.webp",
+          "la-huerfana-9.webp"
+        ],
+        "tags": []
+      },
+      "relationships": {
+        "category": {
+          "data": {
+            "type": "categories",
+            "id": "9"
+          }
+        },
+        "created_by": {
+          "data": {
+            "type": "users",
+            "id": "655"
+          }
+        },
+        "tags": {
+          "data": []
+        }
+      }
+    },
+    {
+      "type": "articles",
+      "id": "2",
+      "attributes": {
+        "id": 2,
+        "asset_id": 110,
+        "title": "Finca La Huérfana",
+        "alias": "finca-la-huerfana",
+        "state": 1,
+        "access": 1,
+        "created": "2025-12-29 16:02:54",
+        "created_by": 655,
+        "created_by_alias": "",
+        "modified": "2026-01-07 16:52:05",
+        "featured": 0,
+        "language": "es-ES",
+        "hits": 1,
+        "publish_up": "2025-12-29 16:02:54",
+        "publish_down": null,
+        "note": "",
+        "images": {
+          "image_intro": "",
+          "image_intro_alt": "chamaquera",
+          "float_intro": "",
+          "image_intro_caption": "",
+          "image_fulltext": "",
+          "image_fulltext_alt": "",
+          "float_fulltext": "",
+          "image_fulltext_caption": ""
+        },
+        "metakey": "",
+        "metadesc": "",
+        "metadata": {
+          "robots": "",
+          "author": "",
+          "rights": ""
+        },
+        "version": 32,
+        "featured_up": null,
+        "featured_down": null,
+        "typeAlias": "com_content.article",
+        "text": "<p>Descubra el equilibrio perfecto entre el buen gusto y la naturaleza virgen en <strong>Finca La Huérfana</strong>. Ubicada a 2.250 metros de altura en el corazón del Estado Táchira, nuestra propiedad le invita a sumergirse en un paisaje de montañas eternas y manantiales cristalinos. Con una arquitectura cálida en piedra y madera de teca, ofrecemos exclusivas cabañas con chimenea diseñadas para quienes buscan silencio, confort y una temperatura media de 14°C. Ya sea explorando nuestros senderos, disfrutando de un atardecer en la terraza o admirando la danza de los colibríes en nuestro comedor, aquí encontrará un santuario único para el descanso y la contemplación en la Cordillera Andina.</p>\r\n<h2> </h2>\r\n<h2><strong>Alojamiento</strong></h2>\r\n<p data-path-to-node=\"4\">El complejo destaca por su construcción rústica en <strong data-path-to-node=\"4\" data-index-in-node=\"51\">piedra, tejas y madera de teca</strong>. Ofrece:</p>\r\n<ul data-path-to-node=\"5\">\r\n<li>\r\n<p data-path-to-node=\"5,0,0\"><strong data-path-to-node=\"5,0,0\" data-index-in-node=\"0\">5 cabañas</strong> con chimenea privada.</p>\r\n</li>\r\n<li>\r\n<p data-path-to-node=\"5,1,0\"><strong data-path-to-node=\"5,1,0\" data-index-in-node=\"0\">1 habitación matrimonial</strong>.</p>\r\n</li>\r\n</ul>\r\n<h2 data-path-to-node=\"6\">Instalaciones y Servicios</h2>\r\n<p data-path-to-node=\"7\">La finca está equipada para el confort y el esparcimiento, contando con:</p>\r\n<ul style=\"list-style-type: disc;\" data-path-to-node=\"8\">\r\n<li>\r\n<p data-path-to-node=\"8,0,0\"><strong data-path-to-node=\"8,0,0\" data-index-in-node=\"0\">Áreas de relax:</strong> Salón de lectura y música, terraza con hamacas y gimnasio con <strong data-path-to-node=\"8,0,0\" data-index-in-node=\"78\">sauna infrarrojo</strong>.</p>\r\n</li>\r\n<li>\r\n<p data-path-to-node=\"8,1,0\"><strong data-path-to-node=\"8,1,0\" data-index-in-node=\"0\">Entretenimiento:</strong> Sala de TV satelital, colección de películas y mesas de juego.</p>\r\n</li>\r\n<li>\r\n<p data-path-to-node=\"8,2,0\"><strong data-path-to-node=\"8,2,0\" data-index-in-node=\"0\">Eventos:</strong> Sala de reuniones disponible.</p>\r\n</li>\r\n</ul>\r\n<h2 data-path-to-node=\"9\">Actividades y Recreación</h2>\r\n<p data-path-to-node=\"10\">Es un destino ideal tanto para la aventura como para el descanso:</p>\r\n<ul style=\"list-style-type: disc;\" data-path-to-node=\"11\">\r\n<li>\r\n<p data-path-to-node=\"11,0,0\"><strong data-path-to-node=\"11,0,0\" data-index-in-node=\"0\">Naturaleza:</strong> Senderismo, ciclismo de montaña y excursiones dirigidas.</p>\r\n</li>\r\n<li>\r\n<p data-path-to-node=\"11,1,0\"><strong data-path-to-node=\"11,1,0\" data-index-in-node=\"0\">Avistamiento de aves:</strong> Oportunidad única para observar especies locales y colibríes.</p>\r\n</li>\r\n<li>\r\n<p data-path-to-node=\"11,2,0\"><strong data-path-to-node=\"11,2,0\" data-index-in-node=\"0\">Cultura local:</strong> Posibilidad de convivir con los habitantes de la zona y conocer sus cultivos tradicionales de flores y hortalizas.</p>\r\n</li>\r\n</ul>\r\n<h2 style=\"text-align: left;\">Gastronomia</h2>\r\n<p>Los sabores que perduran en la memoria se dejan sentir en la comida de la Huérfana, la hora del desayuno se torna un acontecimiento rodeados de naturaleza y de diversas variedades de colibríes alimentándose en nuestros comederos, la buena música y la tranquilidad brindan un ingrediente adicional al disfrute de todos los sentidos. La cena a su vez, se convierte en un momento mágico, con antorchas y velas encendidas a lo largo de los caminos, donde el sonido del río y del viento arrullan envolviendo a la Posada en un momento especial para cada uno de sus huéspedes.</p>\r\n<p><br>El restaurante de la posada ofrece opciones diversas para el desayuno, que van desde el típico desayuno andino, pizca andina, arepas de trigo, queso ahumado, crema de leche, mermeladas caseras elaboradas en la finca, jugos, café, chocolate, frutas y tortas hasta desayunos con granola, frutas y panecillos recién horneados. Para la cena, bajo la modalidad “gastronomía dirigida” abrimos la mesa con un buen vino y quesos al orégano, luego comenzamos a servir un primer plato, que generalmente es una buena crema de vegetales frescos cultivados en la zona, acompañada con un delicioso pan casero recién horneado con mantequilla, para el segundo plato tenemos una variedad que pasa por pasteles de espárragos, de acelga y ricotta, por pasticho de pasta hecha en casa hasta distintas maneras de preparar el pollo y las carnes, siempre acompañadas de lechugas o vegetales frescos cultivadas en nuestro propio huerto, tan frescos que resultan crocantes y con mucho sabor y para el postre contamos con: tarta de ruibarbo, de fresa o de mora con crema, pie de limón, bizcocho tres leches, quesillos, torta de coco con chocolate, brownies, torta de zanahoria o torta de cambur. Café o té para cerrar.</p> ",
+        "slogan": "Donde vivir la naturaleza es una realidad",
+        "icono": "",
+        "descripcion": "",
+        "amennities-list": "",
+        "whatsapp": "+584247207950",
+        "direccion": "Aldea Río Arriba, Carretera Trasandina, Municipio José María Vargas, Páramo El Zumbador a 7 kms. del poblado del Cobre",
+        "tlf": "<p>Celular: +58 424 720 7950</p>",
+        "e-mail": "",
+        "web": "https://www.posadafincalahuerfana.com",
+        "estado": "El Cobre - Táchira",
+        "instagram": "posadafincalahuerfana",
+        "destino": {
+          "montana": "Montaña"
+        },
+        "horario-de-atencion": "8:00AM a 6:00PM",
+        "google-map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.0823018226506!2d-72.07193877805949!3d7.99043747143553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e667bf45f2ee347%3A0x75b84e705467f70a!2sPOSADA%20FINCA%20LA%20HUERFANA!5e0!3m2!1ses!2sar!4v1767804668350!5m2!1ses!2sar",
+        "asociado-junior": {
+          "no": "No"
+        },
+        "fundador": {
+          "si": "Si"
+        },
+        "logo": "{\"imagefile\":\"images\\/huerfana.png#joomlaImage:\\/\\/local-images\\/huerfana.png?width=158&height=145\",\"alt_text\":\"Logo Finca la Hu\\u00e9rfana\",\"alt_empty\":\"1\"}",
+        "portada": "{\"imagefile\":\"images\\/posadas\\/la-huerfana-1.webp#joomlaImage:\\/\\/local-images\\/posadas\\/la-huerfana-1.webp?width=1920&height=1080\",\"alt_text\":\"\",\"alt_empty\":\"1\"}",
+        "galeria-de-imagenes": [
+          "la-huerfana-10.webp",
+          "la-huerfana-11.webp",
+          "la-huerfana-12.webp",
+          "la-huerfana-13.webp",
+          "la-huerfana-14.webp",
+          "la-huerfana-2.webp",
+          "la-huerfana-3.webp",
+          "la-huerfana-4.webp",
+          "la-huerfana-5.webp",
+          "la-huerfana-6.webp",
+          "la-huerfana-7.webp",
+          "la-huerfana-8.webp",
+          "la-huerfana-9.webp"
+        ],
+        "tags": []
+      },
+      "relationships": {
+        "category": {
+          "data": {
+            "type": "categories",
+            "id": "8"
+          }
+        },
+        "created_by": {
+          "data": {
+            "type": "users",
+            "id": "655"
+          }
+        },
+        "tags": {
+          "data": []
+        }
+      }
+    }
+  ],
+  "meta": {
+    "total-pages": 1
+  }
+}

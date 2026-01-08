@@ -85,7 +85,7 @@ export default function PosadasFilterableList({ initialPosadas, dictionary, lang
                       className="material-symbols-outlined text-text-secondary-light dark:text-text-secondary-dark">search</span>
                   </div>
                   <input
-                    className="flex w-full min-w-0 flex-1 resize-none border-0 bg-white dark:bg-card-dark text-text-main-light dark:text-text-main-dark focus:outline-0 focus:ring-0 h-full placeholder:text-text-secondary-light dark:placeholder:text-text-secondary-dark px-3 text-sm md:text-base font-normal"
+                    className="flex w-full min-w-0 flex-1 resize-none border-0 bg-white dark:bg-card-dark text-text-main-light dark:text-text-main focus:outline-0 focus:ring-0 h-full placeholder:text-text-secondary-light dark:placeholder:text-text-secondary-dark px-3 text-sm md:text-base font-normal"
                     placeholder={dictionary.posadas.searchPlaceholder} 
                     value={searchTerm}
                     onChange={(e) => setSearchTerm(e.target.value)}
@@ -116,7 +116,7 @@ export default function PosadasFilterableList({ initialPosadas, dictionary, lang
                 className={`flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full px-5 font-bold transition-all active:scale-95 shadow-sm border ${
                   selectedRegion === regionKey 
                     ? 'bg-primary text-white border-primary' 
-                    : 'bg-white dark:bg-card-dark text-text-main dark:text-white border-[#e5e7eb] dark:border-[#2a3e50] hover:bg-gray-50 dark:hover:bg-[#232f3e]'
+                    : 'bg-white dark:bg-secondary text-text-main dark:text-white border-[#e5e7eb] dark:border-[#2a3e50] hover:bg-gray-100 dark:hover:bg-white dark:hover:text-text-main'
                 }`}
               >
                 <span className="text-sm leading-normal">{dictionary.posadas.regions[regionKey]}</span>
