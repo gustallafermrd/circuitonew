@@ -23,6 +23,8 @@ const CATEGORY_MAP: Record<string, string> = {
   en: "9",
 };
 
+const BLOG_CATEGORY_ID = "10";
+
 export async function getFoundingPosadas(lang: string = "es") {
   const catId = CATEGORY_MAP[lang] || CATEGORY_MAP.es;
   const res = await fetch(`${JOOMLA_API_URL}?page[limit]=100`, {
@@ -94,6 +96,40 @@ export async function getPosadaByAlias(alias: string, lang: string = "es") {
   return data.data.find((item: any) => {
     const isMatchingAlias = item.attributes.alias === alias;
     const isMatchingCategory = item.relationships?.category?.data?.id === catId;
+    return isMatchingAlias && isMatchingCategory;
+  }) || null;
+}
+// Blog Articles (ES Only)
+export async function getBlogArticles() {
+  const res = await fetch(`${JOOMLA_API_URL}?page[limit]=100`, {
+    headers: {
+      Authorization: `Bearer ${process.env.JOOMLA_API_TOKEN}`,
+      Accept: "application/vnd.api+json",
+    },
+    next: { revalidate: 0 } 
+  });
+
+  const data = await res.json();
+  if (!data.data) return [];
+
+  return data.data.filter((item: any) => item.relationships?.category?.data?.id === BLOG_CATEGORY_ID);
+}
+
+export async function getBlogArticleByAlias(alias: string) {
+  const res = await fetch(`${JOOMLA_API_URL}?page[limit]=100`, {
+    headers: {
+      Authorization: `Bearer ${process.env.JOOMLA_API_TOKEN}`,
+      Accept: "application/vnd.api+json",
+    },
+    next: { revalidate: 0 }
+  });
+
+  const data = await res.json();
+  if (!data.data) return null;
+
+  return data.data.find((item: any) => {
+    const isMatchingAlias = item.attributes.alias === alias;
+    const isMatchingCategory = item.relationships?.category?.data?.id === BLOG_CATEGORY_ID;
     return isMatchingAlias && isMatchingCategory;
   }) || null;
 }

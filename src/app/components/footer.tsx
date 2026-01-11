@@ -1,5 +1,8 @@
 import Image from "next/image";
+import Link from "next/link";
+
 export default function Footer() {
+  const date = new Date().getFullYear();
   return (
     <footer className="bg-primary text-white pt-16 pb-8 border-t border-white/10">
       <div className="mx-auto px-4 sm:px-6 lg:px-8">
@@ -63,9 +66,10 @@ export default function Footer() {
         </div>
         <div
           className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500">
-          <p>© 2023 Circuito de la Excelencia. Todos los derechos reservados.</p>
+          <p>© 2021 - {date} Circuito de la Excelencia. Todos los derechos reservados.</p>
           <p className="flex items-center gap-1">Diseñado con <span
-              className="material-symbols-outlined text-secondary text-sm">favorite</span> en Venezuela</p>
+              className="material-symbols-outlined text-secondary text-sm">favorite</span> por 
+              <Link className="hover:text-secondary transition-colors" href="https://gatwebs.com" target="_blank" rel="noopener noreferrer">Gatwebs</Link></p>
         </div>
       </div>
     </footer>  

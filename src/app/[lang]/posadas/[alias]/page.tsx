@@ -2,8 +2,9 @@ import { getPosadaByAlias } from "@/lib/joomla";
 import { getDictionary } from "@/lib/get-dictionary";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import ImageGallery from "@/app/components/image-gallery";
-import GoogleMap from "@/app/components/google-map";
+import ImageGallery from "@/app/components/posadas/image-gallery";
+import GoogleMap from "@/app/components/posadas/google-map";
+import { Instagram } from "lucide-react";
 
 export default async function PosadaDetailPage({
   params,
@@ -80,18 +81,34 @@ export default async function PosadaDetailPage({
       <div className="px-4 md:px-10 lg:px-40 flex flex-1 justify-center py-5">
         <div className="layout-content-container flex flex-col max-w-[1200px] flex-1">
           <div className="flex flex-wrap justify-between items-end gap-4 py-4">
-            <div className="flex flex-col gap-2">
-              <Link 
-                href={`/${lang}/posadas`}
-                className="flex items-center gap-1 text-sm text-gray-500 hover:text-secondary transition-colors mb-2"
-              >
-                <span className="material-symbols-outlined text-sm">arrow_back</span>
-                {dictionary.posadas.backToList}
-              </Link>
-              <h1 className="text-3xl md:text-5xl font-black leading-tight tracking-[-0.033em] text-text-main dark:text-white">
-                {attr.title}
-              </h1>
-              <h2 className="text-lg md:text-2xl font-semibold italic text-secondary dark:text-secondary">"{attr.slogan}"</h2>
+            <div className="flex flex-1 justify-between items-end gap-4">
+              <div className="flex flex-col gap-2">
+                <Link 
+                  href={`/${lang}/posadas`}
+                  className="flex items-center gap-1 text-sm text-gray-500 hover:text-secondary transition-colors mb-2"
+                >
+                  <span className="material-symbols-outlined text-sm">arrow_back</span>
+                  {dictionary.posadas.backToList}
+                </Link>
+                <h1 className="text-3xl md:text-5xl font-black leading-tight tracking-[-0.033em] text-text-main dark:text-white">
+                  {attr.title}
+                </h1>
+                <h2 className="text-lg md:text-2xl font-semibold italic text-secondary dark:text-secondary">{attr.slogan}</h2>
+              </div>
+
+              {/* Social Media Icons */}
+              <div className="flex items-center gap-4 mb-2">
+                {attr.instagram && (
+                  <a 
+                    href={attr.instagram.startsWith('http') ? attr.instagram : `https://instagram.com/${attr.instagram.replace('@', '')}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-text-main hover:text-secondary transition-colors"
+                  >
+                    <Instagram className="size-6 md:size-8" />
+                  </a>
+                )}
+              </div>
             </div>
           </div>
 
@@ -220,9 +237,10 @@ export default async function PosadaDetailPage({
                         </div>
                         <div>
                           <p className="text-xs font-bold uppercase text-gray-500 dark:text-gray-400 mb-1">Teléfonos</p>
-                          <p className="text-sm font-medium text-text-main dark:text-white">
-                            {attr.tlf}
-                          </p>
+                          <div 
+                            className="text-sm font-medium text-text-main dark:text-white"
+                            dangerouslySetInnerHTML={{ __html: attr.tlf || "" }}
+                          />
                         </div>
                       </div>
                     )}
@@ -268,7 +286,7 @@ export default async function PosadaDetailPage({
                   {attr['horario-de-atencion'] && (
                     <div className="mt-6 flex items-center justify-center gap-2 text-gray-500 text-sm">
                       <span className="material-symbols-outlined text-[18px]">info</span>
-                      <span className="text-xs text-center">Horario: {attr['horario-de-atencion']}</span>
+                      <span className="text-xs text-center">Horario: {attr['horario-de-atencion'] || "Horario: 9:00 AM - 6:00 PM"}</span>
                     </div>
                   )}
                 </div>

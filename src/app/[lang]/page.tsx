@@ -1,8 +1,8 @@
 import { getArticles } from "@/lib/joomla";
-import Hero from "@/app/components/hero";
-import Intro from "@/app/components/intro";
-import Fundadores from "@/app/components/fundadores";
-import Mapa from "@/app/components/mapa";
+import Hero from "@/app/components/home/hero";
+import Intro from "@/app/components/home/intro";
+import Fundadores from "@/app/components/home/fundadores";
+import Mapa from "@/app/components/home/mapa";
 import Comentarios from "@/app/components/comentarios";
 import { getDictionary } from "@/lib/get-dictionary";
 

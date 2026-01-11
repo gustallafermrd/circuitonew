@@ -56,5 +56,22 @@
     "bookNow": "Reservar Ahora",
     "backToList": "Volver a la lista",
     "whereWillYouBe": "Ubicación"
+  },
+  "blog": {
+    "title": "Blog del Circuito",
+    "subtitle": "Sumérgete en historias, guías de viaje y experiencias únicas en nuestras posadas de excelencia. Un recorrido por lo mejor de nuestra tierra.",
+    "featured": "Destacado",
+    "readFull": "Leer artículo completo",
+    "readMore": "Leer más",
+    "search": "Buscar en el blog",
+    "searchPlaceholder": "¿Qué buscas?",
+    "newsletterTitle": "Únete al Circuito",
+    "newsletterSubtitle": "Recibe las mejores ofertas y nuevos artículos directamente en tu correo.",
+    "newsletterPlaceholder": "Tu correo electrónico",
+    "newsletterButton": "Suscribirse",
+    "instagramTitle": "Síguenos en Instagram",
+    "discover": "Descubre Venezuela",
+    "previous": "Anterior",
+    "next": "Siguiente"
   }
 }

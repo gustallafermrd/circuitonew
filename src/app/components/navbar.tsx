@@ -25,19 +25,25 @@ export default function Navbar({ lang }: { lang: string }) {
       <nav className="hidden md:flex items-center gap-9">
              <Link
                 href={`/${lang}`}
-                className="text-text-main dark:text-gray-300 hover:text-secondary dark:hover:text-secondary transition-colors text-sm font-medium"
+                className="text-text-main dark:text-gray-300 hover:text-secondary dark:hover:text-secondary transition-colors text-lg"
               >
                 {lang === 'es' ? 'Inicio' : 'Home'}
               </Link>
               <Link
                 href={`/${lang}/posadas`}
-                className="text-text-main dark:text-gray-300 hover:text-secondary dark:hover:text-secondary transition-colors text-sm font-medium"
+                className="text-text-main dark:text-gray-300 hover:text-secondary dark:hover:text-secondary transition-colors text-lg "
               >
                 {lang === 'es' ? 'Posadas' : 'Posadas'}
               </Link>
               <Link
+                href={`/${lang}/blog`}
+                className="text-text-main dark:text-gray-300 hover:text-secondary dark:hover:text-secondary transition-colors text-lg "
+              >
+                Blog
+              </Link>
+              <Link
                 href={`/${lang}/contacto`}
-                className="text-text-main dark:text-gray-300 hover:text-secondary dark:hover:text-secondary transition-colors text-sm font-medium"
+                className="text-text-main dark:text-gray-300 hover:text-secondary dark:hover:text-secondary transition-colors text-lg"
               >
                 {lang === 'es' ? 'Contacto' : 'Contact'}
               </Link>
