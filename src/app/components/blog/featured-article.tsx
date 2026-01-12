@@ -1,10 +1,8 @@
-import { getBlogArticles } from "@/lib/joomla";
 import { getImageUrl, formatDate, stripHtml } from "@/lib/blog";
 import Link from "next/link";
 
-export default async function FeaturedArticle() {
-  const articles = await getBlogArticles();
-  const featured = articles[0];
+export default async function FeaturedArticle({ featured }: { featured: any }) {
+  if (!featured) return null;
 
   return (
     <div className="w-full max-w-[1440px] px-4 md:px-6 mb-12">

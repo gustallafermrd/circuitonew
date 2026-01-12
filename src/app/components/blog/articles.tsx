@@ -1,9 +1,7 @@
-import { getBlogArticles } from "@/lib/joomla";
 import { getImageUrl, formatDate, stripHtml, truncateWords } from "@/lib/blog";
 import Link from "next/link";
 
-export default async function Articles() {
-  const articles = await getBlogArticles();
+export default async function Articles({ articles }: { articles: any[] }) {
 
   return (
     <div className="flex lg:flex-row">
@@ -31,7 +29,7 @@ export default async function Articles() {
                 <div className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-4 flex-grow">
                   {truncateWords(stripHtml(article.attributes.text), 40)}
                 </div>
-                <Link className="inline-flex items-center text-secondary font-semibold text-sm hover:underline" 
+                <Link className="inline-flex items-center text-secondary font-semibold text-sm" 
                   href={`/es/blog/${article.attributes.alias}`}>
                   Leer Mas <span className="material-symbols-outlined text-base ml-1">arrow_right_alt</span>
                 </Link>

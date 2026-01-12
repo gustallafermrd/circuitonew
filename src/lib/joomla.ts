@@ -101,7 +101,7 @@ export async function getPosadaByAlias(alias: string, lang: string = "es") {
 }
 // Blog Articles (ES Only)
 export async function getBlogArticles() {
-  const res = await fetch(`${JOOMLA_API_URL}?page[limit]=100`, {
+  const res = await fetch(`${JOOMLA_API_URL}?page[limit]=100&sort=-created`, {
     headers: {
       Authorization: `Bearer ${process.env.JOOMLA_API_TOKEN}`,
       Accept: "application/vnd.api+json",
