@@ -73,5 +73,18 @@
     "discover": "Descubre Venezuela",
     "previous": "Anterior",
     "next": "Siguiente"
+  },
+  "giftCard": {
+    "badge": "El Regalo Perfecto",
+    "title1": "Regala una",
+    "title2": "Experiencia Única",
+    "description": "Más que un regalo, es un recuerdo para toda la vida. Con la Gift Card del Circuito de la Excelencia, obsequias lo mejor de la hospitalidad venezolana. Elige el monto, personaliza tu mensaje y envía felicidad al instante.",
+    "brand": "Circuito de la Excelencia",
+    "cardType": "GIFT",
+    "validUntil": "Válido Hasta",
+    "memberLabel": "Miembro",
+    "memberType": "Premium",
+    "deliveryStatus": "Entrega Inmediata",
+    "deliveryMethod": "En tu E-mail"
   }
 }

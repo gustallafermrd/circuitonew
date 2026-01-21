@@ -56,5 +56,18 @@
     "bookNow": "Book Now",
     "backToList": "Back to list",
     "whereWillYouBe": "GPS Coordinates"
+  },
+  "giftCard": {
+    "badge": "The Perfect Gift",
+    "title1": "Give a",
+    "title2": "Unique Experience",
+    "description": "More than just a gift, it's a memory for a lifetime. With the Circuito de la Excelencia Gift Card, you give the best of Venezuelan hospitality. Choose the amount, customize your message, and send happiness instantly.",
+    "brand": "Circuito de la Excelencia",
+    "cardType": "GIFT",
+    "validUntil": "Valid Until",
+    "memberLabel": "Member",
+    "memberType": "Premium",
+    "deliveryStatus": "Immediate Delivery",
+    "deliveryMethod": "In your E-mail"
   }
 }
