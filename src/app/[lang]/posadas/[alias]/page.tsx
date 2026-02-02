@@ -281,12 +281,6 @@ export default async function PosadaDetailPage({
                       </a>
                     )}
                   </div>
-                  {attr['horario-de-atencion'] && (
-                    <div className="mt-6 flex items-center justify-center gap-2 text-gray-500 text-sm">
-                      <span className="material-symbols-outlined text-[18px]">info</span>
-                      <span className="text-xs text-center">Horario: {attr['horario-de-atencion'] || "Horario: 9:00 AM - 6:00 PM"}</span>
-                    </div>
-                  )}
                 </div>
               </div>
             </div>
