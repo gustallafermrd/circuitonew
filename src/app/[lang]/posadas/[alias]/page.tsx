@@ -140,14 +140,12 @@ export default async function PosadaDetailPage({
                   <span className="material-symbols-outlined text-2xl mt-1 text-secondary">verified_user</span>
                   <div>
                     <h4 className="font-bold text-base md:text-lg dark:text-white">Calidad Certificada</h4>
-                    <p className="text-gray-500 dark:text-gray-400">Esta posada cumple con los estándares del Circuito de la Excelencia.</p>
                   </div>
                 </div>
                 <div className="flex gap-4 items-start">
                   <span className="material-symbols-outlined text-2xl mt-1 text-secondary">location_on</span>
                   <div>
                     <h4 className="font-bold text-base md:text-lg dark:text-white">Excelente ubicación</h4>
-                    <p className="text-gray-500 dark:text-gray-400">Ubicada en {attr.estado}, una de las zonas más privilegiadas del país.</p>
                   </div>
                 </div>
               </div>
