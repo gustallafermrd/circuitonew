@@ -93,7 +93,7 @@ export default async function PosadaDetailPage({
                 <h1 className="text-3xl md:text-5xl font-black leading-tight tracking-[-0.033em] text-text-main dark:text-white">
                   {attr.title}
                 </h1>
-                <h2 className="text-lg md:text-2xl font-semibold italic text-secondary dark:text-secondary">{attr.slogan}</h2>
+                <h2 className="text-lg md:text-4xl font-semibold italic text-secondary dark:text-secondary">{attr.slogan}</h2>
               </div>
 
               {/* Social Media Icons */}
