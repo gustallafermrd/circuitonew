@@ -125,28 +125,32 @@ export default async function PosadaDetailPage({
                     <p className="font-semibold">{attr.estado}, Venezuela</p>
                   </div>
                 </div>
-                {/* Logo or placeholder */}
-                <div className="size-20 rounded-full bg-white dark:bg-white overflow-hidden border border-gray-100 p-1 hidden sm:block shadow-sm">
-                   <div className="w-full h-full rounded-full bg-contain bg-center bg-no-repeat flex items-center justify-center"
-                        style={logoImage ? { backgroundImage: `url('${logoImage}')` } : {}}>
-                      {!logoImage && <span className="text-primary font-bold text-xl">{attr.title.charAt(0)}</span>}
-                   </div>
-                </div>
+
               </div>
 
               {/* Special features */}
-              <div className="flex flex-col gap-6 border-b border-[#f0f4f2] dark:border-white/10 pb-8">
-                <div className="flex gap-4 items-start">
-                  <span className="material-symbols-outlined text-2xl mt-1 text-secondary">verified_user</span>
-                  <div>
-                    <h4 className="font-bold text-base md:text-lg dark:text-white">Calidad Certificada</h4>
+              <div className="flex justify-between items-center border-b border-[#f0f4f2] dark:border-white/10 pb-8">
+                <div className="flex flex-col gap-6">
+                  <div className="flex gap-4 items-start">
+                    <span className="material-symbols-outlined text-2xl mt-1 text-secondary">verified_user</span>
+                    <div>
+                      <h4 className="font-bold text-base md:text-lg dark:text-white">Calidad Certificada</h4>
+                    </div>
+                  </div>
+                  <div className="flex gap-4 items-start">
+                    <span className="material-symbols-outlined text-2xl mt-1 text-secondary">location_on</span>
+                    <div>
+                      <h4 className="font-bold text-base md:text-lg dark:text-white">Excelente ubicación</h4>
+                    </div>
                   </div>
                 </div>
-                <div className="flex gap-4 items-start">
-                  <span className="material-symbols-outlined text-2xl mt-1 text-secondary">location_on</span>
-                  <div>
-                    <h4 className="font-bold text-base md:text-lg dark:text-white">Excelente ubicación</h4>
-                  </div>
+
+                {/* Logo or placeholder */}
+                <div className="size-30 bg-white dark:bg-white overflow-hidden p-1 hidden sm:block shrink-0">
+                   <div className="w-full h-full rounded-full bg-contain bg-center bg-no-repeat flex items-center justify-center"
+                        style={logoImage ? { backgroundImage: `url('${logoImage}')` } : {}}>
+                      {!logoImage && <span className="text-primary font-bold text-4xl">{attr.title.charAt(0)}</span>}
+                   </div>
                 </div>
               </div>
 
