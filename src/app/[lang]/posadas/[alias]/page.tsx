@@ -146,8 +146,8 @@ export default async function PosadaDetailPage({
                 </div>
 
                 {/* Logo or placeholder */}
-                <div className="size-30 bg-white dark:bg-white overflow-hidden p-1 hidden sm:block shrink-0">
-                   <div className="w-full h-full rounded-full bg-contain bg-center bg-no-repeat flex items-center justify-center"
+                <div className="size-50 bg-white dark:bg-white overflow-hidden p-1 hidden sm:block shrink-0">
+                   <div className="w-full h-full bg-contain bg-center bg-no-repeat flex items-center justify-center"
                         style={logoImage ? { backgroundImage: `url('${logoImage}')` } : {}}>
                       {!logoImage && <span className="text-primary font-bold text-4xl">{attr.title.charAt(0)}</span>}
                    </div>
