@@ -1,0 +1,19 @@
+.timelineLine {
+  position: relative;
+}
+
+.timelineLine::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent, #c9a446 15%, #c9a446 85%, transparent);
+}
+
+@media (max-width: 768px) {
+  .timelineLine::before {
+    left: 20px;
+  }
+}

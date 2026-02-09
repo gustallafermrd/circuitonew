@@ -42,7 +42,7 @@ export default async function LangLayout({
         <Providers>
           <Navbar lang={lang} />
           {children}
-          <Footer />
+          <Footer lang={lang} />
         </Providers>
       </body>
     </html>

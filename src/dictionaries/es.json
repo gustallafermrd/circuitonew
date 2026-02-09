@@ -86,5 +86,9 @@
     "memberType": "Premium",
     "deliveryStatus": "Entrega Inmediata",
     "deliveryMethod": "En tu E-mail"
+  },
+  "quienesSomos": {
+    "title": "Quienes Somos",
+    "description": "Contenido próximamente..."
   }
 }

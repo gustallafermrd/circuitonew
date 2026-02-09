@@ -69,5 +69,9 @@
     "memberType": "Premium",
     "deliveryStatus": "Immediate Delivery",
     "deliveryMethod": "In your E-mail"
+  },
+  "quienesSomos": {
+    "title": "Who We Are",
+    "description": "Content coming soon..."
   }
 }

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Footer() {
+export default function Footer({ lang = 'es' }: { lang?: string }) {
   const date = new Date().getFullYear();
   return (
     <footer className="bg-primary text-white pt-16 pb-8 border-t border-white/10">
@@ -30,11 +30,22 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-bold mb-6 text-secondary">Navegación</h4>
             <ul className="space-y-3 text-sm text-gray-300">
-              <li><a className="hover:text-white transition-colors" href="#">Inicio</a></li>
-              <li><a className="hover:text-white transition-colors" href="#">Posadas</a></li>
-              <li><a className="hover:text-white transition-colors" href="#">Destinos</a></li>
-              <li><a className="hover:text-white transition-colors" href="#">Blog</a></li>
-              <li><a className="hover:text-white transition-colors" href="#">Contacto</a></li>
+              <li><Link className="hover:text-white transition-colors" href={`/${lang}/quienes-somos`}>Sobre Nosotros</Link></li>
+              <li><Link className="hover:text-white transition-colors" href={`/${lang}/sello-de-calidad`}>Sello de Calidad</Link></li>
+              <li><Link className="hover:text-white transition-colors" href={`/${lang}/posadas`}>Posadas</Link></li>
+              <li><Link className="hover:text-white transition-colors" href={`/${lang}/destinos`}>Destinos</Link></li>
+              <li><Link className="hover:text-white transition-colors" href={`/${lang}/blog`}>Blog</Link></li>
+              <li><Link className="hover:text-white transition-colors" href={`/${lang}/contacto`}>Contacto</Link></li>
+            </ul>
+          </div>
+          
+          {/* Legal */}
+          <div>
+            <h4 className="text-lg font-bold mb-6 text-secondary">Legal</h4>
+            <ul className="space-y-3 text-sm text-gray-300">
+              <li><a className="hover:text-white transition-colors" href="#">Términos y Condiciones</a></li>
+              <li><a className="hover:text-white transition-colors" href="#">Política de Privacidad</a></li>
+              <li><a className="hover:text-white transition-colors" href="#">Política de Cookies</a></li>
             </ul>
           </div>
           <div>
@@ -52,15 +63,6 @@ export default function Footer() {
                 <span className="material-symbols-outlined text-secondary text-lg mt-0.5">mail</span>
                 <span>info@circuitoexcelencia.com</span>
               </li>
-            </ul>
-          </div>
-          {/* Legal */}
-          <div>
-            <h4 className="text-lg font-bold mb-6 text-secondary">Legal</h4>
-            <ul className="space-y-3 text-sm text-gray-300">
-              <li><a className="hover:text-white transition-colors" href="#">Términos y Condiciones</a></li>
-              <li><a className="hover:text-white transition-colors" href="#">Política de Privacidad</a></li>
-              <li><a className="hover:text-white transition-colors" href="#">Política de Cookies</a></li>
             </ul>
           </div>
         </div>
