@@ -28,7 +28,6 @@ export default function Footer({ lang = 'es' }: { lang?: string }) {
             </div>
           </div>
           <div>
-            <h4 className="text-lg font-bold mb-6 text-secondary">Navegación</h4>
             <ul className="space-y-3 text-sm text-gray-300">
               <li><Link className="hover:text-white transition-colors" href={`/${lang}/quienes-somos`}>Sobre Nosotros</Link></li>
               <li><Link className="hover:text-white transition-colors" href={`/${lang}/sello-de-calidad`}>Sello de Calidad</Link></li>
@@ -41,7 +40,6 @@ export default function Footer({ lang = 'es' }: { lang?: string }) {
           
           {/* Legal */}
           <div>
-            <h4 className="text-lg font-bold mb-6 text-secondary">Legal</h4>
             <ul className="space-y-3 text-sm text-gray-300">
               <li><a className="hover:text-white transition-colors" href="#">Términos y Condiciones</a></li>
               <li><a className="hover:text-white transition-colors" href="#">Política de Privacidad</a></li>

@@ -37,7 +37,7 @@ export default async function QuienesSomosPage({
             El <strong className="text-primary font-bold">Circuito de la Excelencia</strong> es una Asociación Civil sin fines de lucro que agrupa a un selecto grupo de posadas en Venezuela. Nacimos con el firme propósito de elevar los estándares de servicio y hospitalidad en el país, ofreciendo a los viajeros experiencias auténticas garantizadas por un riguroso sistema de gestión.
           </p>
           <p className="text-slate-600 text-lg leading-relaxed text-justify">
-            Nuestra red no solo representa alojamiento; representa una cultura de calidad que se vive en cada rincón de           nuestras posadas asociadas, desde los Andes hasta las costas caribeñas.
+            Nuestra red no solo representa alojamiento; representa una cultura de calidad que se vive en cada rincón de nuestras posadas asociadas, desde los Andes hasta las costas caribeñas.
           </p>
         </div>
         <div className="relative">
@@ -190,7 +190,7 @@ export default async function QuienesSomosPage({
         </div>
       </div>
       <div className="absolute top-0 right-0 opacity-10 pointer-events-none translate-x-1/4 -translate-y-1/4">
-        <span className="material-symbols-outlined text-xl text-white">hotel_class</span>
+        <span className="material-symbols-outlined !text-[150px] text-white">hotel_class</span>
       </div>
     </section>
     <div className="w-full bg-white text-brand-navy px-6 py-20 lg:px-40">
