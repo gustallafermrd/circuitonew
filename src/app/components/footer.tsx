@@ -29,21 +29,18 @@ export default function Footer({ lang = 'es' }: { lang?: string }) {
           </div>
           <div>
             <ul className="space-y-3 text-sm text-gray-300">
+              <li><Link className="hover:text-white transition-colors" href={`/${lang}/posadas`}>Posadas</Link></li>
               <li><Link className="hover:text-white transition-colors" href={`/${lang}/quienes-somos`}>Sobre Nosotros</Link></li>
               <li><Link className="hover:text-white transition-colors" href={`/${lang}/sello-de-calidad`}>Sello de Calidad</Link></li>
-              <li><Link className="hover:text-white transition-colors" href={`/${lang}/posadas`}>Posadas</Link></li>
-              <li><Link className="hover:text-white transition-colors" href={`/${lang}/destinos`}>Destinos</Link></li>
-              <li><Link className="hover:text-white transition-colors" href={`/${lang}/blog`}>Blog</Link></li>
-              <li><Link className="hover:text-white transition-colors" href={`/${lang}/contacto`}>Contacto</Link></li>
             </ul>
           </div>
           
           {/* Legal */}
           <div>
             <ul className="space-y-3 text-sm text-gray-300">
-              <li><a className="hover:text-white transition-colors" href="#">Términos y Condiciones</a></li>
-              <li><a className="hover:text-white transition-colors" href="#">Política de Privacidad</a></li>
-              <li><a className="hover:text-white transition-colors" href="#">Política de Cookies</a></li>
+              <li><Link className="hover:text-white transition-colors" href={`/${lang}/blog`}>Blog</Link></li>
+              <li><Link className="hover:text-white transition-colors" href={`/${lang}/destinos`}>Destinos</Link></li>
+              <li><Link className="hover:text-white transition-colors" href={`/${lang}/contacto`}>Contacto</Link></li>
             </ul>
           </div>
           <div>

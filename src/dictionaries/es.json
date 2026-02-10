@@ -88,7 +88,63 @@
     "deliveryMethod": "En tu E-mail"
   },
   "quienesSomos": {
-    "title": "Quienes Somos",
+    "title": "Quienés Somos",
     "description": "Contenido próximamente..."
+  },
+  "contact": {
+    "badge": "Estamos aquí para ti",
+    "title": "Contáctanos",
+    "description": "¿Tienes alguna pregunta sobre nuestras posadas o destinos? Nuestro equipo está listo para ayudarte a planificar tu experiencia perfecta en Venezuela.",
+    "subtitle": "Estamos aquí para ayudarte a planificar tu próxima escapada inolvidable.",
+    "form": {
+      "title": "Envíanos un mensaje",
+      "subtitle": "Completa el formulario y te responderemos a la brevedad posible.",
+      "name": "Nombre Completo",
+      "namePlaceholder": "Ej. Juan Pérez",
+      "email": "Correo Electrónico",
+      "emailPlaceholder": "Ej. juan@correo.com",
+      "phone": "Teléfono",
+      "phonePlaceholder": "+58 ...",
+      "subject": "Asunto",
+      "subjectOptions": {
+        "general": "Información General",
+        "reservations": "Reservas",
+        "corporate": "Eventos Corporativos",
+        "suggestions": "Sugerencias"
+      },
+      "message": "Mensaje",
+      "messagePlaceholder": "¿En qué podemos ayudarte?",
+      "submit": "Enviar Mensaje",
+      "success": "¡Mensaje enviado con éxito!",
+      "error": "Hubo un error al enviar el mensaje. Por favor intenta de nuevo."
+    },
+    "info": {
+      "title": "Información de Contacto",
+      "addressLabel": "Dirección Principal",
+      "address": "Av. Principal de Las Mercedes, Caracas, Venezuela.",
+      "phoneLabel": "Teléfonos",
+      "phone": "+58 212 999 9999",
+      "phoneSecondary": "+58 414 123 4567 (WhatsApp)",
+      "emailLabel": "Correo Electrónico",
+      "email": "info@circuitodelaexcelencia.com",
+      "followUs": "Síguenos en redes sociales:"
+    },
+    "faq": {
+      "title": "Preguntas Frecuentes",
+      "items": [
+        {
+          "question": "¿Qué es el Circuito de la Excelencia?",
+          "answer": "Es una asociación de posadas conformada por un grupo de venezolanos emprendedores y soñadores que, aunando esfuerzos, talento y entusiasmo decidieron compartir su estilo de vida para crear y compartir una cultura de anfitriones y de calidad. Esta asociación agrupa a las mejores posadas del país."
+        },
+        {
+          "question": "¿Cómo reservar en una posada del Circuito de la Excelencia?",
+          "answer": "Contactando directamente a la posada de su preferencia."
+        },
+        {
+          "question": "¿Cómo hacerte miembro del Circuito de la Excelencia?",
+          "answer": "Para formar parte del Circuito de la Excelencia, debes contactar a los responsables para coordinar una visita de acercamiento."
+        }
+      ]
+    }
   }
 }
