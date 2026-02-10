@@ -46,7 +46,7 @@ export default async function ContactPage({
               <ContactForm dictionary={dictionary.contact.form} />
 
             </div>
-            <div className="lg:w-[400px] flex flex-col gap-8">
+            <div className="lg:w-[440px] flex flex-col gap-4">
               <div className="bg-primary rounded-2xl p-8 text-white relative overflow-hidden">
                 <div className="absolute -top-10 -right-10 w-32 h-32 bg-secondary rounded-full opacity-20 blur-2xl"></div>
                 <h3 className="text-xl font-bold mb-6 flex items-center gap-2">
@@ -55,8 +55,8 @@ export default async function ContactPage({
                   </span>
                   {dictionary.contact.info.title}
                 </h3>
-                <div className="flex flex-col gap-6">
-                  <div className="flex items-start gap-4">
+                <div className="flex flex-col gap-2">
+                  <div className="flex items-start gap-2">
                     <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center shrink-0">
                       <span className="material-symbols-outlined text-secondary">
                         location_on
@@ -71,7 +71,7 @@ export default async function ContactPage({
                       </p>
                     </div>
                   </div>
-                  <div className="flex items-start gap-4">
+                  <div className="flex items-start gap-2">
                     <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center shrink-0">
                       <span className="material-symbols-outlined text-secondary">
                         phone_in_talk
@@ -84,12 +84,9 @@ export default async function ContactPage({
                       <p className="font-medium">
                         {dictionary.contact.info.phone}
                       </p>
-                      <p className="font-medium text-gray-400 text-sm mt-1">
-                         {dictionary.contact.info.phoneSecondary}
-                      </p>
                     </div>
                   </div>
-                  <div className="flex items-start gap-4">
+                  <div className="flex items-start gap-2">
                     <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center shrink-0">
                       <span className="material-symbols-outlined text-secondary">
                         mail

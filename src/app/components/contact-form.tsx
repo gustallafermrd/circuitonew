@@ -50,10 +50,19 @@ export default function ContactForm({ dictionary }: ContactFormProps) {
     setIsSubmitting(true);
     setStatus("idle");
 
-    // Simulate API call
     try {
-      // artificial delay
-      await new Promise((resolve) => setTimeout(resolve, 1500));
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to send message");
+      }
+
       setStatus("success");
       setFormData({
         name: "",
