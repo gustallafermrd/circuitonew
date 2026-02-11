@@ -23,9 +23,9 @@ export default async function QuienesSomosPage({
         </h1>
         <div className="w-24 h-1 bg-brand-gold mx-auto"></div>
         <p className="text-white/90 text-lg font-medium leading-relaxed md:text-2xl max-w-[750px] mx-auto italic">
-          "Unidos por la pasión de servir y el compromiso con la calidad.
+          "Unidos por la Pasión de Servir y el Compromiso con la Calidad,
         </p>
-        <p className="text-white/90 text-lg font-medium leading-relaxed md:text-2xl max-w-[750px] mx-auto italic">Con alma de Anfitriones."</p>
+        <p className="text-white/90 text-lg font-medium leading-relaxed md:text-2xl max-w-[750px] mx-auto italic">Con Alma de Anfitriones."</p>
       </div>
     </div>
     <section className="flex flex-col items-center px-6 py-20 lg:px-40 bg-white">
