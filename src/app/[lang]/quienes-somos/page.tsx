@@ -1,4 +1,5 @@
 
+import Link from "next/link";
 import { getDictionary } from "@/lib/get-dictionary";
 import styles from "./timeline.module.css";
 
@@ -201,14 +202,16 @@ export default async function QuienesSomosPage({
           alojamiento.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 mt-4">
-          <button
+          <Link
+            href={`/${lang}/posadas`}
             className="flex min-w-[200px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-14 px-8 bg-primary hover:bg-[#25254a] text-white text-lg font-bold transition-all shadow-xl">
             Explorar Posadas
-          </button>
-          <button
+          </Link>
+          <Link
+            href={`/${lang}/contacto`}
             className="flex min-w-[200px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-14 px-8 bg-transparent border-2 border-secondary text-secondary hover:bg-secondary hover:text-white text-lg font-bold transition-all">
             Contáctanos
-          </button>
+          </Link>
         </div>
       </div>
     </div>

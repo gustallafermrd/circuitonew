@@ -52,7 +52,7 @@ export default function Footer({ lang = 'es' }: { lang?: string }) {
               </li>
               <li className="flex items-start gap-3">
                 <span className="material-symbols-outlined text-secondary text-lg mt-0.5">call</span>
-                <span>+58 212 123 4567</span>
+                <span>+58 (0424) 713-7673</span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="material-symbols-outlined text-secondary text-lg mt-0.5">mail</span>

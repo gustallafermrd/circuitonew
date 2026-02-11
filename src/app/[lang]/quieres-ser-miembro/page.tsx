@@ -57,8 +57,7 @@ export default async function QuieresSerMiembroPage({
               <span className="material-symbols-outlined text-secondary group-hover:text-white text-3xl">public</span>
             </div>
             <h3 className="text-xl font-bold mb-3">Marketing Global</h3>
-            <p className="text-primary/70 leading-relaxed">Exposición en nuestra plataforma web, redes sociales y ferias de
-              turismo nacionales.</p>
+            <p className="text-primary/70 leading-relaxed">Exposición en nuestra plataforma web, redes sociales y ferias de turismo nacionales.</p>
           </div>
           <div
             className="p-8 rounded-xl bg-background-light border-t-4 border-secondary hover:shadow-2xl transition-shadow group">
@@ -67,8 +66,7 @@ export default async function QuieresSerMiembroPage({
               <span className="material-symbols-outlined text-secondary group-hover:text-white text-3xl">groups</span>
             </div>
             <h3 className="text-xl font-bold mb-3">Networking Elite</h3>
-            <p className="text-primary/70 leading-relaxed">Conexión directa con los mejores posaderos del país para
-              intercambio de experiencias.</p>
+            <p className="text-primary/70 leading-relaxed">Conexión directa con los mejores posaderos del país para intercambio de experiencias.</p>
           </div>
           <div
             className="p-8 rounded-xl bg-background-light border-t-4 border-secondary hover:shadow-2xl transition-shadow group">
@@ -77,8 +75,7 @@ export default async function QuieresSerMiembroPage({
               <span className="material-symbols-outlined text-secondary group-hover:text-white text-3xl">school</span>
             </div>
             <h3 className="text-xl font-bold mb-3">Capacitación</h3>
-            <p className="text-primary/70 leading-relaxed">Acceso a talleres exclusivos de servicio, gastronomía y gestión
-              hotelera de alto nivel.</p>
+            <p className="text-primary/70 leading-relaxed">Acceso a talleres exclusivos de servicio, gastronomía y gestión hotelera de alto nivel.</p>
           </div>
         </div>
       </div>
@@ -145,8 +142,7 @@ export default async function QuieresSerMiembroPage({
                 className="w-20 h-20 bg-secondary text-white text-3xl font-bold rounded-full flex items-center justify-center mb-8 shadow-lg ring-8 ring-background-light">
                 1</div>
               <h3 className="text-2xl font-bold mb-4">Postulación</h3>
-              <p className="text-primary/70">Completa el formulario inicial con los detalles de tu posada y fotografías de
-                tus instalaciones.</p>
+              <p className="text-primary/70">Completa el formulario inicial con los detalles de tu posada y fotografías de tus instalaciones.</p>
             </div>
             <div
               className="bg-white p-10 rounded-2xl shadow-lg border border-secondary/10 text-center flex flex-col items-center">
@@ -154,8 +150,7 @@ export default async function QuieresSerMiembroPage({
                 className="w-20 h-20 bg-secondary text-white text-3xl font-bold rounded-full flex items-center justify-center mb-8 shadow-lg ring-8 ring-background-light">
                 2</div>
               <h3 className="text-2xl font-bold mb-4">Evaluación</h3>
-              <p className="text-primary/70">Nuestro comité de expertos realizará una auditoría presencial bajo los 50
-                parámetros de calidad.</p>
+              <p className="text-primary/70">Nuestro comité de expertos realizará una auditoría presencial bajo los 50 parámetros de calidad.</p>
             </div>
             <div
               className="bg-white p-10 rounded-2xl shadow-lg border border-secondary/10 text-center flex flex-col items-center">
@@ -163,8 +158,7 @@ export default async function QuieresSerMiembroPage({
                 className="w-20 h-20 bg-secondary text-white text-3xl font-bold rounded-full flex items-center justify-center mb-8 shadow-lg ring-8 ring-background-light">
                 3</div>
               <h3 className="text-2xl font-bold mb-4">Certificación</h3>
-              <p className="text-primary/70">Una vez aprobada la auditoría, recibes tu placa oficial y eres incluido en todo
-                el ecosistema del Circuito.</p>
+              <p className="text-primary/70">Una vez aprobada la auditoría, recibes tu placa oficial y eres incluido en todo el ecosistema del Circuito.</p>
             </div>
           </div>
         </div>
@@ -173,18 +167,18 @@ export default async function QuieresSerMiembroPage({
     <section className="py-24 bg-white">
       <div className="container mx-auto px-6">
         <div className="max-w-5xl mx-auto bg-primary rounded-2xl overflow-hidden shadow-2xl flex flex-col lg:flex-row">
-          <div className="lg:w-2/5 p-12 flex flex-col justify-center border-r border-primary/20 bg-primary">
+          <div className="lg:w-1/2 p-12 flex flex-col justify-center border-r border-primary/20 bg-primary">
             <h2 className="text-3xl font-bold mb-6 text-white">¿Listo para dar el paso?</h2>
             <p className="text-white/80 mb-8 text-lg">Déjanos tus datos y un asesor se pondrá en contacto contigo para guiarte
               en el proceso de pre-selección.</p>
             <div className="space-y-4">
               <div className="flex items-center gap-4">
                 <span className="material-symbols-outlined text-secondary">email</span>
-                <span className="text-white font-medium">info@circuitodelaexcelencia.com</span>
+                <span className="text-white font-medium">direccionejecutiva@circuitodelaexcelencia.com</span>
               </div>
               <div className="flex items-center gap-4">
                 <span className="material-symbols-outlined text-secondary">phone</span>
-                <span className="text-white font-medium">+58 (212) 000-0000</span>
+                <span className="text-white font-medium">+58 (0424) 713-7673</span>
               </div>
             </div>
           </div>
@@ -193,25 +187,25 @@ export default async function QuieresSerMiembroPage({
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
                   <label className="block text-sm font-bold text-primary mb-2 uppercase tracking-wide">Nombre Completo</label>
-                  <input className="w-full border-gray rounded-lg p-3 focus:ring-gray focus:border-gray"
+                  <input className="w-full border border-[#dbe6df] dark:border-[#2a3c30] bg-white dark:bg-[#1c2e24] rounded-lg p-3 focus:ring-gray focus:border-gray"
                     placeholder="Ej. Juan Pérez" type="text" />
                 </div>
                 <div>
                   <label className="block text-sm font-bold text-primary mb-2 uppercase tracking-wide">Nombre de la Posada</label>
-                  <input className="w-full border-gray-200 rounded-lg p-3 focus:ring-secondary focus:border-secondary"
+                  <input className="w-full border border-[#dbe6df] dark:border-[#2a3c30] bg-white dark:bg-[#1c2e24] rounded-lg p-3 focus:ring-secondary focus:border-secondary"
                     placeholder="Nombre comercial" type="text" />
                 </div>
               </div>
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
                   <label className="block text-sm font-bold text-primary mb-2 uppercase tracking-wide">Correo Electrónico</label>
-                  <input className="w-full border-gray-200 rounded-lg p-3 focus:ring-primary focus:border-primary"
+                  <input className="w-full border border-[#dbe6df] dark:border-[#2a3c30] bg-white dark:bg-[#1c2e24] rounded-lg p-3"
                     placeholder="email@ejemplo.com" type="email" />
                 </div>
                 <div>
                   <label className="block text-sm font-bold text-primary mb-2 uppercase tracking-wide">Ubicación (Estado)</label>
                   <select
-                    className="w-full border-gray-400 rounded-lg p-3 focus:ring-primary focus:border-primary text-primary/60">
+                    className="w-full border border-[#dbe6df] dark:border-[#2a3c30] bg-white dark:bg-[#1c2e24] rounded-lg p-3 focus:ring-primary focus:border-primary text-primary/60">
                     <option>Seleccionar estado</option>
                     <option>Mérida</option>
                     <option>Falcon</option>
@@ -223,7 +217,7 @@ export default async function QuieresSerMiembroPage({
               </div>
               <div>
                 <label className="block text-sm font-bold text-primary mb-2 uppercase tracking-wide">Breve descripción de la propiedad</label>
-                <textarea className="w-full border-gray-200 rounded-lg p-3 focus:ring-primary focus:border-primary"
+                <textarea className="w-full border border-[#dbe6df] dark:border-[#2a3c30] bg-white dark:bg-[#1c2e24] rounded-lg p-3 focus:ring-primary focus:border-primary"
                   placeholder="Cuéntanos un poco sobre tu posada..." rows={4}></textarea>
               </div>
               <button
