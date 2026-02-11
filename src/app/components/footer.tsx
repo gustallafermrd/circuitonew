@@ -48,7 +48,7 @@ export default function Footer({ lang = 'es' }: { lang?: string }) {
             <ul className="space-y-4 text-sm text-gray-300">
               <li className="flex items-start gap-3">
                 <span className="material-symbols-outlined text-secondary text-lg mt-0.5">location_on</span>
-                <span>Caracas, Venezuela</span>
+                <span>Táchira, Venezuela</span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="material-symbols-outlined text-secondary text-lg mt-0.5">call</span>
@@ -56,7 +56,7 @@ export default function Footer({ lang = 'es' }: { lang?: string }) {
               </li>
               <li className="flex items-start gap-3">
                 <span className="material-symbols-outlined text-secondary text-lg mt-0.5">mail</span>
-                <span>info@circuitoexcelencia.com</span>
+                <span>direccionejecutiva@circuitoexcelencia.com</span>
               </li>
             </ul>
           </div>
