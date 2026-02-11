@@ -39,7 +39,7 @@ export default function Footer({ lang = 'es' }: { lang?: string }) {
           <div>
             <ul className="space-y-3 text-sm text-gray-300">
               <li><Link className="hover:text-white transition-colors" href={`/${lang}/blog`}>Blog</Link></li>
-              <li><Link className="hover:text-white transition-colors" href={`/${lang}/destinos`}>Destinos</Link></li>
+              <li><Link className="hover:text-white transition-colors" href={`/${lang}/quieres-ser-miembro`}>¿Quieres ser miembro?</Link></li>
               <li><Link className="hover:text-white transition-colors" href={`/${lang}/contacto`}>Contacto</Link></li>
             </ul>
           </div>
