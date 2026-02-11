@@ -121,9 +121,7 @@ export default async function QuienesSomosPage({
                 <span className="text-secondary font-extrabold text-3xl block mb-2">2004</span>
                 <h3 className="text-primary text-xl font-bold mb-3">La Fundación</h3>
                 <p className="text-slate-600 leading-relaxed">
-                  El Circuito nace por la visión de <strong className="text-primary">10 posaderos pioneros</strong> en la
-                  región andina, decididos a unirse para profesionalizar el sector y ofrecer una propuesta de valor
-                  diferenciada.
+                  El Circuito nace por la visión de <strong className="text-primary">5 posaderos pioneros</strong> decididos a unirse para profesionalizar el sector y ofrecer una propuesta de valor diferenciada.
                 </p>
               </div>
             </div>
