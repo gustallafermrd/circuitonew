@@ -13,7 +13,7 @@ export default async function QuieresSerMiembroPage({
     <>
       <section className="relative h-[600px] flex items-center overflow-hidden">
       <img alt="Luxury Inn" className="absolute inset-0 w-full h-full object-cover"
-        src="/img/miembro-1.png" />
+        src="/img/miembro-1.webp" />
       <div className="absolute inset-0 bg-primary/60"></div>
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-2xl">
@@ -35,7 +35,7 @@ export default async function QuieresSerMiembroPage({
       <div className="container mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-4xl font-bold mb-4">Beneficios de ser miembro</h2>
-          <div className="w-24 h-1 bg-primary mx-auto mb-6"></div>
+          <div className="w-24 h-1 bg-secondary mx-auto mb-6"></div>
           <p className="text-lg text-primary/70">Formar parte del Circuito de la Excelencia no es solo un sello, es una
             transformación integral para su negocio de hospitalidad.</p>
         </div>
