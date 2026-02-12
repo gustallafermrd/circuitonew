@@ -13,7 +13,7 @@ export default async function SelloCalidadPage({
     <main className="flex-1">
       <section className="relative w-full py-20 lg:py-32 overflow-hidden bg-background-soft">
         <div className="absolute inset-0 z-0">
-          <div className="absolute inset-0 bg-gradient-to-r from-white via-white/80 to-transparent z-10"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/80 to-transparent z-10"></div>
           <Image className="w-full h-full object-cover opacity-20" data-alt="Luxury tropical inn building at sunset"
             src="/img/sello-de-calidad.png" alt="Sello de Calidad" width={1920} height={1080} />
         </div>
@@ -147,7 +147,7 @@ export default async function SelloCalidadPage({
                 <span className="material-symbols-outlined text-secondary text-3xl shrink-0">check_circle</span>
                 <div>
                   <h4 className="text-brand-navy font-bold text-lg">Turismo Sostenible</h4>
-                  <p className="text-text-muted">Tu visita contribuye positivamente al medio ambiente y a la economía local.
+                  <p className="text-text-muted">Tu visita contribuye positivamente al ambiente y a la economía local.
                   </p>
                 </div>
               </div>
