@@ -13,17 +13,12 @@ export default async function SelloCalidadPage({
     <main className="flex-1">
       <section className="relative w-full py-20 lg:py-32 overflow-hidden bg-background-soft">
         <div className="absolute inset-0 z-0">
-          <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/80 to-transparent z-10"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-white via-white/80 to-transparent z-10"></div>
           <Image className="w-full h-full object-cover opacity-20" data-alt="Luxury tropical inn building at sunset"
             src="/img/sello-de-calidad.png" alt="Sello de Calidad" width={1920} height={1080} />
         </div>
         <div className="relative z-20 max-w-7xl mx-auto px-6 lg:px-20 grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
-            <div
-              className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary/10 border border-secondary text-secondary">
-              <span className="material-symbols-outlined text-sm">stars</span>
-              <span className="text-xs font-bold uppercase tracking-widest">Estándar de Oro</span>
-            </div>
             <h1 className="text-brand-navy text-5xl lg:text-7xl font-black leading-[1.1] tracking-tight">
               Garantía de <br /><span className="text-secondary">Excelencia</span> Turística
             </h1>
