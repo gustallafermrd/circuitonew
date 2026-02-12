@@ -13,7 +13,7 @@ export default async function SelloCalidadPage({
     <main className="flex-1">
       <section className="relative w-full py-20 lg:py-32 overflow-hidden bg-background-soft">
         <div className="absolute inset-0 z-0">
-          <div className="absolute inset-0 bg-gradient-to-r from-white via-white/80 to-transparent z-10"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-white via-white/60 to-transparent z-10"></div>
           <Image className="w-full h-full object-cover opacity-20" data-alt="Luxury tropical inn building at sunset"
             src="/img/sello-de-calidad.png" alt="Sello de Calidad" width={1920} height={1080} />
         </div>
@@ -23,7 +23,7 @@ export default async function SelloCalidadPage({
               Garantía de <br /><span className="text-secondary">Excelencia</span> Turística
             </h1>
             <p className="text-text-muted text-lg lg:text-xl max-w-xl leading-relaxed">
-              El Sello de Calidad es la máxima distinción otorgada a las posadas que cumplen con los más rigurosos
+              El Sello de Calidad es la máxima distinción otorgada a las posadas que cumplen con rigurosos
               estándares de servicio y hospitalidad en Venezuela.
             </p>
           </div>
