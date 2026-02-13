@@ -5,6 +5,7 @@ import "../globals.css";
 import Navbar from "../components/navbar";
 import { Providers } from "../providers";
 import Footer from "../components/footer";
+import { getDictionary } from "@/lib/get-dictionary";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,6 +30,7 @@ export default async function LangLayout({
   params: Promise<{ lang: string }>;
 }) {
   const { lang } = await params;
+  const dictionary = await getDictionary(lang as 'en' | 'es');
 
   return (
     <html lang={lang} suppressHydrationWarning>
@@ -42,7 +44,7 @@ export default async function LangLayout({
         <Providers>
           <Navbar lang={lang} />
           {children}
-          <Footer lang={lang} />
+          <Footer lang={lang} dictionary={dictionary} />
         </Providers>
       </body>
     </html>

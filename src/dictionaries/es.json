@@ -88,8 +88,218 @@
     "deliveryMethod": "En tu E-mail"
   },
   "quienesSomos": {
-    "title": "Quienés Somos",
-    "description": "Contenido próximamente..."
+    "hero": {
+      "title": "¿Quiénes Somos?",
+      "quote1": "\"Unidos por la Pasión de Servir y el Compromiso con la Calidad,",
+      "quote2": "Con Alma de Anfitriones.\""
+    },
+    "history": {
+      "badge": "Nuestra Historia",
+      "title": "Compromiso con la Hospitalidad Venezolana",
+      "paragraph1": "El Circuito de la Excelencia es una Asociación Civil sin fines de lucro que agrupa a un selecto grupo de posadas en Venezuela. Nacimos con el firme propósito de elevar los estándares de servicio y hospitalidad en el país, ofreciendo a los viajeros experiencias auténticas garantizadas por un riguroso sistema de gestión.",
+      "paragraph2": "Nuestra red no solo representa alojamiento; representa una cultura de calidad que se vive en cada rincón de nuestras posadas asociadas, desde los Andes hasta las costas caribeñas."
+    },
+    "mission": {
+      "title": "Nuestra Misión",
+      "description": "\"Promover y fortalecer la hospitalidad de excelencia en Venezuela, a través de una red de posadas que operan bajo un sistema de gestión de calidad, impulsando el desarrollo sostenible y la valoración de nuestra cultura.\""
+    },
+    "vision": {
+      "title": "Nuestra Visión",
+      "description": "\"Ser el referente nacional e internacional de la hospitalidad venezolana de alta calidad, reconocidos por la calidez del servicio, la autenticidad de nuestras experiencias y el compromiso inquebrantable con la excelencia turística.\""
+    },
+    "values": {
+      "title": "Valores que nos Guían",
+      "quality": {
+        "title": "Calidad",
+        "description": "Buscamos la perfección en cada detalle del servicio."
+      },
+      "unity": {
+        "title": "Unidad",
+        "description": "Fortaleza a través de la cooperación entre posaderos."
+      },
+      "identity": {
+        "title": "Identidad",
+        "description": "Orgullo por nuestras raíces y cultura local."
+      },
+      "sustainability": {
+        "title": "Sostenibilidad",
+        "description": "Respeto por el entorno y desarrollo local."
+      }
+    },
+    "timeline": {
+      "badge": "Hitos Clave",
+      "title": "Nuestra Trayectoria",
+      "subtitle": "Un recorrido de esfuerzo y pasión por construir el mejor rostro del turismo en Venezuela.",
+      "founding": {
+        "year": "2004",
+        "title": "La Fundación",
+        "description": "El Circuito nace por la visión de 5 posaderos pioneros decididos a unirse para profesionalizar el sector y ofrecer una propuesta de valor diferenciada."
+      },
+      "evolution": {
+        "year": "Evolución",
+        "title": "Modelo de Gestión de Calidad",
+        "description": "Desarrollamos e implementamos un Sistema de Gestión de Calidad (SGC) propio, único en el país, que garantiza estándares internacionales en todas nuestras posadas asociadas."
+      },
+      "present": {
+        "year": "Actualidad",
+        "title": "Consolidación y Referencia",
+        "description": "Hoy somos el referente indiscutible de hospitalidad en Venezuela, conectando a viajeros con las experiencias más auténticas y exclusivas de nuestra geografía."
+      }
+    },
+    "juniorAssociate": {
+      "title": "¿Qué es un Asociado Junior?",
+      "description": "Un Asociado Junior es una posada que se ha incorporado recientemente a nuestro Circuito. Actualmente, se encuentra en proceso de adaptación a nuestra Norma Técnica. El estatus de Asociado Junior tiene una duración aproximada de un año.",
+      "badge": "CALIDAD CERTIFICADA"
+    },
+    "cta": {
+      "title": "Viviendo la Excelencia",
+      "description": "Le invitamos a descubrir el encanto de Venezuela a través de nuestros ojos. Una experiencia que trasciende el alojamiento.",
+      "explorePosadas": "Explorar Posadas",
+      "contact": "Contáctanos"
+    }
+  },
+  "quieresSerMiembro": {
+    "hero": {
+      "badge": "Afiliación de Posadas",
+      "title": "¿Quieres formar parte de la excelencia?",
+      "description": "Únete a la red más exclusiva de posadas en Venezuela y eleva tu estándar de servicio al nivel de los mejores.",
+      "startApplication": "Iniciar Solicitud",
+      "viewBenefits": "Ver Beneficios"
+    },
+    "benefits": {
+      "title": "Beneficios de ser miembro",
+      "subtitle": "Formar parte del Circuito de la Excelencia no es solo un sello, es una transformación integral para su negocio de hospitalidad.",
+      "qualitySeal": {
+        "title": "Sello de Calidad",
+        "description": "Reconocimiento nacional e internacional bajo estándares europeos de calidad turística."
+      },
+      "globalMarketing": {
+        "title": "Marketing Global",
+        "description": "Exposición en nuestra plataforma web, redes sociales y ferias de turismo nacionales."
+      },
+      "networking": {
+        "title": "Networking Elite",
+        "description": "Conexión directa con los mejores posaderos del país para intercambio de experiencias."
+      },
+      "training": {
+        "title": "Capacitación",
+        "description": "Acceso a talleres exclusivos de servicio, gastronomía y gestión hotelera de alto nivel."
+      }
+    },
+    "requirements": {
+      "title": "Requisitos de Ingreso",
+      "subtitle": "Para mantener el prestigio de nuestra red, todas las posadas deben cumplir con criterios rigurosos antes de su certificación.",
+      "infrastructure": {
+        "title": "Infraestructura Excepcional",
+        "description": "Arquitectura armónica con el entorno y mantenimiento impecable."
+      },
+      "service": {
+        "title": "Servicio Personalizado",
+        "description": "Atención directa de sus dueños o gerencia altamente capacitada."
+      },
+      "environmental": {
+        "title": "Compromiso Ambiental",
+        "description": "Prácticas sostenibles y respeto por la cultura local."
+      },
+      "gastronomy": {
+        "title": "Gastronomía de Autor",
+        "description": "Propuesta culinaria que resalte los sabores e ingredientes regionales."
+      }
+    },
+    "process": {
+      "title": "Tu camino a la excelencia",
+      "step1": {
+        "title": "Postulación",
+        "description": "Completa el formulario inicial con los detalles de tu posada y fotografías de tus instalaciones."
+      },
+      "step2": {
+        "title": "Evaluación",
+        "description": "Nuestro comité de expertos realizará una auditoría presencial bajo los 50 parámetros de calidad."
+      },
+      "step3": {
+        "title": "Certificación",
+        "description": "Una vez aprobada la auditoría, recibes tu placa oficial y eres incluido en todo el ecosistema del Circuito."
+      }
+    },
+    "contactForm": {
+      "title": "¿Listo para dar el paso?",
+      "subtitle": "Déjanos tus datos y un asesor se pondrá en contacto contigo para guiarte en el proceso de pre-selección.",
+      "fullName": "Nombre Completo",
+      "fullNamePlaceholder": "Ej. Juan Pérez",
+      "posadaName": "Nombre de la Posada",
+      "posadaNamePlaceholder": "Nombre comercial",
+      "email": "Correo Electrónico",
+      "emailPlaceholder": "email@ejemplo.com",
+      "location": "Ubicación (Estado)",
+      "locationPlaceholder": "Seleccionar estado",
+      "description": "Breve descripción de la propiedad",
+      "descriptionPlaceholder": "Cuéntanos un poco sobre tu posada...",
+      "submit": "ENVIAR SOLICITUD DE INFORMACIÓN",
+      "states": {
+        "select": "Seleccionar estado",
+        "merida": "Mérida",
+        "falcon": "Falcon",
+        "miranda": "Miranda",
+        "aragua": "Aragua",
+        "other": "Otros"
+      }
+    }
+  },
+  "selloDeCalidad": {
+    "hero": {
+      "title": "Garantía de",
+      "titleHighlight": "Excelencia",
+      "titleEnd": "Turística",
+      "description": "El Sello de Calidad es la máxima distinción otorgada a las posadas que cumplen con rigurosos estándares de servicio y hospitalidad en Venezuela.",
+      "badgeText": "Sello de Calidad"
+    },
+    "managementModel": {
+      "title": "Nuestro Modelo de Gestión",
+      "subtitle": "Evaluamos rigurosamente cuatro dimensiones fundamentales para asegurar que cada detalle de su estadía sea excepcional.",
+      "business": {
+        "title": "Gestión del Negocio",
+        "description": "Aseguramos una base empresarial sólida, visión estratégica y sostenibilidad para garantizar la permanencia del servicio."
+      },
+      "service": {
+        "title": "Gestión del Servicio",
+        "description": "Atención personalizada, calidez humana y procesos eficientes diseñados para superar las expectativas del huésped."
+      },
+      "facility": {
+        "title": "Gestión de la Instalación",
+        "description": "Mantenimiento impecable, estética de alto nivel y confort en cada espacio físico de nuestras posadas asociadas."
+      },
+      "environmental": {
+        "title": "Gestión Ambiental",
+        "description": "Compromiso firme con la preservación del entorno natural y el desarrollo social de las comunidades locales."
+      }
+    },
+    "whyChoose": {
+      "title": "¿Por qué elegir una posada con Sello de Calidad?",
+      "quote": "\"La calidad no es un accidente, es siempre el resultado de un esfuerzo de la inteligencia.\"",
+      "quoteAuthor": "— Estándar del Circuito",
+      "trust": {
+        "title": "Confianza Garantizada",
+        "description": "Sabes exactamente qué esperar: estándares internacionales aplicados localmente."
+      },
+      "security": {
+        "title": "Seguridad y Respaldo",
+        "description": "Posadas que operan legalmente y cumplen con todas las normativas de seguridad y salud."
+      },
+      "sustainable": {
+        "title": "Turismo Sostenible",
+        "description": "Tu visita contribuye positivamente al ambiente y a la economía local."
+      },
+      "unique": {
+        "title": "Experiencias Únicas",
+        "description": "Cada posada es singular, pero todas comparten el mismo nivel de excelencia en el trato."
+      }
+    },
+    "cta": {
+      "title": "¿Tu posada tiene lo necesario?",
+      "description": "Únete al grupo élite de la hospitalidad venezolana. Solicita hoy mismo la información para iniciar tu proceso de certificación.",
+      "emailPlaceholder": "Tu correo electrónico",
+      "button": "Solicitar Información"
+    }
   },
   "contact": {
     "badge": "Estamos aquí para ti",
@@ -145,5 +355,25 @@
         }
       ]
     }
+  },
+  "footer": {
+    "tagline": "Promovemos el turismo de calidad en Venezuela, conectando a los viajeros con las posadas más exclusivas y auténticas del país.",
+    "navigation": {
+      "posadas": "Posadas",
+      "aboutUs": "Sobre Nosotros",
+      "qualitySeal": "Sello de Calidad",
+      "blog": "Blog",
+      "becomeMember": "¿Quieres ser miembro?",
+      "contact": "Contacto"
+    },
+    "contactSection": {
+      "title": "Contacto",
+      "location": "Táchira, Venezuela",
+      "phone": "+58 (0424) 713-7673",
+      "email": "direccionejecutiva@circuitoexcelencia.com"
+    },
+    "copyright": "Circuito de la Excelencia. Todos los derechos reservados.",
+    "designedBy": "Diseñado con",
+    "by": "por"
   }
 }

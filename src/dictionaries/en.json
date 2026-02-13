@@ -71,8 +71,218 @@
     "deliveryMethod": "In your E-mail"
   },
   "quienesSomos": {
-    "title": "Who We Are",
-    "description": "Content coming soon..."
+    "hero": {
+      "title": "Who We Are?",
+      "quote1": "\"United by the Passion to Serve and Commitment to Quality,",
+      "quote2": "With the Soul of Hosts.\""
+    },
+    "history": {
+      "badge": "Our History",
+      "title": "Commitment to Venezuelan Hospitality",
+      "paragraph1": "The Circuit of Excellence is a non-profit Civil Association that brings together a select group of inns in Venezuela. We were born with the firm purpose of raising service and hospitality standards in the country, offering travelers authentic experiences guaranteed by a rigorous management system.",
+      "paragraph2": "Our network does not only represent accommodation; it represents a culture of quality that is lived in every corner of our associated inns, from the Andes to the Caribbean coasts."
+    },
+    "mission": {
+      "title": "Our Mission",
+      "description": "\"To promote and strengthen excellence in hospitality in Venezuela, through a network of inns that operate under a quality management system, driving sustainable development and the appreciation of our culture.\""
+    },
+    "vision": {
+      "title": "Our Vision",
+      "description": "\"To be the national and international reference for high-quality Venezuelan hospitality, recognized for the warmth of service, the authenticity of our experiences, and the unwavering commitment to tourism excellence.\""
+    },
+    "values": {
+      "title": "Values That Guide Us",
+      "quality": {
+        "title": "Quality",
+        "description": "We seek perfection in every detail of service."
+      },
+      "unity": {
+        "title": "Unity",
+        "description": "Strength through cooperation among innkeepers."
+      },
+      "identity": {
+        "title": "Identity",
+        "description": "Pride in our roots and local culture."
+      },
+      "sustainability": {
+        "title": "Sustainability",
+        "description": "Respect for the environment and local development."
+      }
+    },
+    "timeline": {
+      "badge": "Key Milestones",
+      "title": "Our Journey",
+      "subtitle": "A journey of effort and passion to build the best face of tourism in Venezuela.",
+      "founding": {
+        "year": "2004",
+        "title": "The Foundation",
+        "description": "The Circuit was born from the vision of 5 pioneering innkeepers determined to unite to professionalize the sector and offer a differentiated value proposition."
+      },
+      "evolution": {
+        "year": "Evolution",
+        "title": "Quality Management Model",
+        "description": "We developed and implemented our own Quality Management System (QMS), unique in the country, which guarantees international standards in all our associated inns."
+      },
+      "present": {
+        "year": "Present",
+        "title": "Consolidation and Reference",
+        "description": "Today we are the undisputed reference for hospitality in Venezuela, connecting travelers with the most authentic and exclusive experiences of our geography."
+      }
+    },
+    "juniorAssociate": {
+      "title": "What is a Junior Associate?",
+      "description": "A Junior Associate is an inn that has recently joined our Circuit. Currently, it is in the process of adapting to our Technical Standard. The Junior Associate status lasts approximately one year.",
+      "badge": "CERTIFIED QUALITY"
+    },
+    "cta": {
+      "title": "Living Excellence",
+      "description": "We invite you to discover the charm of Venezuela through our eyes. An experience that transcends accommodation.",
+      "explorePosadas": "Explore Posadas",
+      "contact": "Contact Us"
+    }
+  },
+  "quieresSerMiembro": {
+    "hero": {
+      "badge": "Inn Affiliation",
+      "title": "Want to be part of excellence?",
+      "description": "Join the most exclusive network of inns in Venezuela and elevate your service standard to the level of the best.",
+      "startApplication": "Start Application",
+      "viewBenefits": "View Benefits"
+    },
+    "benefits": {
+      "title": "Membership Benefits",
+      "subtitle": "Being part of the Circuit of Excellence is not just a seal, it is a comprehensive transformation for your hospitality business.",
+      "qualitySeal": {
+        "title": "Quality Seal",
+        "description": "National and international recognition under European tourism quality standards."
+      },
+      "globalMarketing": {
+        "title": "Global Marketing",
+        "description": "Exposure on our web platform, social media, and national tourism fairs."
+      },
+      "networking": {
+        "title": "Elite Networking",
+        "description": "Direct connection with the best innkeepers in the country for experience exchange."
+      },
+      "training": {
+        "title": "Training",
+        "description": "Access to exclusive workshops on service, gastronomy, and high-level hotel management."
+      }
+    },
+    "requirements": {
+      "title": "Entry Requirements",
+      "subtitle": "To maintain the prestige of our network, all inns must meet rigorous criteria before certification.",
+      "infrastructure": {
+        "title": "Exceptional Infrastructure",
+        "description": "Architecture in harmony with the environment and impeccable maintenance."
+      },
+      "service": {
+        "title": "Personalized Service",
+        "description": "Direct attention from owners or highly trained management."
+      },
+      "environmental": {
+        "title": "Environmental Commitment",
+        "description": "Sustainable practices and respect for local culture."
+      },
+      "gastronomy": {
+        "title": "Signature Gastronomy",
+        "description": "Culinary proposal that highlights regional flavors and ingredients."
+      }
+    },
+    "process": {
+      "title": "Your path to excellence",
+      "step1": {
+        "title": "Application",
+        "description": "Complete the initial form with your inn's details and photographs of your facilities."
+      },
+      "step2": {
+        "title": "Evaluation",
+        "description": "Our expert committee will conduct an on-site audit under the 50 quality parameters."
+      },
+      "step3": {
+        "title": "Certification",
+        "description": "Once the audit is approved, you receive your official plaque and are included in the entire Circuit ecosystem."
+      }
+    },
+    "contactForm": {
+      "title": "Ready to take the step?",
+      "subtitle": "Leave us your details and an advisor will contact you to guide you through the pre-selection process.",
+      "fullName": "Full Name",
+      "fullNamePlaceholder": "Ex. John Doe",
+      "posadaName": "Inn Name",
+      "posadaNamePlaceholder": "Commercial name",
+      "email": "Email Address",
+      "emailPlaceholder": "email@example.com",
+      "location": "Location (State)",
+      "locationPlaceholder": "Select state",
+      "description": "Brief property description",
+      "descriptionPlaceholder": "Tell us a little about your inn...",
+      "submit": "SEND INFORMATION REQUEST",
+      "states": {
+        "select": "Select state",
+        "merida": "Mérida",
+        "falcon": "Falcon",
+        "miranda": "Miranda",
+        "aragua": "Aragua",
+        "other": "Others"
+      }
+    }
+  },
+  "selloDeCalidad": {
+    "hero": {
+      "title": "Guarantee of",
+      "titleHighlight": "Excellence",
+      "titleEnd": "in Tourism",
+      "description": "The Quality Seal is the highest distinction awarded to inns that meet rigorous service and hospitality standards in Venezuela.",
+      "badgeText": "Quality Seal"
+    },
+    "managementModel": {
+      "title": "Our Management Model",
+      "subtitle": "We rigorously evaluate four fundamental dimensions to ensure that every detail of your stay is exceptional.",
+      "business": {
+        "title": "Business Management",
+        "description": "We ensure a solid business foundation, strategic vision, and sustainability to guarantee service continuity."
+      },
+      "service": {
+        "title": "Service Management",
+        "description": "Personalized attention, human warmth, and efficient processes designed to exceed guest expectations."
+      },
+      "facility": {
+        "title": "Facility Management",
+        "description": "Impeccable maintenance, high-level aesthetics, and comfort in every physical space of our associated inns."
+      },
+      "environmental": {
+        "title": "Environmental Management",
+        "description": "Firm commitment to preserving the natural environment and social development of local communities."
+      }
+    },
+    "whyChoose": {
+      "title": "Why choose an inn with a Quality Seal?",
+      "quote": "\"Quality is never an accident; it is always the result of intelligent effort.\"",
+      "quoteAuthor": "— Circuit Standard",
+      "trust": {
+        "title": "Guaranteed Trust",
+        "description": "You know exactly what to expect: international standards applied locally."
+      },
+      "security": {
+        "title": "Security and Support",
+        "description": "Inns that operate legally and comply with all safety and health regulations."
+      },
+      "sustainable": {
+        "title": "Sustainable Tourism",
+        "description": "Your visit contributes positively to the environment and local economy."
+      },
+      "unique": {
+        "title": "Unique Experiences",
+        "description": "Each inn is unique, but all share the same level of excellence in service."
+      }
+    },
+    "cta": {
+      "title": "Does your inn have what it takes?",
+      "description": "Join the elite group of Venezuelan hospitality. Request information today to start your certification process.",
+      "emailPlaceholder": "Your email address",
+      "button": "Request Information"
+    }
   },
   "contact": {
     "badge": "We are here for you",
@@ -128,5 +338,25 @@
         }
       ]
     }
+  },
+  "footer": {
+    "tagline": "We promote quality tourism in Venezuela, connecting travelers with the most exclusive and authentic inns in the country.",
+    "navigation": {
+      "posadas": "Posadas",
+      "aboutUs": "About Us",
+      "qualitySeal": "Quality Seal",
+      "blog": "Blog",
+      "becomeMember": "Want to be a member?",
+      "contact": "Contact"
+    },
+    "contactSection": {
+      "title": "Contact",
+      "location": "Táchira, Venezuela",
+      "phone": "+58 (0424) 713-7673",
+      "email": "direccionejecutiva@circuitoexcelencia.com"
+    },
+    "copyright": "Circuit of Excellence. All rights reserved.",
+    "designedBy": "Designed with",
+    "by": "by"
   }
 }
