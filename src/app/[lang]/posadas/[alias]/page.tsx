@@ -186,7 +186,7 @@ export default async function PosadaDetailPage({
                 return (
                   <div className="border-b border-[#f0f4f2] dark:border-white/10 pb-8">
                     <h3 className="text-xl md:text-2xl font-bold mb-6 dark:text-white">Lo que ofrece este lugar</h3>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+                    <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
                       {amenityList.map((amenity, idx) => (
                         <div key={idx} className="flex items-center gap-4 text-text-main dark:text-gray-200">
                           <span className="text-secondary material-symbols-outlined">{amenity.icon}</span>

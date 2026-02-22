@@ -61,7 +61,7 @@ export default function ImageGallery({ images, title }: ImageGalleryProps) {
         {images.slice(1, 5).map((img, i) => (
           <div 
             key={i} 
-            className="relative group cursor-pointer hidden md:block"
+            className="relative group cursor-pointer md:block"
             onClick={() => openLightbox(i + 1)}
           >
             <div className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
