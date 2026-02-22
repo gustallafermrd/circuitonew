@@ -12,10 +12,11 @@ export default async function Articles({ articles }: { articles: any[] }) {
               key={article.id}
               className="flex flex-col bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300 border border-gray-100 dark:border-gray-800 group">
               <div className="relative w-full overflow-hidden bg-gray-100 dark:bg-gray-800" style={{ height: '300px' }}>
-                <div
-                  className="absolute inset-0 w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
-                  style={{ backgroundImage: `url('${getImageUrl(article.attributes.images)}')` }}>
-                </div>
+                <img
+                  src={getImageUrl(article.attributes.images)}
+                  alt={article.attributes.title}
+                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
               </div>
               <div className="p-6 flex flex-col flex-grow">
                 <div className="flex items-center gap-1.5 text-secondary">

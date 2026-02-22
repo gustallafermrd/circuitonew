@@ -39,10 +39,11 @@ export default function PosadaCard({ posada, lang, dictionary }: PosadaCardProps
   return (
     <Link href={`/${lang}/posadas/${attr.alias}`} className="group flex flex-col gap-4 cursor-pointer">
       <div className="relative w-full aspect-[4/3] overflow-hidden rounded-xl bg-gray-200">
-        <div className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
-          data-alt={attr.title}
-          style={{ backgroundImage: `url("${image}")` }}>
-        </div>
+        <img
+          src={image}
+          alt={attr.title}
+          className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+        />
           <div
           className="absolute top-3 right-3 bg-white/90 dark:bg-black/80 backdrop-blur text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide text-text-main dark:text-white">
           {attr.estado}

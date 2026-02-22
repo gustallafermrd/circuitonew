@@ -9,9 +9,10 @@ export default async function FeaturedArticle({ featured }: { featured: any }) {
       <div className="bg-white dark:bg-[#181834] rounded-2xl overflow-hidden shadow-xl flex flex-col md:flex-row transition-all duration-300 hover:shadow-2xl border border-gray-100 dark:border-gray-800">
         {/* Left Section: Image (50%) */}
         <div className="relative w-full md:w-1/2 min-h-[300px] md:min-h-[450px] overflow-hidden">
-          <div 
-            className="absolute inset-0 bg-cover bg-center transition-transform duration-700 hover:scale-110"
-            style={{ backgroundImage: `url('${getImageUrl(featured.attributes.images)}')` }}
+          <img
+            src={getImageUrl(featured.attributes.images)}
+            alt={featured.attributes.title}
+            className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 hover:scale-110"
           />
         </div>
 
