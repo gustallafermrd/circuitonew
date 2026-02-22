@@ -20,13 +20,14 @@ export default async function PosadaDetailPage({
   }
 
   const attr = posada.attributes;
-  const SITE_URL = "https://beta.circuitodelaexcelencia.com/";
+  const SITE_URL = "https://beta.circuitodelaexcelencia.com";
   
   // Handle image parsing safely
   const getImageUrl = (imagePath: string) => {
     if (!imagePath) return '/img/placeholder.jpg';
-    const cleanPath = imagePath.split('#')[0];
-    return cleanPath.startsWith('http') ? cleanPath : `${SITE_URL}${cleanPath}`;
+    // Remove fragment identifiers and leading slashes to avoid double-slash URLs
+    const cleanPath = imagePath.split('#')[0].replace(/^\/+/, '');
+    return cleanPath.startsWith('http') ? cleanPath : `${SITE_URL}/${cleanPath}`;
   };
 
   let mainImage = '/img/placeholder.jpg';

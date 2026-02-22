@@ -46,10 +46,10 @@ export default function ImageGallery({ images, title }: ImageGalleryProps) {
   return (
     <>
       {/* Thumbnail Grid */}
-      <div className="relative grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-2 h-[300px] md:h-[500px] rounded-xl overflow-hidden mb-12">
+      <div className="relative grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-2 h-[300px] md:h-[500px] rounded-xl overflow-hidden mb-12">
         {/* Main Image */}
         <div 
-          className="md:col-span-2 md:row-span-2 relative group cursor-pointer"
+          className="col-span-1 md:col-span-2 md:row-span-2 relative h-full group cursor-pointer"
           onClick={() => openLightbox(0)}
         >
           <div className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
@@ -57,11 +57,11 @@ export default function ImageGallery({ images, title }: ImageGalleryProps) {
           </div>
         </div>
 
-        {/* Supporting Images */}
+        {/* Supporting Images — hidden on mobile (cells collapse to 0 height in single-col grid) */}
         {images.slice(1, 5).map((img, i) => (
           <div 
             key={i} 
-            className="relative group cursor-pointer md:block"
+            className="hidden md:block relative group cursor-pointer"
             onClick={() => openLightbox(i + 1)}
           >
             <div className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105"

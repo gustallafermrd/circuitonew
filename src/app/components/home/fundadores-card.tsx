@@ -11,21 +11,25 @@ interface PosadaCardProps {
 
 export default function PosadaCard({ posada, lang, dictionary }: PosadaCardProps) {
   const attr = posada.attributes;
-  const SITE_URL = "https://beta.circuitodelaexcelencia.com/";
+  const SITE_URL = "https://beta.circuitodelaexcelencia.com";
   
-  // Handle image parsing safely
+  // Handle image parsing safely — strip leading slashes to prevent double-slash URLs
+  const buildImageUrl = (path: string) => {
+    const cleanPath = path.split('#')[0].replace(/^\/+/, '');
+    return cleanPath.startsWith('http') ? cleanPath : `${SITE_URL}/${cleanPath}`;
+  };
+
   let image = '/img/placeholder.jpg';
   
   if (attr.portada) {
     try {
       const portadaObj = typeof attr.portada === 'string' ? JSON.parse(attr.portada) : attr.portada;
       if (portadaObj.imagefile) {
-        const cleanPath = portadaObj.imagefile.split('#')[0];
-        image = cleanPath.startsWith('http') ? cleanPath : `${SITE_URL}${cleanPath}`;
+        image = buildImageUrl(portadaObj.imagefile);
       }
     } catch (e) {
       if (typeof attr.portada === 'string' && attr.portada.length > 0) {
-        image = attr.portada.startsWith('http') ? attr.portada : `${SITE_URL}${attr.portada}`;
+        image = buildImageUrl(attr.portada);
       }
     }
   }

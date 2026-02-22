@@ -1,4 +1,4 @@
-const SITE_URL = "https://beta.circuitodelaexcelencia.com/";
+const SITE_URL = "https://beta.circuitodelaexcelencia.com";
 
 /**
  * Parses Joomla image data and returns a full URL.
@@ -18,8 +18,9 @@ export const getImageUrl = (images: any) => {
   const intro = imagesObj.image_intro;
   if (!intro) return '/img/placeholder.jpg';
   
-  const cleanPath = intro.split('#')[0];
-  return cleanPath.startsWith('http') ? cleanPath : `${SITE_URL}${cleanPath}`;
+  // Strip fragment and leading slashes to avoid double-slash URLs
+  const cleanPath = intro.split('#')[0].replace(/^\/+/, '');
+  return cleanPath.startsWith('http') ? cleanPath : `${SITE_URL}/${cleanPath}`;
 };
 
 /**
