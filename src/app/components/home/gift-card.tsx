@@ -19,7 +19,7 @@ export default function GiftCard({ dictionary }: { dictionary: any }) {
                 <h2 className="text-white text-4xl md:text-5xl lg:text-6xl font-black leading-tight">
                   {dictionary.title1}
                 </h2>
-                <h3 className="text-secondary text-5xl md:text-6xl lg:text-8xl font-black leading-[0.9] tracking-tighter">
+                <h3 className="text-secondary text-4xl md:text-4xl lg:text-6xl font-black leading-[0.9] tracking-tighter">
                   {dictionary.title2}
                 </h3>
               </div>

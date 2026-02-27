@@ -356,6 +356,75 @@
       ]
     }
   },
+  "comentarios": {
+    "title": "Experiencias de Huéspedes",
+    "subtitle": "Escucha a los viajeros que han descubierto la magia.",
+    "reviews": [
+      {
+        "text": "\"El Circuito de la Excelencia me ofrece 29 razones para soñar\"",
+        "author": "Eyla Adrián",
+        "stars": 5,
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuAIG9j8DYTJZQKPfyfMvA5XaMCDKDOjKqhZc1dYVoP1gNWBU7KaFSdkZ5Ke5kF2GBMZvDCENKIlofajvR777GEDZZGXj5EU0AczlduQKSz4-FC3pMXTJCcJtcAksa6IPiP3XsCrFy0g1HWH9KTz1sQ6uJZNd_iQF2ekrGChD2PebnCZX57F06ENRKiT72Y7XumN_qjuvXfVfZHgVY-KyngM67FNMgIPGNn3gJU7D4CBm7kt2-KwaJamud2HRvRvb5vQel1SWeqlqa0",
+        "alt": "Portrait of a smiling woman"
+      },
+      {
+        "text": "\"El circuito de la Excelencia es una reunión de almas que creen y crean.\"",
+        "author": "Mérida Motta",
+        "stars": 4,
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBryUE5QicMCg2-PtU0Xns7TcRTWtJDkC83WK5M0gdsORcbejiKbnn8Lc-V44qYFGz58tGrjvwYfaM-iOa4ROgb2xCDerGpaAWVkiSDcICoR5UMmWrrnkr9Ltzrv8CVqb73GkAuBfnlSsqc3jh_OaxkZGrpvQTHPzTQ42ZTqKa_5RHug-Zb7H9BpL7ISxXR6iAMWdDCE5nRdlEImukjAgaqCdT8bOf03qwwgBkD778cqteBj1GN8bzLf3NNrj4cxAbcCmGv7cyOxBM",
+        "alt": "Portrait of a man with glasses"
+      },
+      {
+        "text": "\"Las posadas del Circuito son excelencia, calidez, humanidad y hogar, sin duda es el destino de Rodando en Familia por Venezuela en cada uno de los estados que recorremos.\"",
+        "author": "Anabella Guzmán",
+        "stars": 5,
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBMjP5yzVvn48F07WvvVaadHj7G6XwVzRRFmlCLsgzJhv8IaOqj71nM_SjNu5RIeyKiyXCGrGHUW_PxRafF51CwKwKe5fBVnltyoI_4o810svAeZYODVwKgRjnuNymX68xACCs6PemOKLA4IAijQBchn7oyJsyJLc0rxRQgpFCGDKKQZyws3Ti3PNcwsJfoVXCCQcrXqdFXEFaCLohfxm1WGCiu9z30odQF_xD3sa5Ksg7mMDL00X8Dx8_4CbiU1QsdfV0O4znQfrg",
+        "alt": "Portrait of a young woman hiking"
+      },
+      {
+        "text": "\"Al Circuito lo integran posadas con altos estándares de calidad.\"",
+        "author": "Rossana Di Turi",
+        "stars": 5,
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBMjP5yzVvn48F07WvvVaadHj7G6XwVzRRFmlCLsgzJhv8IaOqj71nM_SjNu5RIeyKiyXCGrGHUW_PxRafF51CwKwKe5fBVnltyoI_4o810svAeZYODVwKgRjnuNymX68xACCs6PemOKLA4IAijQBchn7oyJsyJLc0rxRQgpFCGDKKQZyws3Ti3PNcwsJfoVXCCQcrXqdFXEFaCLohfxm1WGCiu9z30odQF_xD3sa5Ksg7mMDL00X8Dx8_4CbiU1QsdfV0O4znQfrg",
+        "alt": "Portrait of a young woman hiking"
+      },
+      {
+        "text": "\"El Circuito es convertir la calidez y el orgullo en un oficio.\"",
+        "author": "Valentina Quintero",
+        "stars": 5,
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBMjP5yzVvn48F07WvvVaadHj7G6XwVzRRFmlCLsgzJhv8IaOqj71nM_SjNu5RIeyKiyXCGrGHUW_PxRafF51CwKwKe5fBVnltyoI_4o810svAeZYODVwKgRjnuNymX68xACCs6PemOKLA4IAijQBchn7oyJsyJLc0rxRQgpFCGDKKQZyws3Ti3PNcwsJfoVXCCQcrXqdFXEFaCLohfxm1WGCiu9z30odQF_xD3sa5Ksg7mMDL00X8Dx8_4CbiU1QsdfV0O4znQfrg",
+        "alt": "Portrait of a young woman hiking"
+      },
+      {
+        "text": "\"Han creado con profesionalismo, una base sólida para el crecimiento del turismo en Venezuela.\"",
+        "author": "Rossana R. Da Silva",
+        "stars": 5,
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBMjP5yzVvn48F07WvvVaadHj7G6XwVzRRFmlCLsgzJhv8IaOqj71nM_SjNu5RIeyKiyXCGrGHUW_PxRafF51CwKwKe5fBVnltyoI_4o810svAeZYODVwKgRjnuNymX68xACCs6PemOKLA4IAijQBchn7oyJsyJLc0rxRQgpFCGDKKQZyws3Ti3PNcwsJfoVXCCQcrXqdFXEFaCLohfxm1WGCiu9z30odQF_xD3sa5Ksg7mMDL00X8Dx8_4CbiU1QsdfV0O4znQfrg",
+        "alt": "Portrait of a young woman hiking"
+      },
+      {
+        "text": "\"El Circuito es un grupo de enamorados del país.\"",
+        "author": "Erika Paz",
+        "stars": 5,
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBMjP5yzVvn48F07WvvVaadHj7G6XwVzRRFmlCLsgzJhv8IaOqj71nM_SjNu5RIeyKiyXCGrGHUW_PxRafF51CwKwKe5fBVnltyoI_4o810svAeZYODVwKgRjnuNymX68xACCs6PemOKLA4IAijQBchn7oyJsyJLc0rxRQgpFCGDKKQZyws3Ti3PNcwsJfoVXCCQcrXqdFXEFaCLohfxm1WGCiu9z30odQF_xD3sa5Ksg7mMDL00X8Dx8_4CbiU1QsdfV0O4znQfrg",
+        "alt": "Portrait of a young woman hiking"
+      },
+      {
+        "text": "\"Las mujeres y hombres que conforman el Circuito encarnan lo mejor de la venezolanidad.\"",
+        "author": "Alvaro Montenegro",
+        "stars": 5,
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBMjP5yzVvn48F07WvvVaadHj7G6XwVzRRFmlCLsgzJhv8IaOqj71nM_SjNu5RIeyKiyXCGrGHUW_PxRafF51CwKwKe5fBVnltyoI_4o810svAeZYODVwKgRjnuNymX68xACCs6PemOKLA4IAijQBchn7oyJsyJLc0rxRQgpFCGDKKQZyws3Ti3PNcwsJfoVXCCQcrXqdFXEFaCLohfxm1WGCiu9z30odQF_xD3sa5Ksg7mMDL00X8Dx8_4CbiU1QsdfV0O4znQfrg",
+        "alt": "Portrait of a young woman hiking"
+      },
+      {
+        "text": "\"El Circuito de la Excelencia es ¡Estadía de Altura!.\"",
+        "author": "Ana Virginia Escobar",
+        "stars": 5,
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBMjP5yzVvn48F07WvvVaadHj7G6XwVzRRFmlCLsgzJhv8IaOqj71nM_SjNu5RIeyKiyXCGrGHUW_PxRafF51CwKwKe5fBVnltyoI_4o810svAeZYODVwKgRjnuNymX68xACCs6PemOKLA4IAijQBchn7oyJsyJLc0rxRQgpFCGDKKQZyws3Ti3PNcwsJfoVXCCQcrXqdFXEFaCLohfxm1WGCiu9z30odQF_xD3sa5Ksg7mMDL00X8Dx8_4CbiU1QsdfV0O4znQfrg",
+        "alt": "Portrait of a young woman hiking"
+      }
+    ]
+  },
   "footer": {
     "tagline": "Promovemos el turismo de calidad en Venezuela, conectando a los viajeros con las posadas más exclusivas y auténticas del país.",
     "navigation": {

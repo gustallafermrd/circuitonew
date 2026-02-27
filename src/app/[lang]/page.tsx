@@ -22,7 +22,7 @@ export default async function LangHome({
       <GiftCard dictionary={dictionary.giftCard} />
       <Fundadores dictionary={dictionary.fundadores} lang={lang} />
       <Mapa />
-      <Comentarios />
+      <Comentarios dictionary={dictionary.comentarios} />
     </main>
   );
 }
