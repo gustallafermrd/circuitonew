@@ -73,8 +73,7 @@ export default function Footer({ lang = 'es', dictionary }: FooterProps) {
         <div
           className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500">
           <p>© 2021 - {date} {t.copyright}</p>
-          <p className="flex items-center gap-1">{t.designedBy} <span
-              className="material-symbols-outlined text-secondary text-sm">favorite</span> {t.by} 
+          <p className="flex items-center gap-1">{t.designedBy} 
               <Link className="hover:text-secondary transition-colors" href="https://gatwebs.com" target="_blank" rel="noopener noreferrer">Gatwebs</Link></p>
         </div>
       </div>
