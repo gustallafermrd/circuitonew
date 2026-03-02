@@ -55,7 +55,19 @@
     "amenities": "Servicios",
     "bookNow": "Reservar Ahora",
     "backToList": "Volver a la lista",
-    "whereWillYouBe": "Ubicación"
+    "whereWillYouBe": "Ubicación",
+    "detail": {
+      "location": "Ubicación",
+      "certifiedQuality": "Calidad Certificada",
+      "excellentLocation": "Excelente ubicación",
+      "whatThisPlaceOffers": "Lo que ofrece este lugar",
+      "contactUs": "Contáctanos",
+      "directReservation": "Reserva directamente con la posada para obtener la mejor atención.",
+      "address": "Dirección",
+      "phones": "Teléfonos",
+      "email": "Correo Electrónico",
+      "visitWebsite": "Visitar sitio web"
+    }
   },
   "blog": {
     "title": "Blog del Circuito",

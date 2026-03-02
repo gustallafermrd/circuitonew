@@ -10,9 +10,9 @@
 - [ x ] Hacer el campo de Whatsapp en Joomla y ajustar el codigo de la posada para que muestre el whatsapp donde se debe
 - [ x ] Hacer la seccion del blog
 - [ x ] Acomodar el footer para inglés
-- [  ] Hacer el slider de la parte de comentarios 
-- [  ] Arreglar la gift card 
+- [ x ] Hacer el slider de la parte de comentarios 
+- [ x ] Arreglar la gift card 
 - [  ] Eliminar la parte de miembros fundadores 
 - [  ] Hacer la parte del pasaporte, en donde van los miembros fundadores 
 - [  ] Actualizar el blog con el último artículo y la foto 
-- [  ] Traducir el blog al inglés
+- [ x] Traducir el blog al inglés

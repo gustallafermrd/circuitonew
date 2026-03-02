@@ -120,7 +120,7 @@ export default async function PosadaDetailPage({
             <div className="flex flex-col gap-10">
               <div className="flex justify-between items-center border-b border-[#f0f4f2] dark:border-white/10 pb-8">
                 <div>
-                  <h3 className="text-xl md:text-2xl font-bold mb-1 dark:text-white">Ubicación</h3>
+                  <h3 className="text-xl md:text-2xl font-bold mb-1 dark:text-white">{dictionary.posadas.detail.location}</h3>
                   <div className="flex items-center gap-1 text-secondary">
                     <span className="material-symbols-outlined [font-variation-settings:'FILL'_1]">location_on</span>
                     <p className="font-semibold">{attr.estado}, Venezuela</p>
@@ -135,13 +135,13 @@ export default async function PosadaDetailPage({
                   <div className="flex gap-4 items-start">
                     <span className="material-symbols-outlined text-2xl mt-1 text-secondary">verified_user</span>
                     <div>
-                      <h4 className="font-bold text-base md:text-lg dark:text-white">Calidad Certificada</h4>
+                      <h4 className="font-bold text-base md:text-lg dark:text-white">{dictionary.posadas.detail.certifiedQuality}</h4>
                     </div>
                   </div>
                   <div className="flex gap-4 items-start">
                     <span className="material-symbols-outlined text-2xl mt-1 text-secondary">location_on</span>
                     <div>
-                      <h4 className="font-bold text-base md:text-lg dark:text-white">Excelente ubicación</h4>
+                      <h4 className="font-bold text-base md:text-lg dark:text-white">{dictionary.posadas.detail.excellentLocation}</h4>
                     </div>
                   </div>
                 </div>
@@ -186,7 +186,7 @@ export default async function PosadaDetailPage({
 
                 return (
                   <div className="border-b border-[#f0f4f2] dark:border-white/10 pb-8">
-                    <h3 className="text-xl md:text-2xl font-bold mb-6 dark:text-white">Lo que ofrece este lugar</h3>
+                    <h3 className="text-xl md:text-2xl font-bold mb-6 dark:text-white">{dictionary.posadas.detail.whatThisPlaceOffers}</h3>
                     <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
                       {amenityList.map((amenity, idx) => (
                         <div key={idx} className="flex items-center gap-4 text-text-main dark:text-gray-200">
@@ -202,7 +202,7 @@ export default async function PosadaDetailPage({
               {/* Google Map */}
               {googleMapUrl && (
                 <div className="pb-8">
-                  <h3 className="text-xl md:text-2xl font-bold mb-2 dark:text-white">{dictionary.posadas?.whereWillYouBe || "Ubicación"}</h3>
+                  <h3 className="text-xl md:text-2xl font-bold mb-2 dark:text-white">{dictionary.posadas?.whereWillYouBe}</h3>
                   <p className="text-gray-500 dark:text-gray-400 mb-6">{attr.estado}, Venezuela</p>
                   <GoogleMap src={googleMapUrl} />
                 </div>
@@ -214,9 +214,9 @@ export default async function PosadaDetailPage({
               <div className="sticky top-28 w-full">
                 <div className="rounded-xl border border-primary/10 dark:border-white/10 shadow-xl p-6 bg-white dark:bg-[#1e2a22]">
                   <div className="mb-6 border-b border-primary/10 pb-4">
-                    <h3 className="text-2xl font-bold text-primary dark:text-white">Contáctanos</h3>
+                    <h3 className="text-2xl font-bold text-primary dark:text-white">{dictionary.posadas.detail.contactUs}</h3>
                     <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
-                      Reserva directamente con la posada para obtener la mejor atención.
+                      {dictionary.posadas.detail.directReservation}
                     </p>
                   </div>
                   <div className="space-y-6">
@@ -226,7 +226,7 @@ export default async function PosadaDetailPage({
                           <span className="material-symbols-outlined">location_on</span>
                         </div>
                         <div>
-                          <p className="text-xs font-bold uppercase text-gray-500 dark:text-gray-400 mb-1">Dirección</p>
+                          <p className="text-xs font-bold uppercase text-gray-500 dark:text-gray-400 mb-1">{dictionary.posadas.detail.address}</p>
                           <p className="text-sm font-medium text-text-main dark:text-white whitespace-pre-wrap">
                             {attr.direccion}
                           </p>
@@ -239,7 +239,7 @@ export default async function PosadaDetailPage({
                           <span className="material-symbols-outlined">call</span>
                         </div>
                         <div>
-                          <p className="text-xs font-bold uppercase text-gray-500 dark:text-gray-400 mb-1">Teléfonos</p>
+                          <p className="text-xs font-bold uppercase text-gray-500 dark:text-gray-400 mb-1">{dictionary.posadas.detail.phones}</p>
                           <div 
                             className="text-sm font-medium text-text-main dark:text-white"
                             dangerouslySetInnerHTML={{ __html: attr.tlf || "" }}
@@ -253,7 +253,7 @@ export default async function PosadaDetailPage({
                           <span className="material-symbols-outlined">mail</span>
                         </div>
                         <div>
-                          <p className="text-xs font-bold uppercase text-gray-500 dark:text-gray-400 mb-1">Correo Electrónico</p>
+                          <p className="text-xs font-bold uppercase text-gray-500 dark:text-gray-400 mb-1">{dictionary.posadas.detail.email}</p>
                           <p className="text-sm font-medium text-text-main dark:text-white break-all">
                             {attr['e-mail']}
                           </p>
@@ -282,7 +282,7 @@ export default async function PosadaDetailPage({
                         rel="noopener noreferrer"
                         className="w-full bg-primary hover:bg-[#25254d] text-white font-bold py-3.5 rounded-lg text-base shadow-sm transition-all flex items-center justify-center text-center"
                       >
-                        Visitar sitio web
+                        {dictionary.posadas.detail.visitWebsite}
                       </a>
                     )}
                   </div>

@@ -47,7 +47,9 @@ export default function Footer({ lang = 'es', dictionary }: FooterProps) {
           {/* Legal */}
           <div>
             <ul className="space-y-3 text-sm text-gray-300">
-              <li><Link className="hover:text-white transition-colors" href={`/${lang}/blog`}>{t.navigation.blog}</Link></li>
+              {lang !== 'en' && (
+                <li><Link className="hover:text-white transition-colors" href={`/${lang}/blog`}>{t.navigation.blog}</Link></li>
+              )}
               <li><Link className="hover:text-white transition-colors" href={`/${lang}/quieres-ser-miembro`}>{t.navigation.becomeMember}</Link></li>
               <li><Link className="hover:text-white transition-colors" href={`/${lang}/contacto`}>{t.navigation.contact}</Link></li>
             </ul>

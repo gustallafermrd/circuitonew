@@ -55,7 +55,19 @@
     "amenities": "Amenities",
     "bookNow": "Book Now",
     "backToList": "Back to list",
-    "whereWillYouBe": "GPS Coordinates"
+    "whereWillYouBe": "Location",
+    "detail": {
+      "location": "Location",
+      "certifiedQuality": "Certified Quality",
+      "excellentLocation": "Excellent location",
+      "whatThisPlaceOffers": "What this place offers",
+      "contactUs": "Contact Us",
+      "directReservation": "Book directly with the inn for the best service.",
+      "address": "Address",
+      "phones": "Phones",
+      "email": "Email Address",
+      "visitWebsite": "Visit website"
+    }
   },
   "giftCard": {
     "badge": "The Perfect Gift",
@@ -404,10 +416,9 @@
   "footer": {
     "tagline": "We promote quality tourism in Venezuela, connecting travelers with the most exclusive and authentic inns in the country.",
     "navigation": {
-      "posadas": "Posadas",
+      "posadas": "Inns",
       "aboutUs": "About Us",
       "qualitySeal": "Quality Seal",
-      "blog": "Blog",
       "becomeMember": "Want to be a member?",
       "contact": "Contact"
     },

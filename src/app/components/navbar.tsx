@@ -33,14 +33,16 @@ export default function Navbar({ lang }: { lang: string }) {
                 href={`/${lang}/posadas`}
                 className="text-text-main dark:text-gray-300 hover:text-secondary dark:hover:text-secondary transition-colors text-lg "
               >
-                {lang === 'es' ? 'Posadas' : 'Posadas'}
+                {lang === 'es' ? 'Posadas' : 'Inns'}
               </Link>
-              <Link
-                href={`/${lang}/blog`}
-                className="text-text-main dark:text-gray-300 hover:text-secondary dark:hover:text-secondary transition-colors text-lg "
-              >
-                Blog
-              </Link>
+              {lang !== 'en' && (
+                <Link
+                  href={`/${lang}/blog`}
+                  className="text-text-main dark:text-gray-300 hover:text-secondary dark:hover:text-secondary transition-colors text-lg "
+                >
+                  Blog
+                </Link>
+              )}
               <Link
                 href={`/${lang}/contacto`}
                 className="text-text-main dark:text-gray-300 hover:text-secondary dark:hover:text-secondary transition-colors text-lg"
