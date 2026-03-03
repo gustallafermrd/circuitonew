@@ -1,11 +1,11 @@
 import { getArticles } from "@/lib/joomla";
 import Hero from "@/app/components/home/hero";
 import Intro from "@/app/components/home/intro";
-import Fundadores from "@/app/components/home/fundadores";
 import Mapa from "@/app/components/home/mapa";
 import Comentarios from "@/app/components/comentarios";
 import { getDictionary } from "@/lib/get-dictionary";
 import GiftCard from "@/app/components/home/gift-card";
+import Passport from "@/app/components/home/passport";
 
 export default async function LangHome({
   params,
@@ -20,7 +20,7 @@ export default async function LangHome({
       <Hero dictionary={dictionary.hero} />
       <Intro dictionary={dictionary.intro} />
       <GiftCard dictionary={dictionary.giftCard} />
-      <Fundadores dictionary={dictionary.fundadores} lang={lang} />
+      <Passport dictionary={dictionary.passport} />
       <Mapa />
       <Comentarios dictionary={dictionary.comentarios} />
     </main>

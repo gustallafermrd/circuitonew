@@ -430,5 +430,20 @@
     },
     "copyright": "Circuit of Excellence. All rights reserved.",
     "designedBy": "Designed by"
+  },
+  "passport": {
+    "badge": "Loyalty Program",
+    "titlePart1": "Fidelity",
+    "titlePart2": "Passport",
+    "description": "\"Request it when staying at any of our inns and collect a stamp for each new visit\"",
+    "benefitsVIP": "VIP Benefits",
+    "benefitsVIPDesc": "Special attention upon each arrival and preferential treatment.",
+    "exclusiveRates": "Exclusive Rates",
+    "exclusiveRatesDesc": "Access to special prices for circuit members.",
+    "cta": "Discover Benefits",
+    "floatingTraveler": "Frequent Traveler",
+    "floatingStamps": "Collect Stamps",
+    "tableAlt": "Light wood table with travel elements",
+    "passportAlt": "Circuit of Excellence Fidelity Passport"
   }
 }

@@ -455,5 +455,20 @@
     },
     "copyright": "Circuito de la Excelencia. Todos los derechos reservados.",
     "designedBy": "Diseñado por"
+  },
+  "passport": {
+    "badge": "Programa de Lealtad",
+    "titlePart1": "Pasaporte de",
+    "titlePart2": "Fidelidad",
+    "description": "\"Solicítalo al hospedarte en cualquiera de nuestras posadas y colecciona un sello por cada nueva visita\"",
+    "benefitsVIP": "Beneficios VIP",
+    "benefitsVIPDesc": "Atenciones especiales en cada llegada y trato preferencial.",
+    "exclusiveRates": "Tarifas Exclusivas",
+    "exclusiveRatesDesc": "Acceso a precios especiales para miembros del circuito.",
+    "cta": "Descubrir Beneficios",
+    "floatingTraveler": "Viajero Frecuente",
+    "floatingStamps": "Colecciona Sellos",
+    "tableAlt": "Mesa de madera clara con elementos de viaje",
+    "passportAlt": "Pasaporte de Fidelidad del Circuito de la Excelencia"
   }
 }
