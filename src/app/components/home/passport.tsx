@@ -1,6 +1,6 @@
 export default function Passport({ dictionary }: { dictionary: any }) {
   return (
-    <div className="w-full bg-[#fdfaf5] dark:bg-gray-900/20 py-24 flex justify-center overflow-hidden">
+    <div className="w-full bg-[#e7e0d5] dark:bg-gray-900/20 py-24 flex justify-center overflow-hidden">
       <div className="max-w-[1200px] w-full px-4 md:px-6">
         <div className="relative flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
           <div className="relative w-full lg:w-1/2 flex justify-center items-center">
