@@ -34,7 +34,7 @@ export default function GiftCard({ dictionary }: { dictionary: any }) {
               <img 
                 src="/img/cheque-1.png" 
                 alt="Gift Card" 
-                className="w-80 h-auto rounded-[20px] shadow-[0_40px_80px_-20px_rgba(0,0,0,0.8)] transform -rotate-2 hover:rotate-0 transition-all duration-700"
+                className="w-95 h-auto rounded-[20px] shadow-[0_40px_80px_-20px_rgba(0,0,0,0.8)] transform -rotate-2 hover:rotate-0 transition-all duration-700"
               />
             </div>
           </div>
