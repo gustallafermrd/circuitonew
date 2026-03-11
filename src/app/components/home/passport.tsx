@@ -13,7 +13,7 @@ export default function Passport({ dictionary }: { dictionary: any }) {
             </div>
             <div className="relative z-10 p-10 flex items-center justify-center">
               <img
-                src="/img/pasaporte.png"
+                src="/img/pasaporte.jpeg"
                 alt={dictionary.passportAlt}
                 className="w-full max-w-[320px] md:max-w-[380px] drop-shadow-[0_35px_35px_rgba(0,0,0,0.25)] transition-all duration-700 hover:scale-105 active:scale-95 cursor-pointer"
               />

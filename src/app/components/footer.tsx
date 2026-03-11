@@ -41,6 +41,9 @@ export default function Footer({ lang = 'es', dictionary }: FooterProps) {
               <li><Link className="hover:text-white transition-colors" href={`/${lang}/posadas`}>{t.navigation.posadas}</Link></li>
               <li><Link className="hover:text-white transition-colors" href={`/${lang}/quienes-somos`}>{t.navigation.aboutUs}</Link></li>
               <li><Link className="hover:text-white transition-colors" href={`/${lang}/sello-de-calidad`}>{t.navigation.qualitySeal}</Link></li>
+              {lang === 'es' && (
+                <li><Link className="hover:text-white transition-colors" href="https://capacitacion.circuitodelaexcelencia.com/" target="_blank" rel="noopener noreferrer">{t.navigation.courses}</Link></li>
+              )}
             </ul>
           </div>
           
@@ -51,6 +54,9 @@ export default function Footer({ lang = 'es', dictionary }: FooterProps) {
                 <li><Link className="hover:text-white transition-colors" href={`/${lang}/blog`}>{t.navigation.blog}</Link></li>
               )}
               <li><Link className="hover:text-white transition-colors" href={`/${lang}/quieres-ser-miembro`}>{t.navigation.becomeMember}</Link></li>
+              {lang === 'es' && (
+                <li><a className="hover:text-white transition-colors" href="/pdf/reglamento.pdf" download="reglamento.pdf">{t.navigation.regulations}</a></li>
+              )}
               <li><Link className="hover:text-white transition-colors" href={`/${lang}/contacto`}>{t.navigation.contact}</Link></li>
             </ul>
           </div>
