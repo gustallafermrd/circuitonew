@@ -59,7 +59,7 @@ export default function Passport({ dictionary }: { dictionary: any }) {
               </div>
             </div>
             <div className="pt-4">
-              <button className="bg-primary hover:bg-[#252548] text-white font-bold py-4 px-10 rounded-xl transition-all shadow-lg shadow-primary/20 flex items-center gap-3 group">
+              <button className="bg-secondary/20 hover:bg-secondary/40 text-secondary font-bold py-4 px-10 rounded-xl transition-all shadow-lg shadow-secondary/20 flex items-center gap-3 group">
                 <span>{dictionary.cta}</span>
                 <span className="material-symbols-outlined group-hover:translate-x-1 transition-transform">
                   chevron_right
