@@ -17,13 +17,13 @@ export default function Passport({ dictionary }: { dictionary: any }) {
                 alt={dictionary.passportAlt}
                 className="w-full max-w-[320px] md:max-w-[380px] drop-shadow-[0_35px_35px_rgba(0,0,0,0.25)] transition-all duration-700 hover:scale-105 active:scale-95 cursor-pointer"
               />
-              <div className="absolute -bottom-4 -left-4 bg-white p-3 rounded-xl shadow-lg border border-gray-100 hidden md:flex items-center gap-3">
-                <span className="material-symbols-outlined text-secondary">explore</span>
-                <span className="text-primary font-bold text-sm">{dictionary.floatingTraveler}</span>
+              <div className="absolute -bottom-4 -left-4 bg-primary p-3 rounded-xl shadow-lg border border-gray-100 hidden md:flex items-center gap-3">
+                <span className="material-symbols-outlined text-white">explore</span>
+                <span className="text-white font-bold text-sm">{dictionary.floatingTraveler}</span>
               </div>
-              <div className="absolute -top-10 -right-4 bg-white p-3 rounded-xl shadow-lg border border-gray-100 hidden md:flex items-center gap-3 rotate-6">
-                <span className="material-symbols-outlined text-secondary">ink_highlighter</span>
-                <span className="text-primary font-bold text-sm">{dictionary.floatingStamps}</span>
+              <div className="absolute -top-10 -right-4 bg-primary p-3 rounded-xl shadow-lg border border-gray-100 hidden md:flex items-center gap-3 rotate-6">
+                <span className="material-symbols-outlined text-white">ink_highlighter</span>
+                <span className="text-white font-bold text-sm">{dictionary.floatingStamps}</span>
               </div>
             </div>
           </div>
