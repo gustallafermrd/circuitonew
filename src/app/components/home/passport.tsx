@@ -21,7 +21,7 @@ export default function Passport({ dictionary }: { dictionary: any }) {
                 <span className="material-symbols-outlined text-secondary">explore</span>
                 <span className="text-primary font-bold text-sm">{dictionary.floatingTraveler}</span>
               </div>
-              <div className="absolute -top-5 -right-4 bg-white p-3 rounded-xl shadow-lg border border-gray-100 hidden md:flex items-center gap-3 rotate-6">
+              <div className="absolute -top-10 -right-4 bg-white p-3 rounded-xl shadow-lg border border-gray-100 hidden md:flex items-center gap-3 rotate-6">
                 <span className="material-symbols-outlined text-secondary">ink_highlighter</span>
                 <span className="text-primary font-bold text-sm">{dictionary.floatingStamps}</span>
               </div>
