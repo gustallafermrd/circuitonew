@@ -48,11 +48,11 @@ export default function Mapa() {
 
             {/* Google Maps Iframe */}
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2022064.7920524!2d-67.5!3d8.0!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c2909e7e76c5c7b%3A0x7c5b3f3a3a3a3a3a!2sVenezuela!5e0!3m2!1ses!2sve!4v1234567890"
+              src="https://www.google.com/maps/d/u/0/embed?mid=1RBRT-bE6KccOdhYbaQTgsvkJuVcu-n8&ehbc=2E312F&noprof=1"
               className="w-full h-full border-0"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Google Maps"
+              title="Nuestras Posadas"
               allowFullScreen
             />
           </div>
