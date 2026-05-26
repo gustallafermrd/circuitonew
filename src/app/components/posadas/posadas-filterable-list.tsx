@@ -108,12 +108,12 @@ export default function PosadasFilterableList({ initialPosadas, dictionary, lang
           <h2
             className="text-text-main dark:text-white text-2xl font-bold leading-tight tracking-[-0.015em]">
             {dictionary.posadas.listTitle}</h2>
-          <div className="flex gap-3 overflow-x-auto pb-2 scrollbar-hide">
+          <div className="flex flex-wrap gap-2">
             {['all', 'montana', 'ciudad', 'playa', 'selva', 'llano'].map((regionKey) => (
               <button
                 key={regionKey}
                 onClick={() => setSelectedRegion(regionKey)}
-                className={`flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full px-5 font-bold transition-all active:scale-95 shadow-sm border ${
+                className={`flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full px-4 font-bold transition-all active:scale-95 shadow-sm border ${
                   selectedRegion === regionKey 
                     ? 'bg-primary text-white border-primary' 
                     : 'bg-white dark:bg-secondary text-text-main dark:text-white border-[#e5e7eb] dark:border-[#2a3e50] hover:bg-gray-100 dark:hover:bg-white dark:hover:text-text-main'
