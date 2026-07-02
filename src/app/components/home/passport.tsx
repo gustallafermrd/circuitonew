@@ -13,18 +13,18 @@ export default function Passport({ dictionary }: { dictionary: any }) {
             </div>
             <div className="relative z-10 p-10 flex items-center justify-center">
               <img
-                src="/img/pasaporte.jpeg"
+                src="/img/pasaporte3.png"
                 alt={dictionary.passportAlt}
                 className="w-full max-w-[320px] md:max-w-[380px] drop-shadow-[0_35px_35px_rgba(0,0,0,0.25)] transition-all duration-700 hover:scale-105 active:scale-95 cursor-pointer"
               />
-              <div className="absolute -bottom-4 -left-4 bg-primary p-3 rounded-xl shadow-lg border border-gray-100 hidden md:flex items-center gap-3">
+              {/*<div className="absolute -bottom-4 -left-4 bg-primary p-3 rounded-xl shadow-lg border border-gray-100 hidden md:flex items-center gap-3">
                 <span className="material-symbols-outlined text-white">explore</span>
-                <span className="text-white font-bold text-sm">{dictionary.floatingTraveler}</span>
-              </div>
-              <div className="absolute -top-10 -right-4 bg-primary p-3 rounded-xl shadow-lg border border-gray-100 hidden md:flex items-center gap-3 rotate-6">
+                 <span className="text-white font-bold text-sm">{dictionary.floatingTraveler}</span> 
+              </div>*/}
+              {/* <div className="absolute -top-10 -right-4 bg-primary p-3 rounded-xl shadow-lg border border-gray-100 hidden md:flex items-center gap-3 rotate-6">
                 <span className="material-symbols-outlined text-white">ink_highlighter</span>
                 <span className="text-white font-bold text-sm">{dictionary.floatingStamps}</span>
-              </div>
+              </div> */}
             </div>
           </div>
           <div className="w-full lg:w-1/2 flex flex-col gap-8 text-left">
@@ -59,12 +59,12 @@ export default function Passport({ dictionary }: { dictionary: any }) {
               </div>
             </div>
             <div className="pt-4">
-              <button className="bg-secondary/20 hover:bg-secondary/40 text-secondary font-bold py-4 px-10 rounded-xl transition-all shadow-lg shadow-secondary/20 flex items-center gap-3 group">
+              {/* <button className="bg-secondary/20 hover:bg-secondary/40 text-secondary font-bold py-4 px-10 rounded-xl transition-all shadow-lg shadow-secondary/20 flex items-center gap-3 group">
                 <span>{dictionary.cta}</span>
                 <span className="material-symbols-outlined group-hover:translate-x-1 transition-transform">
                   chevron_right
                 </span>
-              </button>
+              </button> */}
             </div>
           </div>
         </div>
