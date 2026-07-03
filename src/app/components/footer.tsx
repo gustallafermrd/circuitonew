@@ -42,7 +42,7 @@ export default function Footer({ lang = 'es', dictionary }: FooterProps) {
               <li><Link className="hover:text-white transition-colors" href={`/${lang}/quienes-somos`}>{t.navigation.aboutUs}</Link></li>
               <li><Link className="hover:text-white transition-colors" href={`/${lang}/sello-de-calidad`}>{t.navigation.qualitySeal}</Link></li>
               {lang === 'es' && (
-                <li><Link className="hover:text-white transition-colors" href="https://capacitacion.circuitodelaexcelencia.com/" target="_blank" rel="noopener noreferrer">{t.navigation.courses}</Link></li>
+                <li><Link className="hover:text-white transition-colors" href={`/${lang}/capacitaciones`}>{t.navigation.courses}</Link></li>
               )}
             </ul>
           </div>
