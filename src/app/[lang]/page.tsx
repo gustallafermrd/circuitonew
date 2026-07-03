@@ -21,7 +21,7 @@ export default async function LangHome({
       <Intro dictionary={dictionary.intro} />
       <GiftCard dictionary={dictionary.giftCard} />
       <Passport dictionary={dictionary.passport} />
-      <Mapa />
+      {/* <Mapa /> */}
       <Comentarios dictionary={dictionary.comentarios} />
     </main>
   );
