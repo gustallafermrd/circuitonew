@@ -84,13 +84,7 @@ export default function Comentarios({ dictionary }: ComentariosProps) {
                 </div>
                 <p className="text-gray-700 dark:text-gray-300 italic mb-6">{review.text}</p>
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-gray-300 dark:bg-gray-700 overflow-hidden"
-                    data-alt={review.alt}
-                    style={{backgroundImage: `url("${review.image}")`, backgroundSize: 'cover'}}>
-                  </div>
-                  <div>
-                    <p className="text-sm font-bold text-text-main dark:text-white">{review.author}</p>
-                  </div>
+                  <p className="text-sm font-bold text-text-main dark:text-white">{review.author}</p>
                 </div>
               </div>
             ))}

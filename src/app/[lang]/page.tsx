@@ -17,7 +17,7 @@ export default async function LangHome({
   
   return (
     <main className="flex-1 flex flex-col items-center w-full">
-      <Hero dictionary={dictionary.hero} />
+      <Hero dictionary={dictionary.hero} lang={lang} />
       <Intro dictionary={dictionary.intro} />
       <GiftCard dictionary={dictionary.giftCard} />
       <Passport dictionary={dictionary.passport} />
