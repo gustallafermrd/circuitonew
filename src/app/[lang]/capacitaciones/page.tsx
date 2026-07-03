@@ -112,16 +112,6 @@ export default function CapacitacionesPage({
             publicados, con la colaboración de un millar de autores, sólo en los últimos 20 años.
             Y es la encargada de la capacitación en todas sus ediciones.
           </p>
-          <div className="flex justify-center mt-2">
-            <a
-              href="https://forms.gle/PUsq8KiscE6geFdq5"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex min-w-[200px] cursor-pointer items-center justify-center rounded-lg h-14 px-8 bg-secondary hover:bg-[#e0b852] transition-all text-[#181834] text-lg font-bold shadow-lg shadow-black/20"
-            >
-              Inscríbete
-            </a>
-          </div>
         </div>
       </section>
 

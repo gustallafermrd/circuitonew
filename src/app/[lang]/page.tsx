@@ -6,6 +6,7 @@ import Comentarios from "@/app/components/comentarios";
 import { getDictionary } from "@/lib/get-dictionary";
 import GiftCard from "@/app/components/home/gift-card";
 import Passport from "@/app/components/home/passport";
+import DistintivoVerde from "@/app/components/home/distintivo-verde";
 
 export default async function LangHome({
   params,
@@ -21,6 +22,7 @@ export default async function LangHome({
       <Intro dictionary={dictionary.intro} />
       <GiftCard dictionary={dictionary.giftCard} />
       <Passport dictionary={dictionary.passport} />
+      <DistintivoVerde lang={lang} />
       {/* <Mapa /> */}
       <Comentarios dictionary={dictionary.comentarios} />
     </main>
