@@ -6,6 +6,7 @@ import Navbar from "../components/navbar";
 import { Providers } from "../providers";
 import Footer from "../components/footer";
 import MapModal from "../components/map-modal";
+import VideoModal from "../components/video-modal";
 import { getDictionary } from "@/lib/get-dictionary";
 
 const geistSans = Geist({
@@ -47,6 +48,7 @@ export default async function LangLayout({
           {children}
           <Footer lang={lang} dictionary={dictionary} />
           <MapModal />
+          <VideoModal />
         </Providers>
       </body>
     </html>
