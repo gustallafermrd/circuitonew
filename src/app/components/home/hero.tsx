@@ -1,6 +1,10 @@
+'use client';
+
 import Link from 'next/link';
+import { useMapModal } from '@/app/context/map-modal-context';
 
 export default function Hero({ dictionary, lang }: { dictionary: any; lang: string }) {
+  const { openModal } = useMapModal();
   return (
     <div className="w-full @container">
       <div className="relative overflow-hidden flex flex-col items-center justify-center text-center min-h-[600px] md:min-h-[800px] bg-cover bg-center gap-8" data-alt="Impresionante vista aérea de los tepuyes venezolanos al amanecer" style={{ backgroundImage: 'linear-gradient(rgba(24, 24, 52, 0.3) 0%, rgba(24, 24, 52, 0.7) 100%), url("/img/salto-angel.webp")' }}>
@@ -19,6 +23,7 @@ export default function Hero({ dictionary, lang }: { dictionary: any; lang: stri
             {dictionary.explore}
           </Link>
           <button
+            onClick={openModal}
             className="flex min-w-[160px] cursor-pointer items-center justify-center rounded-lg h-12 px-8 bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/30 transition-all text-white text-base font-bold">
             {dictionary.viewMap}
           </button>

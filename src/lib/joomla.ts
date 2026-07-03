@@ -45,6 +45,9 @@ export async function getFoundingPosadas(lang: string = "es") {
       const categoryId = item.relationships?.category?.data?.id;
       if (categoryId !== catId) return false;
 
+      // Published Filter (Joomla state: 1 = published)
+      if (item.attributes.state !== 1) return false;
+
       // 2. Founders Filter
       const fundadores = item.attributes.fundadores || item.attributes.fundador;
       
@@ -75,8 +78,10 @@ export async function getAllPosadas(lang: string = "es") {
   const data = await res.json();
   if (!data.data) return [];
 
-  // Manual filter by category ID
-  return data.data.filter((item: any) => item.relationships?.category?.data?.id === catId);
+  // Manual filter by category ID and published state (Joomla state: 1 = published)
+  return data.data.filter((item: any) =>
+    item.relationships?.category?.data?.id === catId && item.attributes.state === 1
+  );
 }
 
 export async function getPosadaByAlias(alias: string, lang: string = "es") {
@@ -96,7 +101,8 @@ export async function getPosadaByAlias(alias: string, lang: string = "es") {
   return data.data.find((item: any) => {
     const isMatchingAlias = item.attributes.alias === alias;
     const isMatchingCategory = item.relationships?.category?.data?.id === catId;
-    return isMatchingAlias && isMatchingCategory;
+    const isPublished = item.attributes.state === 1;
+    return isMatchingAlias && isMatchingCategory && isPublished;
   }) || null;
 }
 // Blog Articles (ES Only)

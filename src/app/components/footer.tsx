@@ -55,7 +55,7 @@ export default function Footer({ lang = 'es', dictionary }: FooterProps) {
               )}
               <li><Link className="hover:text-white transition-colors" href={`/${lang}/quieres-ser-miembro`}>{t.navigation.becomeMember}</Link></li>
               {lang === 'es' && (
-                <li><a className="hover:text-white transition-colors" href="/pdf/reglamento.pdf" download="reglamento.pdf">{t.navigation.regulations}</a></li>
+                <li><a className="hover:text-white transition-colors" href="/pdf/reglamento.pdf" target="_blank" rel="noopener noreferrer">{t.navigation.regulations}</a></li>
               )}
               <li><Link className="hover:text-white transition-colors" href={`/${lang}/contacto`}>{t.navigation.contact}</Link></li>
             </ul>
