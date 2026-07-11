@@ -10,6 +10,7 @@ interface PosadasFilterableListProps {
 }
 
 const REGION_KEYS: Record<string, string> = {
+  'all': 'all',
   'montana': 'Montaña',
   'ciudad': 'Ciudad',
   'playa': 'Playa',
@@ -29,7 +30,7 @@ function getDestinations(attr: any): string[] {
 
 export default function PosadasFilterableList({ initialPosadas, dictionary, lang }: PosadasFilterableListProps) {
   const [searchTerm, setSearchTerm] = useState('');
-  const [selectedRegions, setSelectedRegions] = useState<string[]>([]);
+  const [selectedRegion, setSelectedRegion] = useState('all');
 
   const filteredPosadas = useMemo(() => {
     return initialPosadas.filter((posada: any) => {
@@ -50,19 +51,19 @@ export default function PosadasFilterableList({ initialPosadas, dictionary, lang
       if (!matchesSearch) return false;
 
       // Region Filter (using Destino)
-      if (selectedRegions.length === 0) return true;
+      if (selectedRegion === 'all') return true;
+      
+      const targetRegionName = REGION_KEYS[selectedRegion];
       
       return destinations.some(d =>
-        selectedRegions.some(region =>
-          REGION_KEYS[region] && d.toLowerCase() === REGION_KEYS[region].toLowerCase()
-        )
+        d.toLowerCase() === targetRegionName.toLowerCase()
       );
     }).sort((a: any, b: any) => {
       const titleA = a.attributes?.title || '';
       const titleB = b.attributes?.title || '';
       return titleA.localeCompare(titleB, lang);
     });
-  }, [initialPosadas, searchTerm, selectedRegions, lang]);
+  }, [initialPosadas, searchTerm, selectedRegion, lang]);
 
   return (
     <>
@@ -112,37 +113,20 @@ export default function PosadasFilterableList({ initialPosadas, dictionary, lang
           <h2
             className="text-text-main dark:text-white text-2xl font-bold leading-tight tracking-[-0.015em]">
             {dictionary.posadas.listTitle}</h2>
-          <div className="flex flex-wrap gap-2 items-center">
-            {['montana', 'ciudad', 'playa', 'selva', 'llano'].map((regionKey) => {
-              const isSelected = selectedRegions.includes(regionKey);
-              return (
-                <button
-                  key={regionKey}
-                  onClick={() => {
-                    setSelectedRegions(prev =>
-                      isSelected
-                        ? prev.filter(r => r !== regionKey)
-                        : [...prev, regionKey]
-                    );
-                  }}
-                  className={`flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full px-4 font-bold transition-all active:scale-95 shadow-sm border ${
-                    isSelected 
-                      ? 'bg-primary text-white border-primary' 
-                      : 'bg-white dark:bg-secondary text-text-main dark:text-white border-[#e5e7eb] dark:border-[#2a3e50] hover:bg-gray-100 dark:hover:bg-white dark:hover:text-text-main'
-                  }`}
-                >
-                  <span className="text-sm leading-normal">{dictionary.posadas.regions[regionKey]}</span>
-                </button>
-              );
-            })}
-            {selectedRegions.length > 0 && (
+          <div className="flex flex-wrap gap-2">
+            {['all', 'montana', 'ciudad', 'playa', 'selva', 'llano'].map((regionKey) => (
               <button
-                onClick={() => setSelectedRegions([])}
-                className="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full px-4 text-sm font-bold text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 transition-colors"
+                key={regionKey}
+                onClick={() => setSelectedRegion(regionKey)}
+                className={`flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full px-4 font-bold transition-all active:scale-95 shadow-sm border ${
+                  selectedRegion === regionKey 
+                    ? 'bg-primary text-white border-primary' 
+                    : 'bg-white dark:bg-secondary text-text-main dark:text-white border-[#e5e7eb] dark:border-[#2a3e50] hover:bg-gray-100 dark:hover:bg-white dark:hover:text-text-main'
+                }`}
               >
-                {lang === 'es' ? 'Limpiar' : 'Clear'}
+                <span className="text-sm leading-normal">{dictionary.posadas.regions[regionKey]}</span>
               </button>
-            )}
+            ))}
           </div>
         </div>
       </section>
