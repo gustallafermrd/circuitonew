@@ -9,9 +9,7 @@ interface PosadasFilterableListProps {
   lang: string;
 }
 
-// Map dictionary keys to destination names for internal logic
 const REGION_KEYS: Record<string, string> = {
-  'all': 'all',
   'montana': 'Montaña',
   'ciudad': 'Ciudad',
   'playa': 'Playa',
@@ -19,20 +17,25 @@ const REGION_KEYS: Record<string, string> = {
   'llano': 'Llano',
 };
 
+function getDestinations(attr: any): string[] {
+  const d = attr?.destino;
+  if (!d) return [];
+  if (typeof d === 'string') return [d];
+  if (typeof d === 'object' && d !== null) {
+    return Object.values(d).filter((v): v is string => typeof v === 'string');
+  }
+  return [];
+}
+
 export default function PosadasFilterableList({ initialPosadas, dictionary, lang }: PosadasFilterableListProps) {
   const [searchTerm, setSearchTerm] = useState('');
-  const [selectedRegion, setSelectedRegion] = useState('all');
+  const [selectedRegions, setSelectedRegions] = useState<string[]>([]);
 
   const filteredPosadas = useMemo(() => {
     return initialPosadas.filter((posada: any) => {
       const attr = posada.attributes;
       const estado = attr.estado || '';
-      let destino = attr.destino || '';
-      
-      // Joomla custom fields can be objects. Extract string value if so.
-      if (typeof destino === 'object' && destino !== null) {
-        destino = Object.values(destino)[0] as string || '';
-      }
+      const destinations = getDestinations(attr);
       
       const title = attr.title || '';
       const text = (attr.text || attr.introtext || '').replace(/<[^>]+>/g, '');
@@ -42,23 +45,24 @@ export default function PosadasFilterableList({ initialPosadas, dictionary, lang
         title.toLowerCase().includes(searchTerm.toLowerCase()) ||
         text.toLowerCase().includes(searchTerm.toLowerCase()) ||
         estado.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        (typeof destino === 'string' && destino.toLowerCase().includes(searchTerm.toLowerCase()));
+        destinations.some(d => d.toLowerCase().includes(searchTerm.toLowerCase()));
 
       if (!matchesSearch) return false;
 
       // Region Filter (using Destino)
-      if (selectedRegion === 'all') return true;
+      if (selectedRegions.length === 0) return true;
       
-      const targetRegionName = REGION_KEYS[selectedRegion];
-      
-      // Match the destination exactly (ignoring case)
-      return typeof destino === 'string' && destino.toLowerCase() === targetRegionName.toLowerCase();
+      return destinations.some(d =>
+        selectedRegions.some(region =>
+          REGION_KEYS[region] && d.toLowerCase() === REGION_KEYS[region].toLowerCase()
+        )
+      );
     }).sort((a: any, b: any) => {
       const titleA = a.attributes?.title || '';
       const titleB = b.attributes?.title || '';
       return titleA.localeCompare(titleB, lang);
     });
-  }, [initialPosadas, searchTerm, selectedRegion, lang]);
+  }, [initialPosadas, searchTerm, selectedRegions, lang]);
 
   return (
     <>
@@ -108,20 +112,37 @@ export default function PosadasFilterableList({ initialPosadas, dictionary, lang
           <h2
             className="text-text-main dark:text-white text-2xl font-bold leading-tight tracking-[-0.015em]">
             {dictionary.posadas.listTitle}</h2>
-          <div className="flex flex-wrap gap-2">
-            {['all', 'montana', 'ciudad', 'playa', 'selva', 'llano'].map((regionKey) => (
+          <div className="flex flex-wrap gap-2 items-center">
+            {['montana', 'ciudad', 'playa', 'selva', 'llano'].map((regionKey) => {
+              const isSelected = selectedRegions.includes(regionKey);
+              return (
+                <button
+                  key={regionKey}
+                  onClick={() => {
+                    setSelectedRegions(prev =>
+                      isSelected
+                        ? prev.filter(r => r !== regionKey)
+                        : [...prev, regionKey]
+                    );
+                  }}
+                  className={`flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full px-4 font-bold transition-all active:scale-95 shadow-sm border ${
+                    isSelected 
+                      ? 'bg-primary text-white border-primary' 
+                      : 'bg-white dark:bg-secondary text-text-main dark:text-white border-[#e5e7eb] dark:border-[#2a3e50] hover:bg-gray-100 dark:hover:bg-white dark:hover:text-text-main'
+                  }`}
+                >
+                  <span className="text-sm leading-normal">{dictionary.posadas.regions[regionKey]}</span>
+                </button>
+              );
+            })}
+            {selectedRegions.length > 0 && (
               <button
-                key={regionKey}
-                onClick={() => setSelectedRegion(regionKey)}
-                className={`flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full px-4 font-bold transition-all active:scale-95 shadow-sm border ${
-                  selectedRegion === regionKey 
-                    ? 'bg-primary text-white border-primary' 
-                    : 'bg-white dark:bg-secondary text-text-main dark:text-white border-[#e5e7eb] dark:border-[#2a3e50] hover:bg-gray-100 dark:hover:bg-white dark:hover:text-text-main'
-                }`}
+                onClick={() => setSelectedRegions([])}
+                className="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full px-4 text-sm font-bold text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 transition-colors"
               >
-                <span className="text-sm leading-normal">{dictionary.posadas.regions[regionKey]}</span>
+                {lang === 'es' ? 'Limpiar' : 'Clear'}
               </button>
-            ))}
+            )}
           </div>
         </div>
       </section>
