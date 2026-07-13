@@ -23,16 +23,13 @@ jobs:
 
       - name: Build
         run: npm run build
-
-      - name: Package for cPanel deployment
-        run: |
-          cp -r public .next/standalone/public
-          cp -r .next/static .next/standalone/.next/static
+        env:
+          JOOMLA_API_TOKEN: ${{ secrets.JOOMLA_API_TOKEN }}
 
       - name: Deploy via lftp
         run: |
           sudo apt-get update -qq && sudo apt-get install -y -qq lftp
-          lftp -e "set ftp:ssl-allow yes; set ssl:verify-certificate no; set net:max-retries 3; set net:reconnect-interval-base 5; mirror -R -v --parallel=3 .next/standalone/ ./public_html/webce1/; quit" \
+          lftp -e "set ftp:ssl-allow yes; set ssl:verify-certificate no; set net:max-retries 3; set net:reconnect-interval-base 5; mirror -R -v --parallel=3 out/ ./public_html/webce1/; quit" \
             -u "${{ secrets.FTP_USERNAME }}","${{ secrets.FTP_PASSWORD }}" \
             -p ${{ secrets.FTP_PORT }} \
             ${{ secrets.FTP_SERVER }}

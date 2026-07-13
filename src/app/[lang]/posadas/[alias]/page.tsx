@@ -1,10 +1,14 @@
-import { getPosadaByAlias } from "@/lib/joomla";
+import { getPosadaByAlias, getAllPosadas } from "@/lib/joomla";
 import { getDictionary } from "@/lib/get-dictionary";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import ImageGallery from "@/app/components/posadas/image-gallery";
 import GoogleMap from "@/app/components/posadas/google-map";
 import { Instagram } from "lucide-react";
+
+export async function generateStaticParams() {
+  return [{ alias: "demo-posada" }];
+}
 
 export default async function PosadaDetailPage({
   params,

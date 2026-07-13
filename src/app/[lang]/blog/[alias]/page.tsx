@@ -1,7 +1,11 @@
-import { getBlogArticleByAlias } from "@/lib/joomla";
+import { getBlogArticleByAlias, getBlogArticles } from "@/lib/joomla";
 import { getImageUrl, formatDate, stripHtml, truncateWords } from "@/lib/blog";
 import { notFound } from "next/navigation";
 import Link from "next/link";
+
+export async function generateStaticParams() {
+  return [{ alias: "demo-blog" }];
+}
 
 export default async function BlogDetailPage({
   params,

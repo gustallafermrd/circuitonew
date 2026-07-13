@@ -1,14 +1,12 @@
 const BASE_API_URL = "https://beta.circuitodelaexcelencia.com/api/index.php/v1";
 const JOOMLA_API_URL = `${BASE_API_URL}/content/articles`;
 
-export async function getArticles() {
-  const res = await fetch(JOOMLA_API_URL, {
+async function joomlaFetch(url: string) {
+  const res = await fetch(url, {
     headers: {
       Authorization: `Bearer ${process.env.JOOMLA_API_TOKEN}`,
       Accept: "application/vnd.api+json",
     },
-    // Disable caching for dev
-    cache: "no-store",
   });
 
   if (!res.ok) {
@@ -25,122 +23,101 @@ const CATEGORY_MAP: Record<string, string> = {
 
 const BLOG_CATEGORY_ID = "10";
 
+export async function getArticles() {
+  try {
+    return await joomlaFetch(JOOMLA_API_URL);
+  } catch {
+    return { data: [] };
+  }
+}
+
 export async function getFoundingPosadas(lang: string = "es") {
-  const catId = CATEGORY_MAP[lang] || CATEGORY_MAP.es;
-  const res = await fetch(`${JOOMLA_API_URL}?page[limit]=100`, {
-    headers: {
-      Authorization: `Bearer ${process.env.JOOMLA_API_TOKEN}`,
-      Accept: "application/vnd.api+json",
-    },
-    next: { revalidate: 0 } 
-  });
+  try {
+    const catId = CATEGORY_MAP[lang] || CATEGORY_MAP.es;
+    const data = await joomlaFetch(`${JOOMLA_API_URL}?page[limit]=100`);
 
-  const data = await res.json();
-  
-  if (!data.data) return [];
+    if (!data.data) return [];
 
-  // Filter ONLY articles in the correct Category AND where attributes.fundadores is "si"
-  return data.data.filter((item: any) => {
-      // 1. Category Filter (Manual because API filter is unreliable)
+    return data.data.filter((item: any) => {
       const categoryId = item.relationships?.category?.data?.id;
       if (categoryId !== catId) return false;
-
-      // Published Filter (Joomla state: 1 = published)
       if (item.attributes.state !== 1) return false;
 
-      // 2. Founders Filter
       const fundadores = item.attributes.fundadores || item.attributes.fundador;
-      
-      // Case 1: It's a string "si"
-      if (typeof fundadores === 'string' && fundadores.toLowerCase() === 'si') return true;
-      
-      // Case 2: It's an object like { si: 'Si' } (Joomla often returns checkboxes/radios this way)
-      if (typeof fundadores === 'object' && fundadores !== null) {
-          // Check values in the object
-           const values = Object.values(fundadores);
-           return values.some((v: any) => typeof v === 'string' && v.toLowerCase() === 'si');
+
+      if (typeof fundadores === "string" && fundadores.toLowerCase() === "si") return true;
+
+      if (typeof fundadores === "object" && fundadores !== null) {
+        const values = Object.values(fundadores);
+        return values.some((v: any) => typeof v === "string" && v.toLowerCase() === "si");
       }
-      
+
       return false;
-  });
+    });
+  } catch {
+    return [];
+  }
 }
 
 export async function getAllPosadas(lang: string = "es") {
-  const catId = CATEGORY_MAP[lang] || CATEGORY_MAP.es;
-  const res = await fetch(`${JOOMLA_API_URL}?page[limit]=100`, {
-    headers: {
-      Authorization: `Bearer ${process.env.JOOMLA_API_TOKEN}`,
-      Accept: "application/vnd.api+json",
-    },
-    next: { revalidate: 0 } 
-  });
-
-  const data = await res.json();
-  if (!data.data) return [];
-
-  // Manual filter by category ID and published state (Joomla state: 1 = published)
-  return data.data.filter((item: any) =>
-    item.relationships?.category?.data?.id === catId && item.attributes.state === 1
-  );
+  try {
+    const catId = CATEGORY_MAP[lang] || CATEGORY_MAP.es;
+    const data = await joomlaFetch(`${JOOMLA_API_URL}?page[limit]=100`);
+    if (!data.data) return [];
+    return data.data.filter(
+      (item: any) =>
+        item.relationships?.category?.data?.id === catId && item.attributes.state === 1
+    );
+  } catch {
+    return [];
+  }
 }
 
 export async function getPosadaByAlias(alias: string, lang: string = "es") {
-  const catId = CATEGORY_MAP[lang] || CATEGORY_MAP.es;
-  const res = await fetch(`${JOOMLA_API_URL}?page[limit]=100`, {
-    headers: {
-      Authorization: `Bearer ${process.env.JOOMLA_API_TOKEN}`,
-      Accept: "application/vnd.api+json",
-    },
-    next: { revalidate: 0 }
-  });
-
-  const data = await res.json();
-  if (!data.data) return null;
-
-  // Manual find to ensure we get the correct article in the correct language/category
-  return data.data.find((item: any) => {
-    const isMatchingAlias = item.attributes.alias === alias;
-    const isMatchingCategory = item.relationships?.category?.data?.id === catId;
-    const isPublished = item.attributes.state === 1;
-    return isMatchingAlias && isMatchingCategory && isPublished;
-  }) || null;
+  try {
+    const catId = CATEGORY_MAP[lang] || CATEGORY_MAP.es;
+    const data = await joomlaFetch(`${JOOMLA_API_URL}?page[limit]=100`);
+    if (!data.data) return null;
+    return (
+      data.data.find((item: any) => {
+        const isMatchingAlias = item.attributes.alias === alias;
+        const isMatchingCategory = item.relationships?.category?.data?.id === catId;
+        const isPublished = item.attributes.state === 1;
+        return isMatchingAlias && isMatchingCategory && isPublished;
+      }) || null
+    );
+  } catch {
+    return null;
+  }
 }
-// Blog Articles (ES Only)
+
 export async function getBlogArticles() {
-  const res = await fetch(`${JOOMLA_API_URL}?page[limit]=100&sort=-created`, {
-    headers: {
-      Authorization: `Bearer ${process.env.JOOMLA_API_TOKEN}`,
-      Accept: "application/vnd.api+json",
-    },
-    next: { revalidate: 0 } 
-  });
-
-  const data = await res.json();
-  if (!data.data) return [];
-
-  return data.data.filter((item: any) => item.relationships?.category?.data?.id === BLOG_CATEGORY_ID);
+  try {
+    const data = await joomlaFetch(`${JOOMLA_API_URL}?page[limit]=100&sort=-created`);
+    if (!data.data) return [];
+    return data.data.filter(
+      (item: any) => item.relationships?.category?.data?.id === BLOG_CATEGORY_ID
+    );
+  } catch {
+    return [];
+  }
 }
 
 export async function getBlogArticleByAlias(alias: string) {
-  const res = await fetch(`${JOOMLA_API_URL}?page[limit]=100`, {
-    headers: {
-      Authorization: `Bearer ${process.env.JOOMLA_API_TOKEN}`,
-      Accept: "application/vnd.api+json",
-    },
-    next: { revalidate: 0 }
-  });
-
-  const data = await res.json();
-  if (!data.data) return null;
-
-  return data.data.find((item: any) => {
-    const isMatchingAlias = item.attributes.alias === alias;
-    const isMatchingCategory = item.relationships?.category?.data?.id === BLOG_CATEGORY_ID;
-    return isMatchingAlias && isMatchingCategory;
-  }) || null;
+  try {
+    const data = await joomlaFetch(`${JOOMLA_API_URL}?page[limit]=100`);
+    if (!data.data) return null;
+    return (
+      data.data.find((item: any) => {
+        const isMatchingAlias = item.attributes.alias === alias;
+        const isMatchingCategory = item.relationships?.category?.data?.id === BLOG_CATEGORY_ID;
+        return isMatchingAlias && isMatchingCategory;
+      }) || null
+    );
+  } catch {
+    return null;
+  }
 }
-
-// Menu items
 
 export interface MenuItem {
   id: number;
@@ -152,29 +129,25 @@ export interface MenuItem {
 
 export async function getMenuItems(menuId: number = 1): Promise<MenuItem[]> {
   try {
-    const response = await fetch(
-      `${BASE_API_URL}/menus/site/items`,
-      {
-        headers: {
-          'Authorization': `Bearer ${process.env.JOOMLA_API_TOKEN}`,
-          'Content-Type': 'application/json',
-        },
-        next: { 
-          revalidate: 3600, // Revalida cada hora
-          tags: ['menu']
-        }
-      }
-    );
+    const response = await fetch(`${BASE_API_URL}/menus/site/items`, {
+      headers: {
+        Authorization: `Bearer ${process.env.JOOMLA_API_TOKEN}`,
+        "Content-Type": "application/json",
+      },
+      next: {
+        tags: ["menu"],
+      },
+    });
 
     if (!response.ok) {
-      console.error('Error fetching menu:', response.statusText);
+      console.error("Error fetching menu:", response.statusText);
       return [];
     }
 
     const data = await response.json();
     return data.data.map((item: any) => item.attributes) || [];
   } catch (error) {
-    console.error('Failed to fetch menu:', error);
+    console.error("Failed to fetch menu:", error);
     return [];
   }
 }

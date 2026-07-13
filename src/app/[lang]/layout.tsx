@@ -19,6 +19,10 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+export function generateStaticParams() {
+  return [{ lang: "es" }, { lang: "en" }];
+}
+
 export const metadata: Metadata = {
   title: "Circuito de la Excelencia",
   description: "Descubre las mejores posadas de Venezuela",
