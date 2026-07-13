@@ -45,7 +45,7 @@ export default async function QuienesSomosPage({
         </div>
         <div className="relative">
           <img alt="Fachada tradicional" className="rounded-2xl shadow-2xl z-10 relative object-cover h-[400px] w-full"
-            src="/img/quienes-somos.webp" />
+            src="/img/quienes-somos.jpeg" />
           <div className="absolute -bottom-6 -right-6 w-full h-full border-2 border-secondary rounded-2xl -z-0"></div>
         </div>
       </div>
