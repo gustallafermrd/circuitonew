@@ -29,15 +29,10 @@ jobs:
           cp -r public .next/standalone/public
           cp -r .next/static .next/standalone/.next/static
 
-      - name: Deploy via FTP
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
-        with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          port: ${{ secrets.FTP_PORT }}
-          protocol: ftps
-          security: loose
-          timeout: 60000
-          local-dir: .next/standalone/
-          server-dir: ./public_html/webce1/
+      - name: Deploy via lftp
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq lftp
+          lftp -e "set ftp:ssl-allow yes; set ssl:verify-certificate no; set net:max-retries 3; set net:reconnect-interval-base 5; mirror -R -v --parallel=3 .next/standalone/ ./public_html/webce1/; quit" \
+            -u "${{ secrets.FTP_USERNAME }}","${{ secrets.FTP_PASSWORD }}" \
+            -p ${{ secrets.FTP_PORT }} \
+            ${{ secrets.FTP_SERVER }}
