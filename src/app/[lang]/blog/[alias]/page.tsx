@@ -4,7 +4,17 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 
 export async function generateStaticParams() {
-  return [{ alias: "demo-blog" }];
+  try {
+    const articles = await getBlogArticles();
+    if (articles.length > 0) {
+      return articles
+        .filter((a: any) => a.attributes?.alias)
+        .map((a: any) => ({ alias: a.attributes.alias }));
+    }
+  } catch (e) {
+    console.error("Failed to fetch blog articles:", e);
+  }
+  return [{ alias: "no-posts" }];
 }
 
 export default async function BlogDetailPage({

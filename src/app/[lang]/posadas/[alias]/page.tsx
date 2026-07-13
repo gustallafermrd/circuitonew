@@ -7,7 +7,20 @@ import GoogleMap from "@/app/components/posadas/google-map";
 import { Instagram } from "lucide-react";
 
 export async function generateStaticParams() {
-  return [{ alias: "demo-posada" }];
+  try {
+    const esPosadas = await getAllPosadas("es");
+    const enPosadas = await getAllPosadas("en");
+    const aliases = new Set<string>();
+    [...esPosadas, ...enPosadas]
+      .filter((p: any) => p.attributes?.alias)
+      .forEach((p: any) => aliases.add(p.attributes.alias));
+    if (aliases.size > 0) {
+      return Array.from(aliases).map((alias) => ({ alias }));
+    }
+  } catch (e) {
+    console.error("Failed to fetch posadas:", e);
+  }
+  return [{ alias: "no-posadas" }];
 }
 
 export default async function PosadaDetailPage({
