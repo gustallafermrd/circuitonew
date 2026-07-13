@@ -40,4 +40,4 @@ jobs:
           security: loose
           timeout: 60000
           local-dir: .next/standalone/
-          server-dir: ./
+          server-dir: ./public_html/webce1/
