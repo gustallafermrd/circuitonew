@@ -39,7 +39,7 @@ export default async function FeaturedArticle({ featured }: { featured: any }) {
           {/* Button */}
           <div>
             <Link 
-              href={`/blog/${featured.attributes.alias}`}
+              href={`/es/blog/${featured.attributes.alias}`}
               className="inline-flex items-center gap-2 bg-primary dark:bg-secondary text-white dark:text-white px-8 py-4 rounded-xl font-bold transition-all hover:scale-105 shadow-lg group"
             >
               Leer Mas
