@@ -10,17 +10,7 @@ export default async function BlogPage({
   const { lang } = await params;
   const articles = await getBlogArticles();
 
-  console.log(`[BLOG DEBUG] lang=${lang}, articles count=${articles.length}, token=${process.env.JOOMLA_API_TOKEN ? 'present' : 'MISSING'}`);
-
-  if (articles.length === 0) {
-    return (
-      <div className="w-full bg-white dark:bg-gray-900 py-16 flex justify-center min-h-screen">
-        <div className="max-w-360 w-full px-4 md:px-6 flex flex-col gap-10">
-          <p>No blog articles found. Token: {process.env.JOOMLA_API_TOKEN ? 'present' : 'MISSING'}</p>
-        </div>
-      </div>
-    );
-  }
+  if (articles.length === 0) return null;
 
   const featuredIndex = articles.findIndex((a: any) => 
     a.attributes.featured === 1 || a.attributes.featured === "1" || a.attributes.featured === true

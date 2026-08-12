@@ -23,6 +23,16 @@ const CATEGORY_MAP: Record<string, string> = {
 
 const BLOG_CATEGORY_ID = "10";
 
+let cachedArticles: any[] | null = null;
+
+async function getAllArticles(): Promise<any[]> {
+  if (cachedArticles) return cachedArticles;
+  const data = await joomlaFetch(`${JOOMLA_API_URL}?page[limit]=100`);
+  const articles: any[] = data.data || [];
+  cachedArticles = articles;
+  return articles;
+}
+
 export async function getArticles() {
   try {
     return await joomlaFetch(JOOMLA_API_URL);
@@ -34,11 +44,9 @@ export async function getArticles() {
 export async function getFoundingPosadas(lang: string = "es") {
   try {
     const catId = CATEGORY_MAP[lang] || CATEGORY_MAP.es;
-    const data = await joomlaFetch(`${JOOMLA_API_URL}?page[limit]=100`);
+    const articles = await getAllArticles();
 
-    if (!data.data) return [];
-
-    return data.data.filter((item: any) => {
+    return articles.filter((item: any) => {
       const categoryId = item.relationships?.category?.data?.id;
       if (categoryId !== catId) return false;
       if (item.attributes.state !== 1) return false;
@@ -62,9 +70,8 @@ export async function getFoundingPosadas(lang: string = "es") {
 export async function getAllPosadas(lang: string = "es") {
   try {
     const catId = CATEGORY_MAP[lang] || CATEGORY_MAP.es;
-    const data = await joomlaFetch(`${JOOMLA_API_URL}?page[limit]=100`);
-    if (!data.data) return [];
-    return data.data.filter(
+    const articles = await getAllArticles();
+    return articles.filter(
       (item: any) =>
         item.relationships?.category?.data?.id === catId && item.attributes.state === 1
     );
@@ -76,10 +83,9 @@ export async function getAllPosadas(lang: string = "es") {
 export async function getPosadaByAlias(alias: string, lang: string = "es") {
   try {
     const catId = CATEGORY_MAP[lang] || CATEGORY_MAP.es;
-    const data = await joomlaFetch(`${JOOMLA_API_URL}?page[limit]=100`);
-    if (!data.data) return null;
+    const articles = await getAllArticles();
     return (
-      data.data.find((item: any) => {
+      articles.find((item: any) => {
         const isMatchingAlias = item.attributes.alias === alias;
         const isMatchingCategory = item.relationships?.category?.data?.id === catId;
         const isPublished = item.attributes.state === 1;
@@ -93,11 +99,10 @@ export async function getPosadaByAlias(alias: string, lang: string = "es") {
 
 export async function getBlogArticles() {
   try {
-    const data = await joomlaFetch(`${JOOMLA_API_URL}?page[limit]=100&sort=-created`);
-    if (!data.data) return [];
-    return data.data.filter(
-      (item: any) => item.relationships?.category?.data?.id === BLOG_CATEGORY_ID
-    );
+    const articles = await getAllArticles();
+    return articles
+      .filter((item: any) => item.relationships?.category?.data?.id === BLOG_CATEGORY_ID)
+      .sort((a: any, b: any) => new Date(b.attributes.created).getTime() - new Date(a.attributes.created).getTime());
   } catch {
     return [];
   }
@@ -105,10 +110,9 @@ export async function getBlogArticles() {
 
 export async function getBlogArticleByAlias(alias: string) {
   try {
-    const data = await joomlaFetch(`${JOOMLA_API_URL}?page[limit]=100`);
-    if (!data.data) return null;
+    const articles = await getAllArticles();
     return (
-      data.data.find((item: any) => {
+      articles.find((item: any) => {
         const isMatchingAlias = item.attributes.alias === alias;
         const isMatchingCategory = item.relationships?.category?.data?.id === BLOG_CATEGORY_ID;
         return isMatchingAlias && isMatchingCategory;
