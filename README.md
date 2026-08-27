@@ -33,4 +33,41 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Check out our [Next.js deployment documentation](https://next.js.org/docs/app/building-your-application/deploying) for more details.
+
+## Deploy manual a Git
+
+Para sincronizar cambios locales con el repositorio remoto:
+
+```bash
+# 1. Ver el estado de los cambios
+git status
+
+# 2. Agregar archivos modificados (o git add . para todos)
+git add .
+
+# 3. Commitear con mensaje descriptivo
+git commit -m "descripción de los cambios"
+
+# 4. Subir al repositorio remoto
+git push origin main
+```
+
+### Flujo típico tras cambios en Joomla
+
+Si actualizaste contenido en Joomla y necesitas regenerar el sitio estático:
+
+```bash
+# 1. Regenerar el build (si usas export estático)
+npm run build
+
+# 2. Verificar que todo compile correctamente
+npm run lint
+
+# 3. Commitear y pushear
+git add .
+git commit -m "rebuild: reflejar cambios en Joomla DB"
+git push origin main
+```
+
+El deploy en Vercel se disparará automáticamente al hacer push a `main`.
