@@ -36,33 +36,69 @@ export default function PosadaCard({ posada, lang, dictionary }: PosadaCardProps
 
   const description = (attr.text || attr.introtext || "").replace(/<[^>]+>/g, '').trim().slice(0, 150) + "...";
 
-  return (
-    <Link href={`/${lang}/posadas/${attr.alias}`} className="group flex flex-col gap-4 cursor-pointer">
+  const isSi = (field: any) => {
+    if (typeof field === 'string') return field.toLowerCase() === 'si';
+    if (typeof field === 'object' && field !== null) {
+      return Object.values(field).some((v: any) => typeof v === 'string' && v.toLowerCase() === 'si');
+    }
+    return false;
+  };
+  const showProximamenteBadge = isSi(attr.proximamente) || isSi(attr['proximamente']);
+  const isDisabled = showProximamenteBadge;
+
+  const cardInner = (
+    <>
       <div className="relative w-full aspect-[4/3] overflow-hidden rounded-xl bg-gray-200">
         <img
           src={image}
           alt={attr.title}
-          className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+          className={`absolute inset-0 w-full h-full object-cover transition-transform duration-500 ${isDisabled ? '' : 'group-hover:scale-110'}`}
         />
-          <div
-          className="absolute top-3 right-3 bg-white/90 dark:bg-black/80 backdrop-blur text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide text-text-main dark:text-white">
-          {attr.estado}
+          <div className="absolute top-3 right-3 flex flex-col items-end gap-2">
+            <div className="bg-white/90 dark:bg-black/80 backdrop-blur text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide text-text-main dark:text-white">
+              {attr.estado}
+            </div>
+            {showProximamenteBadge && (
+              <div className="bg-primary/90 backdrop-blur text-xs font-bold px-3 py-1 rounded-full tracking-wide text-white shadow-sm">
+                Próximamente
+              </div>
+            )}
           </div>
       </div>
       <div className="flex flex-col gap-1">
         <div className="flex justify-between items-start">
           <h3
-            className="text-text-main dark:text-white text-xl font-bold group-hover:text-secondary transition-colors">
+            className={`text-text-main dark:text-white text-xl font-bold transition-colors ${isDisabled ? '' : 'group-hover:text-secondary'}`}>
             {attr.title}</h3>
         </div>
         <p className="text-gray-500 dark:text-gray-400 text-sm line-clamp-2">{description}</p>
         <div className="mt-4">
-          <span className="inline-flex items-center justify-center px-6 py-2 bg-secondary hover:bg-secondary-dark text-white font-bold rounded-lg transition-all duration-300 transform group-hover:translate-x-1">
-            {(dictionary as any).seeMore || "Ver más"}
-            <span className="material-symbols-outlined ml-2 text-lg">arrow_forward</span>
-          </span>
+          {isDisabled ? (
+            <span className="inline-flex items-center justify-center px-6 py-2 bg-gray-200 dark:bg-gray-700 text-gray-500 dark:text-gray-400 font-bold rounded-lg cursor-not-allowed">
+              Próximamente
+            </span>
+          ) : (
+            <span className="inline-flex items-center justify-center px-6 py-2 bg-secondary hover:bg-secondary-dark text-white font-bold rounded-lg transition-all duration-300 transform group-hover:translate-x-1">
+              {(dictionary as any).seeMore || "Ver más"}
+              <span className="material-symbols-outlined ml-2 text-lg">arrow_forward</span>
+            </span>
+          )}
         </div>
       </div>
+    </>
+  );
+
+  if (isDisabled) {
+    return (
+      <div className="flex flex-col gap-4 cursor-default" aria-disabled="true" title="Próximamente disponible">
+        {cardInner}
+      </div>
+    );
+  }
+
+  return (
+    <Link href={`/${lang}/posadas/${attr.alias}`} className="group flex flex-col gap-4 cursor-pointer">
+      {cardInner}
     </Link>
   );
 }

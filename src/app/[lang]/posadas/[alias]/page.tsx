@@ -94,6 +94,17 @@ export default async function PosadaDetailPage({
 
   const googleMapUrl = attr['google-map'];
 
+  const isSi = (field: any) => {
+    if (typeof field === 'string') return field.toLowerCase() === 'si';
+    if (typeof field === 'object' && field !== null) {
+      return Object.values(field).some((v: any) => typeof v === 'string' && v.toLowerCase() === 'si');
+    }
+    return false;
+  };
+  const showJuniorBadge = isSi(attr.asociado_junior) || isSi(attr['asociado-junior']);
+  const showFounderBadge = isSi(attr.fundadores) || isSi(attr.fundador);
+  const showProximamenteBadge = isSi(attr.proximamente) || isSi(attr['proximamente']);
+
   return (
     <main className="layout-container flex h-full grow flex-col pb-20 bg-white dark:bg-gray-900">
       <div className="px-4 md:px-10 lg:px-40 flex flex-1 justify-center py-5">
@@ -112,6 +123,25 @@ export default async function PosadaDetailPage({
                   {attr.title}
                 </h1>
                 <h2 className="text-lg md:text-4xl font-semibold italic text-secondary dark:text-secondary">{attr.slogan}</h2>
+                {(showFounderBadge || showJuniorBadge || showProximamenteBadge) && (
+                  <div className="flex flex-wrap gap-2 mt-3">
+                    {showFounderBadge && (
+                      <span className="bg-white border border-gray-200 text-text-main text-xs font-bold px-3 py-1 rounded-full tracking-wide shadow-sm">
+                        Fundador
+                      </span>
+                    )}
+                    {showJuniorBadge && (
+                      <span className="bg-green-600 text-white text-xs font-bold px-3 py-1 rounded-full tracking-wide shadow-sm">
+                        Asociado Junior
+                      </span>
+                    )}
+                    {showProximamenteBadge && (
+                      <span className="bg-primary text-white text-xs font-bold px-3 py-1 rounded-full tracking-wide shadow-sm">
+                        Próximamente
+                      </span>
+                    )}
+                  </div>
+                )}
               </div>
 
               {/* Social Media Icons */}
