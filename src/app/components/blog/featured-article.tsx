@@ -1,4 +1,4 @@
-import { getImageUrl, formatDate, stripHtml } from "@/lib/blog";
+import { getIntroImageUrl, formatDate, stripHtml } from "@/lib/blog";
 import Link from "next/link";
 
 export default async function FeaturedArticle({ featured }: { featured: any }) {
@@ -10,7 +10,7 @@ export default async function FeaturedArticle({ featured }: { featured: any }) {
         {/* Left Section: Image (50%) */}
         <div className="relative w-full md:w-1/2 min-h-[300px] md:min-h-[450px] overflow-hidden">
           <img
-            src={getImageUrl(featured.attributes.images)}
+            src={getIntroImageUrl(featured.attributes.images)}
             alt={featured.attributes.title}
             className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 hover:scale-110"
           />

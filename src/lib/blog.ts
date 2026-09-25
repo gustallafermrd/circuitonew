@@ -1,27 +1,50 @@
 const SITE_URL = "https://beta.circuitodelaexcelencia.com";
 
-/**
- * Parses Joomla image data and returns a full URL.
- */
-export const getImageUrl = (images: any) => {
-  if (!images) return '/img/placeholder.jpg';
-  
-  let imagesObj = images;
+function resolveImagePath(imagePath: string | undefined): string | null {
+  if (!imagePath) return null;
+  const cleanPath = imagePath.split('#')[0].replace(/^\/+/, '');
+  return cleanPath.startsWith('http') ? cleanPath : `${SITE_URL}/${cleanPath}`;
+}
+
+function parseImages(images: any): any | null {
+  if (!images) return null;
   if (typeof images === 'string') {
     try {
-      imagesObj = JSON.parse(images);
-    } catch (e) {
-      return '/img/placeholder.jpg';
+      return JSON.parse(images);
+    } catch {
+      return null;
     }
   }
+  return images;
+}
 
-  const intro = imagesObj.image_intro;
-  if (!intro) return '/img/placeholder.jpg';
-  
-  // Strip fragment and leading slashes to avoid double-slash URLs
-  const cleanPath = intro.split('#')[0].replace(/^\/+/, '');
-  return cleanPath.startsWith('http') ? cleanPath : `${SITE_URL}/${cleanPath}`;
+/**
+ * Imagen de Introducción (Joomla: Imágenes y Enlaces > Imagen de Introducción)
+ * Usada en listado /es/blog
+ */
+export const getIntroImageUrl = (images: any) => {
+  const obj = parseImages(images);
+  if (!obj) return '/img/placeholder.jpg';
+  const intro = obj.image_intro;
+  return resolveImagePath(intro) || '/img/placeholder.jpg';
 };
+
+/**
+ * Imagen de Artículo Completo (Joomla: Imágenes y Enlaces > Imagen del Artículo Completo)
+ * Usada en detalle /es/blog/[alias]. Fallback a intro si no hay full.
+ */
+export const getFullImageUrl = (images: any) => {
+  const obj = parseImages(images);
+  if (!obj) return '/img/placeholder.jpg';
+  const full = obj.image_fulltext || obj.image_intro;
+  return resolveImagePath(full) || '/img/placeholder.jpg';
+};
+
+/**
+ * @deprecated Usa getIntroImageUrl o getFullImageUrl
+ * Parses Joomla image data and returns a full URL (compat: usa intro).
+ */
+export const getImageUrl = (images: any) => getIntroImageUrl(images);
 
 /**
  * Formats a date string to Spanish (ES) locale.

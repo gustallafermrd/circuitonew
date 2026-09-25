@@ -1,5 +1,5 @@
 import { getBlogArticleByAlias, getBlogArticles } from "@/lib/joomla";
-import { getImageUrl, formatDate, stripHtml, truncateWords } from "@/lib/blog";
+import { getFullImageUrl, formatDate, stripHtml, truncateWords } from "@/lib/blog";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 
@@ -51,7 +51,7 @@ export default async function BlogDetailPage({
             </div>
           </div>
           <div className="flex justify-center h-[300px] md:h-[500px] pb-4">
-            <img className="w-full h-full object-cover rounded-xl" src={getImageUrl(article.attributes.images)} alt={article.attributes.title} />
+            <img className="w-full h-full object-cover rounded-xl" src={getFullImageUrl(article.attributes.images)} alt={article.attributes.title} />
           </div> 
 
           <div className="grid grid-cols-1 lg:grid-cols-[1.8fr_1fr] gap-12 relative">

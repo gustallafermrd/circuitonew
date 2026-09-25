@@ -1,4 +1,4 @@
-import { getImageUrl, formatDate, stripHtml, truncateWords } from "@/lib/blog";
+import { getIntroImageUrl, formatDate, stripHtml, truncateWords } from "@/lib/blog";
 import Link from "next/link";
 
 export default async function Articles({ articles }: { articles: any[] }) {
@@ -13,7 +13,7 @@ export default async function Articles({ articles }: { articles: any[] }) {
               className="flex flex-col bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300 border border-gray-100 dark:border-gray-800 group">
               <div className="relative w-full overflow-hidden bg-gray-100 dark:bg-gray-800" style={{ height: '300px' }}>
                 <img
-                  src={getImageUrl(article.attributes.images)}
+                  src={getIntroImageUrl(article.attributes.images)}
                   alt={article.attributes.title}
                   className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
