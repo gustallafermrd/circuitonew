@@ -96,8 +96,23 @@ export default async function ContactPage({
                       <p className="text-sm text-gray-300 mb-1">
                         {dictionary.contact.info.emailLabel}
                       </p>
-                      <p className="font-medium">
+                      <p className="font-medium break-all">
                         {dictionary.contact.info.email}
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center shrink-0">
+                      <span className="material-symbols-outlined text-secondary">
+                        schedule
+                      </span>
+                    </div>
+                    <div>
+                      <p className="text-sm text-gray-300 mb-1">
+                        {dictionary.contact.info.scheduleLabel}
+                      </p>
+                      <p className="font-medium">
+                        {dictionary.contact.info.schedule}
                       </p>
                     </div>
                   </div>
