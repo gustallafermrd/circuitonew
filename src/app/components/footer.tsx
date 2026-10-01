@@ -73,7 +73,11 @@ export default function Footer({ lang = 'es', dictionary }: FooterProps) {
               </li>
               <li className="flex items-start gap-3">
                 <span className="material-symbols-outlined text-secondary text-lg mt-0.5">mail</span>
-                <span>{t.contactSection.email}</span>
+                <span className="break-all">{t.contactSection.email}</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="material-symbols-outlined text-secondary text-lg mt-0.5">schedule</span>
+                <span>{t.contactSection.schedule}</span>
               </li>
             </ul>
           </div>
